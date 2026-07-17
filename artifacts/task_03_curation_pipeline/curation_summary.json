@@ -1,0 +1,67 @@
+{
+  "runtime_s": 282.11562383314595,
+  "dry_run": false,
+  "source_repo_id": "lerobot/svla_so100_pickplace",
+  "source_revision": "728583b5eaf9e739a7f119e2def466fa1d552402",
+  "config_hash": "d016b3fa4063fc18",
+  "seed": 42,
+  "horizon": 16,
+  "counts_before": {
+    "episodes": 50,
+    "timesteps": 19631
+  },
+  "counts_after_hard_episode_filter": {
+    "episodes_accepted": 50,
+    "episodes_rejected": 0,
+    "timesteps_hard_valid": 19631,
+    "timesteps_hard_invalid": 0
+  },
+  "training_windows": {
+    "conservative": 18881,
+    "strict": 18386,
+    "strict_subset_of_conservative": true
+  },
+  "reason_counts": {
+    "exact_duplicate": 3227,
+    "stationary_duplicate_keep": 7124,
+    "near_duplicate": 7405,
+    "near_lossless_duplicate": 991,
+    "frozen_while_moving_candidate": 1633,
+    "low_sharpness_soft": 982,
+    "overexposed": 267,
+    "sustained_overexposure": 240
+  },
+  "smoothing_enabled": true,
+  "visual_soft_sharpness_threshold": 3.7477951412094965,
+  "wrist_probe": {
+    "opened": true,
+    "error": null,
+    "n_frames_container": 19631,
+    "fps": 30.0,
+    "width": 640,
+    "height": 480,
+    "duration_s": 654.3666666666667,
+    "fourcc": "AV01",
+    "sample_decoded_endpoint_frames": 2,
+    "zero_length": false
+  },
+  "top_probe": {
+    "opened": true,
+    "error": null,
+    "n_frames_container": 19631,
+    "fps": 30.0,
+    "width": 640,
+    "height": 480,
+    "duration_s": 654.3666666666667,
+    "fourcc": "AV01",
+    "sample_decoded_endpoint_frames": 2,
+    "zero_length": false
+  },
+  "alignment_invariants": {
+    "strict_windows_subset_of_conservative": true,
+    "all_windows_single_episode": true,
+    "gripper_unchanged": true
+  },
+  "output_root": "data/curated/svla_so100_pickplace",
+  "artifacts_dir": "artifacts/task_03_curation_pipeline"
+}

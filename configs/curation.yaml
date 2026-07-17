@@ -1,0 +1,78 @@
+# Task 3 curation configuration for lerobot/svla_so100_pickplace
+# Conservative defaults: do not force removals on a clean corpus.
+
+seed: 42
+repo_id: lerobot/svla_so100_pickplace
+revision: 728583b5eaf9e739a7f119e2def466fa1d552402
+
+keys:
+  state: observation.state
+  action: action
+  wrist_camera: observation.images.wrist
+  top_camera: observation.images.top
+
+# Training horizon (timesteps per window). min episode length must exceed this.
+horizon: 16
+
+episode_validation:
+  reject_nan_inf: true
+  reject_non_monotonic_timestamps: true
+  reject_duplicate_timestamps: true
+  reject_frame_index_gaps: true
+  reject_length_mismatch: true
+  reject_missing_wrist_video: true
+  reject_material_video_mismatch: true
+  # Justified: 30 FPS × ~2 s ≈ 60 frames for a short pick segment;
+  # also >= 4× horizon so multiple windows are possible.
+  # Observed Task 1 min length = 326, so this does not force deletions.
+  min_episode_frames: 64
+  min_episode_seconds: 2.0  # informational; frames rule is authoritative at fps=30
+
+smoothing:
+  enabled: true
+  method: savgol
+  window_length: 5
+  polyorder: 2
+  exclude_gripper: true
+  # Refuse to apply if RMSE exceeds this fraction of per-dim std (safety)
+  max_rmse_over_std: 0.35
+
+discontinuity:
+  # Reuse Task 1 scale-aware rule for element flags (diagnostic)
+  mad_k: 8.0
+  abs_floor: 1.0
+  range_frac: 0.01
+  # Stricter severe rule for optional soft window exclusion
+  severe_mad_k: 20.0
+  severe_abs_floor: 8.0
+  # Default: ordinary discontinuities are diagnostic only
+  exclude_ordinary_from_windows: false
+  exclude_severe_from_strict_windows: true
+
+egocentric:
+  near_lossless_mse_threshold: 1.0
+  near_duplicate_mse_threshold: 25.0
+  # Absolute Laplacian=50 over-flagged 78.5% in Task 1 — never hard-filter.
+  # Soft flag uses distribution percentile of sharpness (lower = blurrier).
+  soft_sharpness_percentile: 5.0
+  underexposure_mean_threshold: 40.0
+  overexposure_mean_threshold: 220.0
+  overexposure_sat_frac: 0.15
+  underexposure_sat_frac: 0.15
+  low_entropy_threshold: 3.5
+  # Sustained run lengths (frames)
+  sustained_overexposure_run: 5
+  sustained_frozen_run: 5
+  # Robot-moving threshold: percentile of within-episode |Δstate| norms
+  motion_percentile: 50.0
+  # Frozen = exact OR near-lossless while motion above threshold
+  frozen_uses_near_lossless: true
+
+policies:
+  default: conservative
+  # conservative: hard failures only
+  # strict: hard + sustained overexposure + frozen-while-moving + severe disc
+
+windowing:
+  stride: 1
+  require_monotonic_timestamps: true
