@@ -1,0 +1,4008 @@
+{
+  "limitation": "Proxy labels are position-derived terminal-completion proxies, NOT verified task success/failure labels.",
+  "n_rows": 400,
+  "n_pos": 200,
+  "n_neg": 200,
+  "rows": [
+    {
+      "episode_index": 0,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 454,
+      "split": "test"
+    },
+    {
+      "episode_index": 0,
+      "frame_index": 60,
+      "timestamp": 2.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 60,
+      "episode_length": 454,
+      "split": "test"
+    },
+    {
+      "episode_index": 0,
+      "frame_index": 120,
+      "timestamp": 4.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 120,
+      "episode_length": 454,
+      "split": "test"
+    },
+    {
+      "episode_index": 0,
+      "frame_index": 180,
+      "timestamp": 6.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 180,
+      "episode_length": 454,
+      "split": "test"
+    },
+    {
+      "episode_index": 0,
+      "frame_index": 385,
+      "timestamp": 12.833333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 385,
+      "episode_length": 454,
+      "split": "test"
+    },
+    {
+      "episode_index": 0,
+      "frame_index": 407,
+      "timestamp": 13.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 407,
+      "episode_length": 454,
+      "split": "test"
+    },
+    {
+      "episode_index": 0,
+      "frame_index": 430,
+      "timestamp": 14.333333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 430,
+      "episode_length": 454,
+      "split": "test"
+    },
+    {
+      "episode_index": 0,
+      "frame_index": 453,
+      "timestamp": 15.100000381469727,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 453,
+      "episode_length": 454,
+      "split": "test"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 468,
+      "split": "test"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 62,
+      "timestamp": 2.066666603088379,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 62,
+      "episode_length": 468,
+      "split": "test"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 124,
+      "timestamp": 4.133333206176758,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 124,
+      "episode_length": 468,
+      "split": "test"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 186,
+      "timestamp": 6.199999809265137,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 186,
+      "episode_length": 468,
+      "split": "test"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 397,
+      "timestamp": 13.233333587646484,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 397,
+      "episode_length": 468,
+      "split": "test"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 420,
+      "timestamp": 14.0,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 420,
+      "episode_length": 468,
+      "split": "test"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 443,
+      "timestamp": 14.766666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 443,
+      "episode_length": 468,
+      "split": "test"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 467,
+      "timestamp": 15.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 467,
+      "episode_length": 468,
+      "split": "test"
+    },
+    {
+      "episode_index": 2,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 420,
+      "split": "test"
+    },
+    {
+      "episode_index": 2,
+      "frame_index": 55,
+      "timestamp": 1.8333333730697632,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 55,
+      "episode_length": 420,
+      "split": "test"
+    },
+    {
+      "episode_index": 2,
+      "frame_index": 111,
+      "timestamp": 3.700000047683716,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 111,
+      "episode_length": 420,
+      "split": "test"
+    },
+    {
+      "episode_index": 2,
+      "frame_index": 167,
+      "timestamp": 5.566666603088379,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 167,
+      "episode_length": 420,
+      "split": "test"
+    },
+    {
+      "episode_index": 2,
+      "frame_index": 357,
+      "timestamp": 11.899999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 357,
+      "episode_length": 420,
+      "split": "test"
+    },
+    {
+      "episode_index": 2,
+      "frame_index": 377,
+      "timestamp": 12.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 377,
+      "episode_length": 420,
+      "split": "test"
+    },
+    {
+      "episode_index": 2,
+      "frame_index": 398,
+      "timestamp": 13.266666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 398,
+      "episode_length": 420,
+      "split": "test"
+    },
+    {
+      "episode_index": 2,
+      "frame_index": 419,
+      "timestamp": 13.966666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 419,
+      "episode_length": 420,
+      "split": "test"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 55,
+      "timestamp": 1.8333333730697632,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 55,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 110,
+      "timestamp": 3.6666667461395264,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 110,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 165,
+      "timestamp": 5.5,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 165,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 353,
+      "timestamp": 11.766666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 353,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 373,
+      "timestamp": 12.433333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 373,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 394,
+      "timestamp": 13.133333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 394,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 415,
+      "timestamp": 13.833333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 415,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 4,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 4,
+      "frame_index": 53,
+      "timestamp": 1.7666666507720947,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 53,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 4,
+      "frame_index": 106,
+      "timestamp": 3.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 106,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 4,
+      "frame_index": 159,
+      "timestamp": 5.300000190734863,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 159,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 4,
+      "frame_index": 340,
+      "timestamp": 11.333333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 340,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 4,
+      "frame_index": 360,
+      "timestamp": 12.0,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 360,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 4,
+      "frame_index": 380,
+      "timestamp": 12.666666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 380,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 4,
+      "frame_index": 400,
+      "timestamp": 13.333333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 400,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 5,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 354,
+      "split": "train"
+    },
+    {
+      "episode_index": 5,
+      "frame_index": 46,
+      "timestamp": 1.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 46,
+      "episode_length": 354,
+      "split": "train"
+    },
+    {
+      "episode_index": 5,
+      "frame_index": 93,
+      "timestamp": 3.0999999046325684,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 93,
+      "episode_length": 354,
+      "split": "train"
+    },
+    {
+      "episode_index": 5,
+      "frame_index": 140,
+      "timestamp": 4.666666507720947,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 140,
+      "episode_length": 354,
+      "split": "train"
+    },
+    {
+      "episode_index": 5,
+      "frame_index": 300,
+      "timestamp": 10.0,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 300,
+      "episode_length": 354,
+      "split": "train"
+    },
+    {
+      "episode_index": 5,
+      "frame_index": 317,
+      "timestamp": 10.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 317,
+      "episode_length": 354,
+      "split": "train"
+    },
+    {
+      "episode_index": 5,
+      "frame_index": 335,
+      "timestamp": 11.166666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 335,
+      "episode_length": 354,
+      "split": "train"
+    },
+    {
+      "episode_index": 5,
+      "frame_index": 353,
+      "timestamp": 11.766666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 353,
+      "episode_length": 354,
+      "split": "train"
+    },
+    {
+      "episode_index": 6,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 357,
+      "split": "val"
+    },
+    {
+      "episode_index": 6,
+      "frame_index": 47,
+      "timestamp": 1.5666667222976685,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 47,
+      "episode_length": 357,
+      "split": "val"
+    },
+    {
+      "episode_index": 6,
+      "frame_index": 94,
+      "timestamp": 3.133333444595337,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 94,
+      "episode_length": 357,
+      "split": "val"
+    },
+    {
+      "episode_index": 6,
+      "frame_index": 141,
+      "timestamp": 4.699999809265137,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 141,
+      "episode_length": 357,
+      "split": "val"
+    },
+    {
+      "episode_index": 6,
+      "frame_index": 303,
+      "timestamp": 10.100000381469727,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 303,
+      "episode_length": 357,
+      "split": "val"
+    },
+    {
+      "episode_index": 6,
+      "frame_index": 320,
+      "timestamp": 10.666666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 320,
+      "episode_length": 357,
+      "split": "val"
+    },
+    {
+      "episode_index": 6,
+      "frame_index": 338,
+      "timestamp": 11.266666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 338,
+      "episode_length": 357,
+      "split": "val"
+    },
+    {
+      "episode_index": 6,
+      "frame_index": 356,
+      "timestamp": 11.866666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 356,
+      "episode_length": 357,
+      "split": "val"
+    },
+    {
+      "episode_index": 7,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 7,
+      "frame_index": 46,
+      "timestamp": 1.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 46,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 7,
+      "frame_index": 92,
+      "timestamp": 3.066666603088379,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 92,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 7,
+      "frame_index": 139,
+      "timestamp": 4.633333206176758,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 139,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 7,
+      "frame_index": 298,
+      "timestamp": 9.933333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 298,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 7,
+      "frame_index": 315,
+      "timestamp": 10.5,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 315,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 7,
+      "frame_index": 332,
+      "timestamp": 11.066666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 332,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 7,
+      "frame_index": 350,
+      "timestamp": 11.666666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 350,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 8,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 368,
+      "split": "test"
+    },
+    {
+      "episode_index": 8,
+      "frame_index": 48,
+      "timestamp": 1.600000023841858,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 48,
+      "episode_length": 368,
+      "split": "test"
+    },
+    {
+      "episode_index": 8,
+      "frame_index": 97,
+      "timestamp": 3.2333333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 97,
+      "episode_length": 368,
+      "split": "test"
+    },
+    {
+      "episode_index": 8,
+      "frame_index": 146,
+      "timestamp": 4.866666793823242,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 146,
+      "episode_length": 368,
+      "split": "test"
+    },
+    {
+      "episode_index": 8,
+      "frame_index": 312,
+      "timestamp": 10.399999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 312,
+      "episode_length": 368,
+      "split": "test"
+    },
+    {
+      "episode_index": 8,
+      "frame_index": 330,
+      "timestamp": 11.0,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 330,
+      "episode_length": 368,
+      "split": "test"
+    },
+    {
+      "episode_index": 8,
+      "frame_index": 348,
+      "timestamp": 11.600000381469727,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 348,
+      "episode_length": 368,
+      "split": "test"
+    },
+    {
+      "episode_index": 8,
+      "frame_index": 367,
+      "timestamp": 12.233333587646484,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 367,
+      "episode_length": 368,
+      "split": "test"
+    },
+    {
+      "episode_index": 9,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 388,
+      "split": "train"
+    },
+    {
+      "episode_index": 9,
+      "frame_index": 51,
+      "timestamp": 1.7000000476837158,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 51,
+      "episode_length": 388,
+      "split": "train"
+    },
+    {
+      "episode_index": 9,
+      "frame_index": 102,
+      "timestamp": 3.4000000953674316,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 102,
+      "episode_length": 388,
+      "split": "train"
+    },
+    {
+      "episode_index": 9,
+      "frame_index": 154,
+      "timestamp": 5.133333206176758,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 154,
+      "episode_length": 388,
+      "split": "train"
+    },
+    {
+      "episode_index": 9,
+      "frame_index": 329,
+      "timestamp": 10.966666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 329,
+      "episode_length": 388,
+      "split": "train"
+    },
+    {
+      "episode_index": 9,
+      "frame_index": 348,
+      "timestamp": 11.600000381469727,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 348,
+      "episode_length": 388,
+      "split": "train"
+    },
+    {
+      "episode_index": 9,
+      "frame_index": 367,
+      "timestamp": 12.233333587646484,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 367,
+      "episode_length": 388,
+      "split": "train"
+    },
+    {
+      "episode_index": 9,
+      "frame_index": 387,
+      "timestamp": 12.899999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 387,
+      "episode_length": 388,
+      "split": "train"
+    },
+    {
+      "episode_index": 10,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 364,
+      "split": "train"
+    },
+    {
+      "episode_index": 10,
+      "frame_index": 48,
+      "timestamp": 1.600000023841858,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 48,
+      "episode_length": 364,
+      "split": "train"
+    },
+    {
+      "episode_index": 10,
+      "frame_index": 96,
+      "timestamp": 3.200000047683716,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 96,
+      "episode_length": 364,
+      "split": "train"
+    },
+    {
+      "episode_index": 10,
+      "frame_index": 144,
+      "timestamp": 4.800000190734863,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 144,
+      "episode_length": 364,
+      "split": "train"
+    },
+    {
+      "episode_index": 10,
+      "frame_index": 309,
+      "timestamp": 10.300000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 309,
+      "episode_length": 364,
+      "split": "train"
+    },
+    {
+      "episode_index": 10,
+      "frame_index": 327,
+      "timestamp": 10.899999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 327,
+      "episode_length": 364,
+      "split": "train"
+    },
+    {
+      "episode_index": 10,
+      "frame_index": 345,
+      "timestamp": 11.5,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 345,
+      "episode_length": 364,
+      "split": "train"
+    },
+    {
+      "episode_index": 10,
+      "frame_index": 363,
+      "timestamp": 12.100000381469727,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 363,
+      "episode_length": 364,
+      "split": "train"
+    },
+    {
+      "episode_index": 11,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 377,
+      "split": "val"
+    },
+    {
+      "episode_index": 11,
+      "frame_index": 49,
+      "timestamp": 1.6333333253860474,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 49,
+      "episode_length": 377,
+      "split": "val"
+    },
+    {
+      "episode_index": 11,
+      "frame_index": 99,
+      "timestamp": 3.299999952316284,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 99,
+      "episode_length": 377,
+      "split": "val"
+    },
+    {
+      "episode_index": 11,
+      "frame_index": 149,
+      "timestamp": 4.9666666984558105,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 149,
+      "episode_length": 377,
+      "split": "val"
+    },
+    {
+      "episode_index": 11,
+      "frame_index": 320,
+      "timestamp": 10.666666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 320,
+      "episode_length": 377,
+      "split": "val"
+    },
+    {
+      "episode_index": 11,
+      "frame_index": 338,
+      "timestamp": 11.266666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 338,
+      "episode_length": 377,
+      "split": "val"
+    },
+    {
+      "episode_index": 11,
+      "frame_index": 357,
+      "timestamp": 11.899999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 357,
+      "episode_length": 377,
+      "split": "val"
+    },
+    {
+      "episode_index": 11,
+      "frame_index": 376,
+      "timestamp": 12.533333778381348,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 376,
+      "episode_length": 377,
+      "split": "val"
+    },
+    {
+      "episode_index": 12,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 369,
+      "split": "test"
+    },
+    {
+      "episode_index": 12,
+      "frame_index": 48,
+      "timestamp": 1.600000023841858,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 48,
+      "episode_length": 369,
+      "split": "test"
+    },
+    {
+      "episode_index": 12,
+      "frame_index": 97,
+      "timestamp": 3.2333333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 97,
+      "episode_length": 369,
+      "split": "test"
+    },
+    {
+      "episode_index": 12,
+      "frame_index": 146,
+      "timestamp": 4.866666793823242,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 146,
+      "episode_length": 369,
+      "split": "test"
+    },
+    {
+      "episode_index": 12,
+      "frame_index": 313,
+      "timestamp": 10.433333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 313,
+      "episode_length": 369,
+      "split": "test"
+    },
+    {
+      "episode_index": 12,
+      "frame_index": 331,
+      "timestamp": 11.033333778381348,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 331,
+      "episode_length": 369,
+      "split": "test"
+    },
+    {
+      "episode_index": 12,
+      "frame_index": 349,
+      "timestamp": 11.633333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 349,
+      "episode_length": 369,
+      "split": "test"
+    },
+    {
+      "episode_index": 12,
+      "frame_index": 368,
+      "timestamp": 12.266666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 368,
+      "episode_length": 369,
+      "split": "test"
+    },
+    {
+      "episode_index": 13,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 357,
+      "split": "test"
+    },
+    {
+      "episode_index": 13,
+      "frame_index": 47,
+      "timestamp": 1.5666667222976685,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 47,
+      "episode_length": 357,
+      "split": "test"
+    },
+    {
+      "episode_index": 13,
+      "frame_index": 94,
+      "timestamp": 3.133333444595337,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 94,
+      "episode_length": 357,
+      "split": "test"
+    },
+    {
+      "episode_index": 13,
+      "frame_index": 141,
+      "timestamp": 4.699999809265137,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 141,
+      "episode_length": 357,
+      "split": "test"
+    },
+    {
+      "episode_index": 13,
+      "frame_index": 303,
+      "timestamp": 10.100000381469727,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 303,
+      "episode_length": 357,
+      "split": "test"
+    },
+    {
+      "episode_index": 13,
+      "frame_index": 320,
+      "timestamp": 10.666666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 320,
+      "episode_length": 357,
+      "split": "test"
+    },
+    {
+      "episode_index": 13,
+      "frame_index": 338,
+      "timestamp": 11.266666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 338,
+      "episode_length": 357,
+      "split": "test"
+    },
+    {
+      "episode_index": 13,
+      "frame_index": 356,
+      "timestamp": 11.866666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 356,
+      "episode_length": 357,
+      "split": "test"
+    },
+    {
+      "episode_index": 14,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 375,
+      "split": "test"
+    },
+    {
+      "episode_index": 14,
+      "frame_index": 49,
+      "timestamp": 1.6333333253860474,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 49,
+      "episode_length": 375,
+      "split": "test"
+    },
+    {
+      "episode_index": 14,
+      "frame_index": 99,
+      "timestamp": 3.299999952316284,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 99,
+      "episode_length": 375,
+      "split": "test"
+    },
+    {
+      "episode_index": 14,
+      "frame_index": 149,
+      "timestamp": 4.9666666984558105,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 149,
+      "episode_length": 375,
+      "split": "test"
+    },
+    {
+      "episode_index": 14,
+      "frame_index": 318,
+      "timestamp": 10.600000381469727,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 318,
+      "episode_length": 375,
+      "split": "test"
+    },
+    {
+      "episode_index": 14,
+      "frame_index": 336,
+      "timestamp": 11.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 336,
+      "episode_length": 375,
+      "split": "test"
+    },
+    {
+      "episode_index": 14,
+      "frame_index": 355,
+      "timestamp": 11.833333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 355,
+      "episode_length": 375,
+      "split": "test"
+    },
+    {
+      "episode_index": 14,
+      "frame_index": 374,
+      "timestamp": 12.466666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 374,
+      "episode_length": 375,
+      "split": "test"
+    },
+    {
+      "episode_index": 15,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 384,
+      "split": "train"
+    },
+    {
+      "episode_index": 15,
+      "frame_index": 50,
+      "timestamp": 1.6666666269302368,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 50,
+      "episode_length": 384,
+      "split": "train"
+    },
+    {
+      "episode_index": 15,
+      "frame_index": 101,
+      "timestamp": 3.366666555404663,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 101,
+      "episode_length": 384,
+      "split": "train"
+    },
+    {
+      "episode_index": 15,
+      "frame_index": 152,
+      "timestamp": 5.066666603088379,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 152,
+      "episode_length": 384,
+      "split": "train"
+    },
+    {
+      "episode_index": 15,
+      "frame_index": 326,
+      "timestamp": 10.866666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 326,
+      "episode_length": 384,
+      "split": "train"
+    },
+    {
+      "episode_index": 15,
+      "frame_index": 345,
+      "timestamp": 11.5,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 345,
+      "episode_length": 384,
+      "split": "train"
+    },
+    {
+      "episode_index": 15,
+      "frame_index": 364,
+      "timestamp": 12.133333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 364,
+      "episode_length": 384,
+      "split": "train"
+    },
+    {
+      "episode_index": 15,
+      "frame_index": 383,
+      "timestamp": 12.766666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 383,
+      "episode_length": 384,
+      "split": "train"
+    },
+    {
+      "episode_index": 16,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 16,
+      "frame_index": 48,
+      "timestamp": 1.600000023841858,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 48,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 16,
+      "frame_index": 96,
+      "timestamp": 3.200000047683716,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 96,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 16,
+      "frame_index": 145,
+      "timestamp": 4.833333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 145,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 16,
+      "frame_index": 310,
+      "timestamp": 10.333333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 310,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 16,
+      "frame_index": 328,
+      "timestamp": 10.933333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 328,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 16,
+      "frame_index": 346,
+      "timestamp": 11.533333778381348,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 346,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 16,
+      "frame_index": 364,
+      "timestamp": 12.133333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 364,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 17,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 409,
+      "split": "train"
+    },
+    {
+      "episode_index": 17,
+      "frame_index": 54,
+      "timestamp": 1.7999999523162842,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 54,
+      "episode_length": 409,
+      "split": "train"
+    },
+    {
+      "episode_index": 17,
+      "frame_index": 108,
+      "timestamp": 3.5999999046325684,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 108,
+      "episode_length": 409,
+      "split": "train"
+    },
+    {
+      "episode_index": 17,
+      "frame_index": 162,
+      "timestamp": 5.400000095367432,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 162,
+      "episode_length": 409,
+      "split": "train"
+    },
+    {
+      "episode_index": 17,
+      "frame_index": 347,
+      "timestamp": 11.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 347,
+      "episode_length": 409,
+      "split": "train"
+    },
+    {
+      "episode_index": 17,
+      "frame_index": 367,
+      "timestamp": 12.233333587646484,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 367,
+      "episode_length": 409,
+      "split": "train"
+    },
+    {
+      "episode_index": 17,
+      "frame_index": 387,
+      "timestamp": 12.899999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 387,
+      "episode_length": 409,
+      "split": "train"
+    },
+    {
+      "episode_index": 17,
+      "frame_index": 408,
+      "timestamp": 13.600000381469727,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 408,
+      "episode_length": 409,
+      "split": "train"
+    },
+    {
+      "episode_index": 18,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 385,
+      "split": "train"
+    },
+    {
+      "episode_index": 18,
+      "frame_index": 51,
+      "timestamp": 1.7000000476837158,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 51,
+      "episode_length": 385,
+      "split": "train"
+    },
+    {
+      "episode_index": 18,
+      "frame_index": 102,
+      "timestamp": 3.4000000953674316,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 102,
+      "episode_length": 385,
+      "split": "train"
+    },
+    {
+      "episode_index": 18,
+      "frame_index": 153,
+      "timestamp": 5.099999904632568,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 153,
+      "episode_length": 385,
+      "split": "train"
+    },
+    {
+      "episode_index": 18,
+      "frame_index": 327,
+      "timestamp": 10.899999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 327,
+      "episode_length": 385,
+      "split": "train"
+    },
+    {
+      "episode_index": 18,
+      "frame_index": 346,
+      "timestamp": 11.533333778381348,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 346,
+      "episode_length": 385,
+      "split": "train"
+    },
+    {
+      "episode_index": 18,
+      "frame_index": 365,
+      "timestamp": 12.166666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 365,
+      "episode_length": 385,
+      "split": "train"
+    },
+    {
+      "episode_index": 18,
+      "frame_index": 384,
+      "timestamp": 12.800000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 384,
+      "episode_length": 385,
+      "split": "train"
+    },
+    {
+      "episode_index": 19,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 367,
+      "split": "val"
+    },
+    {
+      "episode_index": 19,
+      "frame_index": 48,
+      "timestamp": 1.600000023841858,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 48,
+      "episode_length": 367,
+      "split": "val"
+    },
+    {
+      "episode_index": 19,
+      "frame_index": 96,
+      "timestamp": 3.200000047683716,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 96,
+      "episode_length": 367,
+      "split": "val"
+    },
+    {
+      "episode_index": 19,
+      "frame_index": 145,
+      "timestamp": 4.833333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 145,
+      "episode_length": 367,
+      "split": "val"
+    },
+    {
+      "episode_index": 19,
+      "frame_index": 311,
+      "timestamp": 10.366666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 311,
+      "episode_length": 367,
+      "split": "val"
+    },
+    {
+      "episode_index": 19,
+      "frame_index": 329,
+      "timestamp": 10.966666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 329,
+      "episode_length": 367,
+      "split": "val"
+    },
+    {
+      "episode_index": 19,
+      "frame_index": 347,
+      "timestamp": 11.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 347,
+      "episode_length": 367,
+      "split": "val"
+    },
+    {
+      "episode_index": 19,
+      "frame_index": 366,
+      "timestamp": 12.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 366,
+      "episode_length": 367,
+      "split": "val"
+    },
+    {
+      "episode_index": 20,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 366,
+      "split": "train"
+    },
+    {
+      "episode_index": 20,
+      "frame_index": 48,
+      "timestamp": 1.600000023841858,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 48,
+      "episode_length": 366,
+      "split": "train"
+    },
+    {
+      "episode_index": 20,
+      "frame_index": 96,
+      "timestamp": 3.200000047683716,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 96,
+      "episode_length": 366,
+      "split": "train"
+    },
+    {
+      "episode_index": 20,
+      "frame_index": 145,
+      "timestamp": 4.833333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 145,
+      "episode_length": 366,
+      "split": "train"
+    },
+    {
+      "episode_index": 20,
+      "frame_index": 311,
+      "timestamp": 10.366666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 311,
+      "episode_length": 366,
+      "split": "train"
+    },
+    {
+      "episode_index": 20,
+      "frame_index": 329,
+      "timestamp": 10.966666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 329,
+      "episode_length": 366,
+      "split": "train"
+    },
+    {
+      "episode_index": 20,
+      "frame_index": 347,
+      "timestamp": 11.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 347,
+      "episode_length": 366,
+      "split": "train"
+    },
+    {
+      "episode_index": 20,
+      "frame_index": 365,
+      "timestamp": 12.166666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 365,
+      "episode_length": 366,
+      "split": "train"
+    },
+    {
+      "episode_index": 21,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 370,
+      "split": "train"
+    },
+    {
+      "episode_index": 21,
+      "frame_index": 49,
+      "timestamp": 1.6333333253860474,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 49,
+      "episode_length": 370,
+      "split": "train"
+    },
+    {
+      "episode_index": 21,
+      "frame_index": 98,
+      "timestamp": 3.2666666507720947,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 98,
+      "episode_length": 370,
+      "split": "train"
+    },
+    {
+      "episode_index": 21,
+      "frame_index": 147,
+      "timestamp": 4.900000095367432,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 147,
+      "episode_length": 370,
+      "split": "train"
+    },
+    {
+      "episode_index": 21,
+      "frame_index": 314,
+      "timestamp": 10.466666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 314,
+      "episode_length": 370,
+      "split": "train"
+    },
+    {
+      "episode_index": 21,
+      "frame_index": 332,
+      "timestamp": 11.066666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 332,
+      "episode_length": 370,
+      "split": "train"
+    },
+    {
+      "episode_index": 21,
+      "frame_index": 350,
+      "timestamp": 11.666666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 350,
+      "episode_length": 370,
+      "split": "train"
+    },
+    {
+      "episode_index": 21,
+      "frame_index": 369,
+      "timestamp": 12.300000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 369,
+      "episode_length": 370,
+      "split": "train"
+    },
+    {
+      "episode_index": 22,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 387,
+      "split": "val"
+    },
+    {
+      "episode_index": 22,
+      "frame_index": 51,
+      "timestamp": 1.7000000476837158,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 51,
+      "episode_length": 387,
+      "split": "val"
+    },
+    {
+      "episode_index": 22,
+      "frame_index": 102,
+      "timestamp": 3.4000000953674316,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 102,
+      "episode_length": 387,
+      "split": "val"
+    },
+    {
+      "episode_index": 22,
+      "frame_index": 153,
+      "timestamp": 5.099999904632568,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 153,
+      "episode_length": 387,
+      "split": "val"
+    },
+    {
+      "episode_index": 22,
+      "frame_index": 328,
+      "timestamp": 10.933333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 328,
+      "episode_length": 387,
+      "split": "val"
+    },
+    {
+      "episode_index": 22,
+      "frame_index": 347,
+      "timestamp": 11.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 347,
+      "episode_length": 387,
+      "split": "val"
+    },
+    {
+      "episode_index": 22,
+      "frame_index": 366,
+      "timestamp": 12.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 366,
+      "episode_length": 387,
+      "split": "val"
+    },
+    {
+      "episode_index": 22,
+      "frame_index": 386,
+      "timestamp": 12.866666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 386,
+      "episode_length": 387,
+      "split": "val"
+    },
+    {
+      "episode_index": 23,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 375,
+      "split": "train"
+    },
+    {
+      "episode_index": 23,
+      "frame_index": 49,
+      "timestamp": 1.6333333253860474,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 49,
+      "episode_length": 375,
+      "split": "train"
+    },
+    {
+      "episode_index": 23,
+      "frame_index": 99,
+      "timestamp": 3.299999952316284,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 99,
+      "episode_length": 375,
+      "split": "train"
+    },
+    {
+      "episode_index": 23,
+      "frame_index": 149,
+      "timestamp": 4.9666666984558105,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 149,
+      "episode_length": 375,
+      "split": "train"
+    },
+    {
+      "episode_index": 23,
+      "frame_index": 318,
+      "timestamp": 10.600000381469727,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 318,
+      "episode_length": 375,
+      "split": "train"
+    },
+    {
+      "episode_index": 23,
+      "frame_index": 336,
+      "timestamp": 11.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 336,
+      "episode_length": 375,
+      "split": "train"
+    },
+    {
+      "episode_index": 23,
+      "frame_index": 355,
+      "timestamp": 11.833333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 355,
+      "episode_length": 375,
+      "split": "train"
+    },
+    {
+      "episode_index": 23,
+      "frame_index": 374,
+      "timestamp": 12.466666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 374,
+      "episode_length": 375,
+      "split": "train"
+    },
+    {
+      "episode_index": 24,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 24,
+      "frame_index": 48,
+      "timestamp": 1.600000023841858,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 48,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 24,
+      "frame_index": 96,
+      "timestamp": 3.200000047683716,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 96,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 24,
+      "frame_index": 145,
+      "timestamp": 4.833333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 145,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 24,
+      "frame_index": 310,
+      "timestamp": 10.333333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 310,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 24,
+      "frame_index": 328,
+      "timestamp": 10.933333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 328,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 24,
+      "frame_index": 346,
+      "timestamp": 11.533333778381348,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 346,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 24,
+      "frame_index": 364,
+      "timestamp": 12.133333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 364,
+      "episode_length": 365,
+      "split": "train"
+    },
+    {
+      "episode_index": 25,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 408,
+      "split": "train"
+    },
+    {
+      "episode_index": 25,
+      "frame_index": 54,
+      "timestamp": 1.7999999523162842,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 54,
+      "episode_length": 408,
+      "split": "train"
+    },
+    {
+      "episode_index": 25,
+      "frame_index": 108,
+      "timestamp": 3.5999999046325684,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 108,
+      "episode_length": 408,
+      "split": "train"
+    },
+    {
+      "episode_index": 25,
+      "frame_index": 162,
+      "timestamp": 5.400000095367432,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 162,
+      "episode_length": 408,
+      "split": "train"
+    },
+    {
+      "episode_index": 25,
+      "frame_index": 346,
+      "timestamp": 11.533333778381348,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 346,
+      "episode_length": 408,
+      "split": "train"
+    },
+    {
+      "episode_index": 25,
+      "frame_index": 366,
+      "timestamp": 12.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 366,
+      "episode_length": 408,
+      "split": "train"
+    },
+    {
+      "episode_index": 25,
+      "frame_index": 386,
+      "timestamp": 12.866666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 386,
+      "episode_length": 408,
+      "split": "train"
+    },
+    {
+      "episode_index": 25,
+      "frame_index": 407,
+      "timestamp": 13.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 407,
+      "episode_length": 408,
+      "split": "train"
+    },
+    {
+      "episode_index": 26,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 353,
+      "split": "train"
+    },
+    {
+      "episode_index": 26,
+      "frame_index": 46,
+      "timestamp": 1.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 46,
+      "episode_length": 353,
+      "split": "train"
+    },
+    {
+      "episode_index": 26,
+      "frame_index": 93,
+      "timestamp": 3.0999999046325684,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 93,
+      "episode_length": 353,
+      "split": "train"
+    },
+    {
+      "episode_index": 26,
+      "frame_index": 140,
+      "timestamp": 4.666666507720947,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 140,
+      "episode_length": 353,
+      "split": "train"
+    },
+    {
+      "episode_index": 26,
+      "frame_index": 300,
+      "timestamp": 10.0,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 300,
+      "episode_length": 353,
+      "split": "train"
+    },
+    {
+      "episode_index": 26,
+      "frame_index": 317,
+      "timestamp": 10.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 317,
+      "episode_length": 353,
+      "split": "train"
+    },
+    {
+      "episode_index": 26,
+      "frame_index": 334,
+      "timestamp": 11.133333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 334,
+      "episode_length": 353,
+      "split": "train"
+    },
+    {
+      "episode_index": 26,
+      "frame_index": 352,
+      "timestamp": 11.733333587646484,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 352,
+      "episode_length": 353,
+      "split": "train"
+    },
+    {
+      "episode_index": 27,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 326,
+      "split": "train"
+    },
+    {
+      "episode_index": 27,
+      "frame_index": 43,
+      "timestamp": 1.4333332777023315,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 43,
+      "episode_length": 326,
+      "split": "train"
+    },
+    {
+      "episode_index": 27,
+      "frame_index": 86,
+      "timestamp": 2.866666555404663,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 86,
+      "episode_length": 326,
+      "split": "train"
+    },
+    {
+      "episode_index": 27,
+      "frame_index": 129,
+      "timestamp": 4.300000190734863,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 129,
+      "episode_length": 326,
+      "split": "train"
+    },
+    {
+      "episode_index": 27,
+      "frame_index": 277,
+      "timestamp": 9.233333587646484,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 277,
+      "episode_length": 326,
+      "split": "train"
+    },
+    {
+      "episode_index": 27,
+      "frame_index": 293,
+      "timestamp": 9.766666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 293,
+      "episode_length": 326,
+      "split": "train"
+    },
+    {
+      "episode_index": 27,
+      "frame_index": 309,
+      "timestamp": 10.300000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 309,
+      "episode_length": 326,
+      "split": "train"
+    },
+    {
+      "episode_index": 27,
+      "frame_index": 325,
+      "timestamp": 10.833333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 325,
+      "episode_length": 326,
+      "split": "train"
+    },
+    {
+      "episode_index": 28,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 378,
+      "split": "train"
+    },
+    {
+      "episode_index": 28,
+      "frame_index": 50,
+      "timestamp": 1.6666666269302368,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 50,
+      "episode_length": 378,
+      "split": "train"
+    },
+    {
+      "episode_index": 28,
+      "frame_index": 100,
+      "timestamp": 3.3333332538604736,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 100,
+      "episode_length": 378,
+      "split": "train"
+    },
+    {
+      "episode_index": 28,
+      "frame_index": 150,
+      "timestamp": 5.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 150,
+      "episode_length": 378,
+      "split": "train"
+    },
+    {
+      "episode_index": 28,
+      "frame_index": 321,
+      "timestamp": 10.699999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 321,
+      "episode_length": 378,
+      "split": "train"
+    },
+    {
+      "episode_index": 28,
+      "frame_index": 339,
+      "timestamp": 11.300000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 339,
+      "episode_length": 378,
+      "split": "train"
+    },
+    {
+      "episode_index": 28,
+      "frame_index": 358,
+      "timestamp": 11.933333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 358,
+      "episode_length": 378,
+      "split": "train"
+    },
+    {
+      "episode_index": 28,
+      "frame_index": 377,
+      "timestamp": 12.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 377,
+      "episode_length": 378,
+      "split": "train"
+    },
+    {
+      "episode_index": 29,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 374,
+      "split": "train"
+    },
+    {
+      "episode_index": 29,
+      "frame_index": 49,
+      "timestamp": 1.6333333253860474,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 49,
+      "episode_length": 374,
+      "split": "train"
+    },
+    {
+      "episode_index": 29,
+      "frame_index": 98,
+      "timestamp": 3.2666666507720947,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 98,
+      "episode_length": 374,
+      "split": "train"
+    },
+    {
+      "episode_index": 29,
+      "frame_index": 148,
+      "timestamp": 4.933333396911621,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 148,
+      "episode_length": 374,
+      "split": "train"
+    },
+    {
+      "episode_index": 29,
+      "frame_index": 317,
+      "timestamp": 10.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 317,
+      "episode_length": 374,
+      "split": "train"
+    },
+    {
+      "episode_index": 29,
+      "frame_index": 335,
+      "timestamp": 11.166666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 335,
+      "episode_length": 374,
+      "split": "train"
+    },
+    {
+      "episode_index": 29,
+      "frame_index": 354,
+      "timestamp": 11.800000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 354,
+      "episode_length": 374,
+      "split": "train"
+    },
+    {
+      "episode_index": 29,
+      "frame_index": 373,
+      "timestamp": 12.433333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 373,
+      "episode_length": 374,
+      "split": "train"
+    },
+    {
+      "episode_index": 30,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 30,
+      "frame_index": 55,
+      "timestamp": 1.8333333730697632,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 55,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 30,
+      "frame_index": 110,
+      "timestamp": 3.6666667461395264,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 110,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 30,
+      "frame_index": 166,
+      "timestamp": 5.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 166,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 30,
+      "frame_index": 355,
+      "timestamp": 11.833333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 355,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 30,
+      "frame_index": 375,
+      "timestamp": 12.5,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 375,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 30,
+      "frame_index": 396,
+      "timestamp": 13.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 396,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 30,
+      "frame_index": 417,
+      "timestamp": 13.899999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 417,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 31,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 575,
+      "split": "train"
+    },
+    {
+      "episode_index": 31,
+      "frame_index": 76,
+      "timestamp": 2.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 76,
+      "episode_length": 575,
+      "split": "train"
+    },
+    {
+      "episode_index": 31,
+      "frame_index": 152,
+      "timestamp": 5.066666603088379,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 152,
+      "episode_length": 575,
+      "split": "train"
+    },
+    {
+      "episode_index": 31,
+      "frame_index": 229,
+      "timestamp": 7.633333206176758,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 229,
+      "episode_length": 575,
+      "split": "train"
+    },
+    {
+      "episode_index": 31,
+      "frame_index": 488,
+      "timestamp": 16.266666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 488,
+      "episode_length": 575,
+      "split": "train"
+    },
+    {
+      "episode_index": 31,
+      "frame_index": 516,
+      "timestamp": 17.200000762939453,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 516,
+      "episode_length": 575,
+      "split": "train"
+    },
+    {
+      "episode_index": 31,
+      "frame_index": 545,
+      "timestamp": 18.16666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 545,
+      "episode_length": 575,
+      "split": "train"
+    },
+    {
+      "episode_index": 31,
+      "frame_index": 574,
+      "timestamp": 19.133333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 574,
+      "episode_length": 575,
+      "split": "train"
+    },
+    {
+      "episode_index": 32,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 32,
+      "frame_index": 55,
+      "timestamp": 1.8333333730697632,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 55,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 32,
+      "frame_index": 110,
+      "timestamp": 3.6666667461395264,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 110,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 32,
+      "frame_index": 165,
+      "timestamp": 5.5,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 165,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 32,
+      "frame_index": 353,
+      "timestamp": 11.766666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 353,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 32,
+      "frame_index": 373,
+      "timestamp": 12.433333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 373,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 32,
+      "frame_index": 394,
+      "timestamp": 13.133333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 394,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 32,
+      "frame_index": 415,
+      "timestamp": 13.833333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 415,
+      "episode_length": 416,
+      "split": "train"
+    },
+    {
+      "episode_index": 33,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 425,
+      "split": "test"
+    },
+    {
+      "episode_index": 33,
+      "frame_index": 56,
+      "timestamp": 1.8666666746139526,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 56,
+      "episode_length": 425,
+      "split": "test"
+    },
+    {
+      "episode_index": 33,
+      "frame_index": 112,
+      "timestamp": 3.7333333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 112,
+      "episode_length": 425,
+      "split": "test"
+    },
+    {
+      "episode_index": 33,
+      "frame_index": 169,
+      "timestamp": 5.633333206176758,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 169,
+      "episode_length": 425,
+      "split": "test"
+    },
+    {
+      "episode_index": 33,
+      "frame_index": 361,
+      "timestamp": 12.033333778381348,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 361,
+      "episode_length": 425,
+      "split": "test"
+    },
+    {
+      "episode_index": 33,
+      "frame_index": 382,
+      "timestamp": 12.733333587646484,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 382,
+      "episode_length": 425,
+      "split": "test"
+    },
+    {
+      "episode_index": 33,
+      "frame_index": 403,
+      "timestamp": 13.433333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 403,
+      "episode_length": 425,
+      "split": "test"
+    },
+    {
+      "episode_index": 33,
+      "frame_index": 424,
+      "timestamp": 14.133333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 424,
+      "episode_length": 425,
+      "split": "test"
+    },
+    {
+      "episode_index": 34,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 376,
+      "split": "train"
+    },
+    {
+      "episode_index": 34,
+      "frame_index": 49,
+      "timestamp": 1.6333333253860474,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 49,
+      "episode_length": 376,
+      "split": "train"
+    },
+    {
+      "episode_index": 34,
+      "frame_index": 99,
+      "timestamp": 3.299999952316284,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 99,
+      "episode_length": 376,
+      "split": "train"
+    },
+    {
+      "episode_index": 34,
+      "frame_index": 149,
+      "timestamp": 4.9666666984558105,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 149,
+      "episode_length": 376,
+      "split": "train"
+    },
+    {
+      "episode_index": 34,
+      "frame_index": 319,
+      "timestamp": 10.633333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 319,
+      "episode_length": 376,
+      "split": "train"
+    },
+    {
+      "episode_index": 34,
+      "frame_index": 337,
+      "timestamp": 11.233333587646484,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 337,
+      "episode_length": 376,
+      "split": "train"
+    },
+    {
+      "episode_index": 34,
+      "frame_index": 356,
+      "timestamp": 11.866666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 356,
+      "episode_length": 376,
+      "split": "train"
+    },
+    {
+      "episode_index": 34,
+      "frame_index": 375,
+      "timestamp": 12.5,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 375,
+      "episode_length": 376,
+      "split": "train"
+    },
+    {
+      "episode_index": 35,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 393,
+      "split": "val"
+    },
+    {
+      "episode_index": 35,
+      "frame_index": 52,
+      "timestamp": 1.7333333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 52,
+      "episode_length": 393,
+      "split": "val"
+    },
+    {
+      "episode_index": 35,
+      "frame_index": 104,
+      "timestamp": 3.4666666984558105,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 104,
+      "episode_length": 393,
+      "split": "val"
+    },
+    {
+      "episode_index": 35,
+      "frame_index": 156,
+      "timestamp": 5.199999809265137,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 156,
+      "episode_length": 393,
+      "split": "val"
+    },
+    {
+      "episode_index": 35,
+      "frame_index": 334,
+      "timestamp": 11.133333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 334,
+      "episode_length": 393,
+      "split": "val"
+    },
+    {
+      "episode_index": 35,
+      "frame_index": 353,
+      "timestamp": 11.766666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 353,
+      "episode_length": 393,
+      "split": "val"
+    },
+    {
+      "episode_index": 35,
+      "frame_index": 372,
+      "timestamp": 12.399999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 372,
+      "episode_length": 393,
+      "split": "val"
+    },
+    {
+      "episode_index": 35,
+      "frame_index": 392,
+      "timestamp": 13.066666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 392,
+      "episode_length": 393,
+      "split": "val"
+    },
+    {
+      "episode_index": 36,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 440,
+      "split": "test"
+    },
+    {
+      "episode_index": 36,
+      "frame_index": 58,
+      "timestamp": 1.9333332777023315,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 58,
+      "episode_length": 440,
+      "split": "test"
+    },
+    {
+      "episode_index": 36,
+      "frame_index": 116,
+      "timestamp": 3.866666555404663,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 116,
+      "episode_length": 440,
+      "split": "test"
+    },
+    {
+      "episode_index": 36,
+      "frame_index": 175,
+      "timestamp": 5.833333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 175,
+      "episode_length": 440,
+      "split": "test"
+    },
+    {
+      "episode_index": 36,
+      "frame_index": 374,
+      "timestamp": 12.466666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 374,
+      "episode_length": 440,
+      "split": "test"
+    },
+    {
+      "episode_index": 36,
+      "frame_index": 395,
+      "timestamp": 13.166666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 395,
+      "episode_length": 440,
+      "split": "test"
+    },
+    {
+      "episode_index": 36,
+      "frame_index": 417,
+      "timestamp": 13.899999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 417,
+      "episode_length": 440,
+      "split": "test"
+    },
+    {
+      "episode_index": 36,
+      "frame_index": 439,
+      "timestamp": 14.633333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 439,
+      "episode_length": 440,
+      "split": "test"
+    },
+    {
+      "episode_index": 37,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 382,
+      "split": "train"
+    },
+    {
+      "episode_index": 37,
+      "frame_index": 50,
+      "timestamp": 1.6666666269302368,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 50,
+      "episode_length": 382,
+      "split": "train"
+    },
+    {
+      "episode_index": 37,
+      "frame_index": 100,
+      "timestamp": 3.3333332538604736,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 100,
+      "episode_length": 382,
+      "split": "train"
+    },
+    {
+      "episode_index": 37,
+      "frame_index": 151,
+      "timestamp": 5.0333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 151,
+      "episode_length": 382,
+      "split": "train"
+    },
+    {
+      "episode_index": 37,
+      "frame_index": 324,
+      "timestamp": 10.800000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 324,
+      "episode_length": 382,
+      "split": "train"
+    },
+    {
+      "episode_index": 37,
+      "frame_index": 343,
+      "timestamp": 11.433333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 343,
+      "episode_length": 382,
+      "split": "train"
+    },
+    {
+      "episode_index": 37,
+      "frame_index": 362,
+      "timestamp": 12.066666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 362,
+      "episode_length": 382,
+      "split": "train"
+    },
+    {
+      "episode_index": 37,
+      "frame_index": 381,
+      "timestamp": 12.699999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 381,
+      "episode_length": 382,
+      "split": "train"
+    },
+    {
+      "episode_index": 38,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 402,
+      "split": "train"
+    },
+    {
+      "episode_index": 38,
+      "frame_index": 53,
+      "timestamp": 1.7666666507720947,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 53,
+      "episode_length": 402,
+      "split": "train"
+    },
+    {
+      "episode_index": 38,
+      "frame_index": 106,
+      "timestamp": 3.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 106,
+      "episode_length": 402,
+      "split": "train"
+    },
+    {
+      "episode_index": 38,
+      "frame_index": 159,
+      "timestamp": 5.300000190734863,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 159,
+      "episode_length": 402,
+      "split": "train"
+    },
+    {
+      "episode_index": 38,
+      "frame_index": 341,
+      "timestamp": 11.366666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 341,
+      "episode_length": 402,
+      "split": "train"
+    },
+    {
+      "episode_index": 38,
+      "frame_index": 361,
+      "timestamp": 12.033333778381348,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 361,
+      "episode_length": 402,
+      "split": "train"
+    },
+    {
+      "episode_index": 38,
+      "frame_index": 381,
+      "timestamp": 12.699999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 381,
+      "episode_length": 402,
+      "split": "train"
+    },
+    {
+      "episode_index": 38,
+      "frame_index": 401,
+      "timestamp": 13.366666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 401,
+      "episode_length": 402,
+      "split": "train"
+    },
+    {
+      "episode_index": 39,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 341,
+      "split": "train"
+    },
+    {
+      "episode_index": 39,
+      "frame_index": 45,
+      "timestamp": 1.5,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 45,
+      "episode_length": 341,
+      "split": "train"
+    },
+    {
+      "episode_index": 39,
+      "frame_index": 90,
+      "timestamp": 3.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 90,
+      "episode_length": 341,
+      "split": "train"
+    },
+    {
+      "episode_index": 39,
+      "frame_index": 135,
+      "timestamp": 4.5,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 135,
+      "episode_length": 341,
+      "split": "train"
+    },
+    {
+      "episode_index": 39,
+      "frame_index": 289,
+      "timestamp": 9.633333206176758,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 289,
+      "episode_length": 341,
+      "split": "train"
+    },
+    {
+      "episode_index": 39,
+      "frame_index": 306,
+      "timestamp": 10.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 306,
+      "episode_length": 341,
+      "split": "train"
+    },
+    {
+      "episode_index": 39,
+      "frame_index": 323,
+      "timestamp": 10.766666412353516,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 323,
+      "episode_length": 341,
+      "split": "train"
+    },
+    {
+      "episode_index": 39,
+      "frame_index": 340,
+      "timestamp": 11.333333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 340,
+      "episode_length": 341,
+      "split": "train"
+    },
+    {
+      "episode_index": 40,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 473,
+      "split": "train"
+    },
+    {
+      "episode_index": 40,
+      "frame_index": 62,
+      "timestamp": 2.066666603088379,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 62,
+      "episode_length": 473,
+      "split": "train"
+    },
+    {
+      "episode_index": 40,
+      "frame_index": 125,
+      "timestamp": 4.166666507720947,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 125,
+      "episode_length": 473,
+      "split": "train"
+    },
+    {
+      "episode_index": 40,
+      "frame_index": 188,
+      "timestamp": 6.266666889190674,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 188,
+      "episode_length": 473,
+      "split": "train"
+    },
+    {
+      "episode_index": 40,
+      "frame_index": 402,
+      "timestamp": 13.399999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 402,
+      "episode_length": 473,
+      "split": "train"
+    },
+    {
+      "episode_index": 40,
+      "frame_index": 425,
+      "timestamp": 14.166666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 425,
+      "episode_length": 473,
+      "split": "train"
+    },
+    {
+      "episode_index": 40,
+      "frame_index": 448,
+      "timestamp": 14.933333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 448,
+      "episode_length": 473,
+      "split": "train"
+    },
+    {
+      "episode_index": 40,
+      "frame_index": 472,
+      "timestamp": 15.733333587646484,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 472,
+      "episode_length": 473,
+      "split": "train"
+    },
+    {
+      "episode_index": 41,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 475,
+      "split": "train"
+    },
+    {
+      "episode_index": 41,
+      "frame_index": 63,
+      "timestamp": 2.0999999046325684,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 63,
+      "episode_length": 475,
+      "split": "train"
+    },
+    {
+      "episode_index": 41,
+      "frame_index": 126,
+      "timestamp": 4.199999809265137,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 126,
+      "episode_length": 475,
+      "split": "train"
+    },
+    {
+      "episode_index": 41,
+      "frame_index": 189,
+      "timestamp": 6.300000190734863,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 189,
+      "episode_length": 475,
+      "split": "train"
+    },
+    {
+      "episode_index": 41,
+      "frame_index": 403,
+      "timestamp": 13.433333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 403,
+      "episode_length": 475,
+      "split": "train"
+    },
+    {
+      "episode_index": 41,
+      "frame_index": 426,
+      "timestamp": 14.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 426,
+      "episode_length": 475,
+      "split": "train"
+    },
+    {
+      "episode_index": 41,
+      "frame_index": 450,
+      "timestamp": 15.0,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 450,
+      "episode_length": 475,
+      "split": "train"
+    },
+    {
+      "episode_index": 41,
+      "frame_index": 474,
+      "timestamp": 15.800000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 474,
+      "episode_length": 475,
+      "split": "train"
+    },
+    {
+      "episode_index": 42,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 417,
+      "split": "train"
+    },
+    {
+      "episode_index": 42,
+      "frame_index": 55,
+      "timestamp": 1.8333333730697632,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 55,
+      "episode_length": 417,
+      "split": "train"
+    },
+    {
+      "episode_index": 42,
+      "frame_index": 110,
+      "timestamp": 3.6666667461395264,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 110,
+      "episode_length": 417,
+      "split": "train"
+    },
+    {
+      "episode_index": 42,
+      "frame_index": 165,
+      "timestamp": 5.5,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 165,
+      "episode_length": 417,
+      "split": "train"
+    },
+    {
+      "episode_index": 42,
+      "frame_index": 354,
+      "timestamp": 11.800000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 354,
+      "episode_length": 417,
+      "split": "train"
+    },
+    {
+      "episode_index": 42,
+      "frame_index": 374,
+      "timestamp": 12.466666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 374,
+      "episode_length": 417,
+      "split": "train"
+    },
+    {
+      "episode_index": 42,
+      "frame_index": 395,
+      "timestamp": 13.166666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 395,
+      "episode_length": 417,
+      "split": "train"
+    },
+    {
+      "episode_index": 42,
+      "frame_index": 416,
+      "timestamp": 13.866666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 416,
+      "episode_length": 417,
+      "split": "train"
+    },
+    {
+      "episode_index": 43,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 423,
+      "split": "train"
+    },
+    {
+      "episode_index": 43,
+      "frame_index": 56,
+      "timestamp": 1.8666666746139526,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 56,
+      "episode_length": 423,
+      "split": "train"
+    },
+    {
+      "episode_index": 43,
+      "frame_index": 112,
+      "timestamp": 3.7333333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 112,
+      "episode_length": 423,
+      "split": "train"
+    },
+    {
+      "episode_index": 43,
+      "frame_index": 168,
+      "timestamp": 5.599999904632568,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 168,
+      "episode_length": 423,
+      "split": "train"
+    },
+    {
+      "episode_index": 43,
+      "frame_index": 359,
+      "timestamp": 11.966666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 359,
+      "episode_length": 423,
+      "split": "train"
+    },
+    {
+      "episode_index": 43,
+      "frame_index": 380,
+      "timestamp": 12.666666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 380,
+      "episode_length": 423,
+      "split": "train"
+    },
+    {
+      "episode_index": 43,
+      "frame_index": 401,
+      "timestamp": 13.366666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 401,
+      "episode_length": 423,
+      "split": "train"
+    },
+    {
+      "episode_index": 43,
+      "frame_index": 422,
+      "timestamp": 14.066666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 422,
+      "episode_length": 423,
+      "split": "train"
+    },
+    {
+      "episode_index": 44,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 367,
+      "split": "train"
+    },
+    {
+      "episode_index": 44,
+      "frame_index": 48,
+      "timestamp": 1.600000023841858,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 48,
+      "episode_length": 367,
+      "split": "train"
+    },
+    {
+      "episode_index": 44,
+      "frame_index": 96,
+      "timestamp": 3.200000047683716,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 96,
+      "episode_length": 367,
+      "split": "train"
+    },
+    {
+      "episode_index": 44,
+      "frame_index": 145,
+      "timestamp": 4.833333492279053,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 145,
+      "episode_length": 367,
+      "split": "train"
+    },
+    {
+      "episode_index": 44,
+      "frame_index": 311,
+      "timestamp": 10.366666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 311,
+      "episode_length": 367,
+      "split": "train"
+    },
+    {
+      "episode_index": 44,
+      "frame_index": 329,
+      "timestamp": 10.966666221618652,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 329,
+      "episode_length": 367,
+      "split": "train"
+    },
+    {
+      "episode_index": 44,
+      "frame_index": 347,
+      "timestamp": 11.566666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 347,
+      "episode_length": 367,
+      "split": "train"
+    },
+    {
+      "episode_index": 44,
+      "frame_index": 366,
+      "timestamp": 12.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 366,
+      "episode_length": 367,
+      "split": "train"
+    },
+    {
+      "episode_index": 45,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 45,
+      "frame_index": 46,
+      "timestamp": 1.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 46,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 45,
+      "frame_index": 92,
+      "timestamp": 3.066666603088379,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 92,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 45,
+      "frame_index": 139,
+      "timestamp": 4.633333206176758,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 139,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 45,
+      "frame_index": 298,
+      "timestamp": 9.933333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 298,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 45,
+      "frame_index": 315,
+      "timestamp": 10.5,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 315,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 45,
+      "frame_index": 332,
+      "timestamp": 11.066666603088379,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 332,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 45,
+      "frame_index": 350,
+      "timestamp": 11.666666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 350,
+      "episode_length": 351,
+      "split": "train"
+    },
+    {
+      "episode_index": 46,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 346,
+      "split": "train"
+    },
+    {
+      "episode_index": 46,
+      "frame_index": 45,
+      "timestamp": 1.5,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 45,
+      "episode_length": 346,
+      "split": "train"
+    },
+    {
+      "episode_index": 46,
+      "frame_index": 91,
+      "timestamp": 3.0333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 91,
+      "episode_length": 346,
+      "split": "train"
+    },
+    {
+      "episode_index": 46,
+      "frame_index": 137,
+      "timestamp": 4.566666603088379,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 137,
+      "episode_length": 346,
+      "split": "train"
+    },
+    {
+      "episode_index": 46,
+      "frame_index": 294,
+      "timestamp": 9.800000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 294,
+      "episode_length": 346,
+      "split": "train"
+    },
+    {
+      "episode_index": 46,
+      "frame_index": 311,
+      "timestamp": 10.366666793823242,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 311,
+      "episode_length": 346,
+      "split": "train"
+    },
+    {
+      "episode_index": 46,
+      "frame_index": 328,
+      "timestamp": 10.933333396911621,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 328,
+      "episode_length": 346,
+      "split": "train"
+    },
+    {
+      "episode_index": 46,
+      "frame_index": 345,
+      "timestamp": 11.5,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 345,
+      "episode_length": 346,
+      "split": "train"
+    },
+    {
+      "episode_index": 47,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 47,
+      "frame_index": 55,
+      "timestamp": 1.8333333730697632,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 55,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 47,
+      "frame_index": 110,
+      "timestamp": 3.6666667461395264,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 110,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 47,
+      "frame_index": 166,
+      "timestamp": 5.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 166,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 47,
+      "frame_index": 355,
+      "timestamp": 11.833333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 355,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 47,
+      "frame_index": 375,
+      "timestamp": 12.5,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 375,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 47,
+      "frame_index": 396,
+      "timestamp": 13.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 396,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 47,
+      "frame_index": 417,
+      "timestamp": 13.899999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 417,
+      "episode_length": 418,
+      "split": "train"
+    },
+    {
+      "episode_index": 48,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 361,
+      "split": "test"
+    },
+    {
+      "episode_index": 48,
+      "frame_index": 47,
+      "timestamp": 1.5666667222976685,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 47,
+      "episode_length": 361,
+      "split": "test"
+    },
+    {
+      "episode_index": 48,
+      "frame_index": 95,
+      "timestamp": 3.1666667461395264,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 95,
+      "episode_length": 361,
+      "split": "test"
+    },
+    {
+      "episode_index": 48,
+      "frame_index": 143,
+      "timestamp": 4.766666889190674,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 143,
+      "episode_length": 361,
+      "split": "test"
+    },
+    {
+      "episode_index": 48,
+      "frame_index": 306,
+      "timestamp": 10.199999809265137,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 306,
+      "episode_length": 361,
+      "split": "test"
+    },
+    {
+      "episode_index": 48,
+      "frame_index": 324,
+      "timestamp": 10.800000190734863,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 324,
+      "episode_length": 361,
+      "split": "test"
+    },
+    {
+      "episode_index": 48,
+      "frame_index": 342,
+      "timestamp": 11.399999618530273,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 342,
+      "episode_length": 361,
+      "split": "test"
+    },
+    {
+      "episode_index": 48,
+      "frame_index": 360,
+      "timestamp": 12.0,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 360,
+      "episode_length": 361,
+      "split": "test"
+    },
+    {
+      "episode_index": 49,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 0,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 49,
+      "frame_index": 53,
+      "timestamp": 1.7666666507720947,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 53,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 49,
+      "frame_index": 106,
+      "timestamp": 3.5333333015441895,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 106,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 49,
+      "frame_index": 159,
+      "timestamp": 5.300000190734863,
+      "proxy_label": 0,
+      "proxy_label_name": "early_nonterminal",
+      "global_pos_in_episode": 159,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 49,
+      "frame_index": 340,
+      "timestamp": 11.333333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 340,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 49,
+      "frame_index": 360,
+      "timestamp": 12.0,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 360,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 49,
+      "frame_index": 380,
+      "timestamp": 12.666666984558105,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 380,
+      "episode_length": 401,
+      "split": "train"
+    },
+    {
+      "episode_index": 49,
+      "frame_index": 400,
+      "timestamp": 13.333333015441895,
+      "proxy_label": 1,
+      "proxy_label_name": "terminal_completion_proxy",
+      "global_pos_in_episode": 400,
+      "episode_length": 401,
+      "split": "train"
+    }
+  ]
+}

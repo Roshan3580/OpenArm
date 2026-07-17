@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "n_errors": 0,
+  "errors": [],
+  "slice_counts": {
+    "nominal_held_out": 40,
+    "object_target_shift": 20,
+    "lighting_camera_perturbation": 15,
+    "control_latency_dynamics": 15,
+    "occlusion_distractor": 10
+  },
+  "n_rollouts": 100,
+  "n_paired_templates": 36
+}

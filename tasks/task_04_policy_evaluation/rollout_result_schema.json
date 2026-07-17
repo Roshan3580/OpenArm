@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarm.local/schemas/rollout_result_v1.json",
+  "title": "OpenArm ACT rollout result record",
+  "type": "object",
+  "required": [
+    "rollout_id",
+    "policy_checkpoint_id",
+    "policy_family",
+    "dataset_repo_id",
+    "dataset_revision",
+    "curation_view",
+    "seed",
+    "evaluation_slice",
+    "observation_config",
+    "perturbations",
+    "timing",
+    "task_outcome",
+    "ground_truth_success_source",
+    "safety_events",
+    "visual_detector",
+    "artifact_refs"
+  ],
+  "properties": {
+    "rollout_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "policy_checkpoint_id": { "type": "string" },
+    "policy_family": { "type": "string", "enum": ["ACT", "DiffusionPolicy"] },
+    "dataset_repo_id": { "type": "string" },
+    "dataset_revision": { "type": "string" },
+    "curation_view": { "type": "string", "enum": ["conservative", "strict", "raw"] },
+    "seed": { "type": "integer" },
+    "evaluation_slice": {
+      "type": "string",
+      "enum": [
+        "nominal_held_out",
+        "object_target_shift",
+        "lighting_camera_perturbation",
+        "control_latency_dynamics",
+        "occlusion_distractor"
+      ]
+    },
+    "observation_config": {
+      "type": "string",
+      "enum": ["wrist_only", "top_only", "wrist_plus_top"]
+    },
+    "state_features": { "type": "string", "enum": ["raw", "smoothed"] },
+    "perturbations": { "type": "object" },
+    "environment_configuration": { "type": "object" },
+    "object_target_initial_poses": { "type": "object" },
+    "camera_configuration": { "type": "object" },
+    "timing": {
+      "type": "object",
+      "required": ["policy_inference_latency_ms", "control_loop_latency_ms", "completion_time_s"],
+      "properties": {
+        "policy_inference_latency_ms": { "type": "number" },
+        "control_loop_latency_ms": { "type": "number" },
+        "missed_control_deadlines": { "type": "integer", "minimum": 0 },
+        "camera_frame_age_ms": { "type": "number" },
+        "observation_action_skew_ms": { "type": "number" },
+        "completion_time_s": { "type": "number" }
+      }
+    },
+    "task_outcome": {
+      "type": "string",
+      "enum": ["success", "partial_success", "failure", "aborted", "uncertain"]
+    },
+    "failure_taxonomy": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "phase_event_annotations": { "type": "object" },
+    "safety_events": {
+      "type": "object",
+      "properties": {
+        "collision_count": { "type": "integer", "minimum": 0 },
+        "severe_collision_count": { "type": "integer", "minimum": 0 },
+        "workspace_violation_count": { "type": "integer", "minimum": 0 },
+        "dropped_object_count": { "type": "integer", "minimum": 0 },
+        "emergency_stop_or_abort_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "ground_truth_success_source": {
+      "type": "string",
+      "enum": [
+        "simulator_state",
+        "trusted_external_evaluator",
+        "adjudicated_human_annotation"
+      ]
+    },
+    "visual_detector": {
+      "type": "object",
+      "properties": {
+        "probability_trajectory": { "type": "array", "items": { "type": "number" } },
+        "triggered": { "type": "boolean" },
+        "first_trigger_timestamp": { "type": ["number", "null"] },
+        "note": { "type": "string" }
+      }
+    },
+    "policy_inputs": {
+      "type": "object",
+      "description": "Must never include simulator success or evaluation labels",
+      "properties": {
+        "state": {},
+        "wrist_image": {},
+        "top_image": {},
+        "language_instruction": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "motion_metrics": { "type": "object" },
+    "efficiency_metrics": { "type": "object" },
+    "visual_quality_metrics": { "type": "object" },
+    "artifact_refs": {
+      "type": "object",
+      "properties": {
+        "trajectory_log": { "type": "string" },
+        "wrist_video": { "type": "string" },
+        "top_video": { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": true
+}

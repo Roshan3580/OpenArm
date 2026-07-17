@@ -1,0 +1,80 @@
+# Task 4 — Policy evaluation design (ACT example)
+
+dataset:
+  repo_id: lerobot/svla_so100_pickplace
+  revision: "728583b5eaf9e739a7f119e2def466fa1d552402"
+  fps: 30
+  task: "Pick up the cube and place it in the box."
+
+policy:
+  family: ACT
+  note: "No trained checkpoint exists in this repository; protocol is executable design only."
+  action_dim: 6  # SO-100
+  control_hz: 30
+  observation_history: 1
+  action_chunk_length: 100
+  execution_horizon: 50
+  temporal_ensembling: true
+  image_resize: [224, 224]
+  cameras:
+    wrist: observation.images.wrist
+    top: observation.images.top
+  training_view_options: [conservative, strict]
+  observation_ablations: [wrist_only, top_only, wrist_plus_top]
+  state_feature_options: [raw, smoothed]
+
+rollouts:
+  total: 100
+  slices:
+    nominal_held_out: 40
+    object_target_shift: 20
+    lighting_camera_perturbation: 15
+    control_latency_dynamics: 15
+    occlusion_distractor: 10
+  seed_base: 42000
+  protocol_path: tasks/task_04_policy_evaluation/rollout_protocol.yaml
+  schema_path: tasks/task_04_policy_evaluation/rollout_result_schema.json
+
+acceptance_proposed:
+  overall_success_rate_min: 0.80
+  wilson_lower_95_min: 0.70
+  nominal_success_rate_min: 0.90
+  worst_slice_success_rate_min: 0.60
+  severe_safety_events_max: 0
+  missed_deadline_rate_max: 0.02
+  median_completion_time_vs_demo_max: 1.5
+  visual_detector_early_fpr_max: 0.05
+  visual_detector_episode_recall_min: 0.80
+
+success_detector:
+  seed: 42
+  resize: [96, 96]
+  hsv_bins: [8, 8, 8]
+  hog:
+    orientations: 9
+    pixels_per_cell: [16, 16]
+    cells_per_block: [2, 2]
+  proxy:
+    positive_final_fraction: 0.15
+    negative_first_fraction: 0.40
+    frames_per_episode_pos: 4
+    frames_per_episode_neg: 4
+  split:
+    train: 0.70
+    val: 0.10
+    test: 0.20
+  logistic_regression:
+    l2_C: 1.0
+    max_iter: 200
+    class_weight: balanced
+  temporal:
+    window: 5
+    votes_required: 4
+    reset_margin: 0.10
+  bootstrap:
+    n_resamples: 200
+    ci: 0.95
+  paths:
+    models_dir: data/models/task_04_success_detector
+    cache_dir: data/evaluation_cache/task_04
+    artifacts_dir: artifacts/task_04_policy_evaluation

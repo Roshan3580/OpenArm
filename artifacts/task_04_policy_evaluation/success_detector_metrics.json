@@ -1,0 +1,207 @@
+{
+  "ok": true,
+  "disclaimer": "Results are for a terminal-completion PROXY classifier on position-derived labels. They are NOT genuine task-success detection metrics. High scores may be easy because early vs late frames differ visually.",
+  "dataset_repo_id": "lerobot/svla_so100_pickplace",
+  "dataset_revision": "728583b5eaf9e739a7f119e2def466fa1d552402",
+  "config": {
+    "resize": [
+      96,
+      96
+    ],
+    "hsv_bins": [
+      8,
+      8,
+      8
+    ],
+    "hog": {
+      "orientations": 9,
+      "pixels_per_cell": [
+        16,
+        16
+      ],
+      "cells_per_block": [
+        2,
+        2
+      ]
+    },
+    "feature_dim_full": 1412,
+    "feature_dim_hsv": 512,
+    "logistic_regression": {
+      "l2_C": 1.0,
+      "max_iter": 200,
+      "class_weight": "balanced"
+    },
+    "seed": 42,
+    "threshold_selected_on": "validation",
+    "threshold": 0.22499999999999998
+  },
+  "counts": {
+    "train": {
+      "n": 280,
+      "n_pos": 140
+    },
+    "val": {
+      "n": 40,
+      "n_pos": 20
+    },
+    "test": {
+      "n": 80,
+      "n_pos": 40
+    },
+    "episodes": {
+      "train": 35,
+      "val": 5,
+      "test": 10
+    },
+    "proxy_manifest": {
+      "n_rows": 400,
+      "n_pos": 200,
+      "n_neg": 200
+    }
+  },
+  "baselines": {
+    "majority": {
+      "threshold": 0.5,
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "specificity": 0.0,
+      "auroc": 0.5,
+      "average_precision": 0.47538532735462624,
+      "confusion": {
+        "tp": 40,
+        "tn": 0,
+        "fp": 40,
+        "fn": 0
+      },
+      "brier": 0.5,
+      "ece": 0.5,
+      "n": 80,
+      "n_pos": 40,
+      "n_neg": 40,
+      "bootstrap_ci": {
+        "f1": {
+          "point": 0.6666666666666666,
+          "low": 0.6666666666666666,
+          "high": 0.6666666666666666,
+          "n_resamples": 200
+        },
+        "auroc": {
+          "point": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "n_resamples": 200
+        },
+        "accuracy": {
+          "point": 0.5,
+          "low": 0.5,
+          "high": 0.5,
+          "n_resamples": 200
+        }
+      }
+    },
+    "hsv_logistic": {
+      "threshold": 0.22499999999999998,
+      "accuracy": 0.6875,
+      "balanced_accuracy": 0.6875,
+      "precision": 0.6530612244897959,
+      "recall": 0.8,
+      "f1": 0.7191011235955055,
+      "specificity": 0.575,
+      "auroc": 0.788125,
+      "average_precision": 0.8036444352175215,
+      "confusion": {
+        "tp": 32,
+        "tn": 23,
+        "fp": 17,
+        "fn": 8
+      },
+      "brier": 0.25075354588913384,
+      "ece": 0.24985424033049605,
+      "n": 80,
+      "n_pos": 40,
+      "n_neg": 40,
+      "bootstrap_ci": {
+        "f1": {
+          "point": 0.7191011235955055,
+          "low": 0.6189123376623377,
+          "high": 0.7958064516129033,
+          "n_resamples": 200
+        },
+        "auroc": {
+          "point": 0.788125,
+          "low": 0.68425,
+          "high": 0.896375,
+          "n_resamples": 200
+        },
+        "accuracy": {
+          "point": 0.6875,
+          "low": 0.6,
+          "high": 0.775,
+          "n_resamples": 200
+        }
+      }
+    }
+  },
+  "main_model": {
+    "threshold": 0.22499999999999998,
+    "accuracy": 0.725,
+    "balanced_accuracy": 0.725,
+    "precision": 0.68,
+    "recall": 0.85,
+    "f1": 0.7555555555555556,
+    "specificity": 0.6,
+    "auroc": 0.833125,
+    "average_precision": 0.845422587061317,
+    "confusion": {
+      "tp": 34,
+      "tn": 24,
+      "fp": 16,
+      "fn": 6
+    },
+    "brier": 0.21322803956063643,
+    "ece": 0.1900364253031968,
+    "n": 80,
+    "n_pos": 40,
+    "n_neg": 40,
+    "bootstrap_ci": {
+      "f1": {
+        "point": 0.7555555555555556,
+        "low": 0.6593344155844154,
+        "high": 0.8447619047619048,
+        "n_resamples": 200
+      },
+      "auroc": {
+        "point": 0.833125,
+        "low": 0.74740625,
+        "high": 0.915671875,
+        "n_resamples": 200
+      },
+      "accuracy": {
+        "point": 0.725,
+        "low": 0.6125,
+        "high": 0.8125,
+        "n_resamples": 200
+      }
+    }
+  },
+  "temporal_proxy": {
+    "n_episodes": 10,
+    "fraction_detected": 0.0,
+    "fraction_trigger_active_in_terminal": 1.0,
+    "false_early_trigger_rate": 1.0,
+    "median_detection_latency_frames": null,
+    "mean_flicker_events": 10.1,
+    "note": "Proxy temporal metrics only \u2014 not genuine task-success metrics.",
+    "frame_threshold": 0.22499999999999998,
+    "temporal_threshold": 0.35,
+    "temporal_threshold_selected_on": "validation_episodes"
+  },
+  "paths": {
+    "models_dir": "data/models/task_04_success_detector",
+    "cache_dir": "data/evaluation_cache/task_04",
+    "artifacts_dir": "artifacts/task_04_policy_evaluation"
+  }
+}
