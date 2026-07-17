@@ -32,7 +32,7 @@ Source frames are **never renumbered**.
 
 ## How wrist changes evaluation
 
-Wrist views reveal contact, enclosure, slip, wrong-object grasp, receptacle misalignment, loss-from-view, near-gripper collision, occlusion, blur, exposure, freeze, and failed release — failures joints alone miss (Task 4 egocentric protocol).
+Wrist views reveal contact, enclosure, slip, wrong-object grasp, receptacle misalignment, loss-from-view, near-gripper collision, occlusion, blur, exposure, freeze, and failed release : failures joints alone miss (Task 4 egocentric protocol).
 
 ## Third-person pretraining → egocentric fine-tuning failures
 
@@ -65,4 +65,4 @@ True multi-view fusion requires model changes beyond stock OpenVLA-7B.
 
 ## Evaluation linkage
 
-Use Task 4 metrics and slices; primary success from simulator/human — not the Task 4 wrist completion-proxy.
+Use Task 4 metrics and slices; primary success from simulator/human : not the Task 4 wrist completion-proxy.

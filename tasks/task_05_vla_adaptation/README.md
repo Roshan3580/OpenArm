@@ -1,4 +1,4 @@
-# Task 5 — OpenVLA Adaptation (Option A)
+# Task 5 : OpenVLA Adaptation (Option A)
 
 **Dataset:** `lerobot/svla_so100_pickplace` @ `728583b5eaf9e739a7f119e2def466fa1d552402`  
 **Model family:** OpenVLA (`openvla/openvla-7b`)  
@@ -16,7 +16,7 @@
 
 ## 1. Scope
 
-Design and implement a reproducible path from Task 3 curated windows to an OpenVLA-compatible training representation, including LoRA config, action-space handling, wrist preprocessing, alignment, and egocentric failure analysis — without training the 7B model.
+Design and implement a reproducible path from Task 3 curated windows to an OpenVLA-compatible training representation, including LoRA config, action-space handling, wrist preprocessing, alignment, and egocentric failure analysis : without training the 7B model.
 
 ## 2. Model choice
 
@@ -70,7 +70,7 @@ Pipeline steps implemented here:
 4. Adapter emits **processor-ready NHWC uint8** images.
 5. The verified official OpenVLA / Prismatic processor would then produce **normalized CHW model tensors**.
 6. The model-free smoke test **stops before** loading that processor or any checkpoint.
-7. Therefore the smoke test validates **alignment, encoding, masking, and batching** — not end-to-end model compatibility.
+7. Therefore the smoke test validates **alignment, encoding, masking, and batching** : not end-to-end model compatibility.
 
 Safe augs only (brightness/contrast/mild blur/center-preserving scale). No flips / large rotations / time reversal. See `egocentric_adaptation.md` and `sample_grid.png`.
 
@@ -100,7 +100,7 @@ See `configs/openvla_lora.yaml` (official vs project tags). Highest impact: LR, 
 
 ## 11. Third-person → egocentric failures
 
-Camera FOV/scale, gripper dominance, self-occlusion, blur, background motion, lighting, partial observability, spatial-prior mismatch, action–viewpoint coupling, embodiment mismatch, forgetting — with diagnostics and Task 4 slices in `egocentric_adaptation.md`.
+Camera FOV/scale, gripper dominance, self-occlusion, blur, background motion, lighting, partial observability, spatial-prior mismatch, action–viewpoint coupling, embodiment mismatch, forgetting : with diagnostics and Task 4 slices in `egocentric_adaptation.md`.
 
 ## 12. Evaluation plan
 

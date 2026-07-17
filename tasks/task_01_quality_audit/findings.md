@@ -1,4 +1,4 @@
-# Task 1 Findings — Quality Audit (Teleoperation + Egocentric)
+# Task 1 Findings : Quality Audit (Teleoperation + Egocentric)
 
 ## 1. Scope and dataset-selection decision
 
@@ -73,7 +73,7 @@ Motor names: `main_shoulder_pan`, `main_shoulder_lift`, `main_elbow_flex`, `main
 | Boundary saturation (empirical) | 1 dim soft-flagged: `main_elbow_flex` (diagnostic; bounds are empirical, not hardware limits) |
 | Within-episode state discontinuities | **8,734** flags, rate **7.43%** of Δ-elements |
 | Within-episode action discontinuities | **9,068** flags, rate **7.72%** |
-| Largest \|Δstate\|_∞ examples | ~**5.6°** (ep 39), ~**5.4°** (ep 34), ~**4.9°** (ep 17) on arm joints with smooth neighbors — **review candidates**, not auto-corrupt |
+| Largest \|Δstate\|_∞ examples | ~**5.6°** (ep 39), ~**5.4°** (ep 34), ~**4.9°** (ep 17) on arm joints with smooth neighbors : **review candidates**, not auto-corrupt |
 
 Discontinuity rule: `|Δ| > max(8·MAD, abs_floor=1.0, 0.01·dim_range)` **within episodes only**. Degree-scale SO-100 joints make small absolute floors inappropriate without `range_frac`.
 
@@ -86,20 +86,20 @@ Full-stream decode of `observation.images.wrist` (AV1, 640×480 @ 30 FPS).
 | Metric | Distribution / rate | Threshold type |
 |--------|---------------------|----------------|
 | Laplacian variance | mean 33.8, median **9.6**, p05 3.7, p95 139.1, max 293 | Absolute blur cut **50** = **exploratory heuristic** (miscalibrated for this camera: flags **78.5%**) |
-| Mean luma | mean 137.0, min 107.4, max 191.3 | — |
+| Mean luma | mean 137.0, min 107.4, max 191.3 | : |
 | Underexposed | **0** frames | Hard engineering (mean<40 or sat≥15%) |
 | Overexposed | **267** frames (**1.36%**) | Hard engineering |
-| Entropy (bits) | mean 7.51, min 6.22, max 7.73 | Low-H<3.5 = exploratory; **0%** flagged — does **not** prove occlusion |
+| Entropy (bits) | mean 7.51, min 6.22, max 7.73 | Low-H<3.5 = exploratory; **0%** flagged : does **not** prove occlusion |
 | Exact adjacent duplicates (array-equal) | **3,227** (**16.48%** of **19,581** within-episode adjacent pairs) | Hard (identical pixels) |
 | Near-lossless duplicates (0 < MSE ≤ 1) | **991** (**5.06%**) | Hard engineering band |
 | Near-duplicates (1 < MSE ≤ 25) | **7,405** (**37.82%**) | Screening (mutually exclusive) |
-| Decode failures / missing | **0 / 0** | — |
+| Decode failures / missing | **0 / 0** | : |
 
 **Within-episode duplicate denominator (corrected):** adjacent pairs are counted only inside an episode after sorting by `frame_index`. With 19,631 frames and 50 episodes the correct denominator is **19,631 − 50 = 19,581**. An earlier recount used 19,630 (global stream order), which incorrectly included the 49 last→first transitions between episodes; 19 of those boundary pairs had been classified as near-duplicates and are now excluded (`near` 7,424 → 7,405). Exact and near-lossless counts were unchanged.
 
 **Duplicate terminology (corrected):** categories are mutually exclusive. Prior Task 1 wording that labeled MSE ≤ 1 as “exact” was wrong; those pairs are split into true exact (array equality) vs near-lossless.
 
-**Interpretation:** High “blur” flag rate means the absolute Laplacian threshold is too aggressive for this wrist stream’s texture/optics — treat as **diagnostic / recalibrate**, not a dataset defect claim. Overexposure at 1.36% is a **soft review** flag. Exact duplicates at 16.4% and near-lossless at 5.0% are **soft review** (possible slow motion, encode reuse, or freeze) — not automatic drops. Low entropy never fired; close-up grasps remain high-entropy useful views (expected self-occlusion ≠ unusable occlusion).
+**Interpretation:** High “blur” flag rate means the absolute Laplacian threshold is too aggressive for this wrist stream’s texture/optics : treat as **diagnostic / recalibrate**, not a dataset defect claim. Overexposure at 1.36% is a **soft review** flag. Exact duplicates at 16.4% and near-lossless at 5.0% are **soft review** (possible slow motion, encode reuse, or freeze) : not automatic drops. Low entropy never fired; close-up grasps remain high-entropy useful views (expected self-occlusion ≠ unusable occlusion).
 
 Montages: `wrist_montage_{normal,low_sharpness,exposure,duplicate}.png` with episode/frame/timestamp/metric labels.
 
@@ -131,10 +131,10 @@ No structural or timing mismatches were detected by the implemented checks.
 
 Separating **defects** from **screening flags**:
 
-1. **Soft review — adjacent exact duplicate wrist frames (16.48% of within-episode pairs)**, plus near-lossless 5.06%; a subset coincides with above-median state motion (soft freeze/stutter review).  
-2. **Soft review — overexposed wrist frames (1.36%).**  
-3. **Diagnostic — absolute blur threshold miscalibration** (78.5% flag rate; median sharpness 9.6 ≪ 50). Recalibrate with distribution-derived cut (e.g. p05) before using as a filter.  
-4. **Soft review — within-episode joint discontinuity candidates (~7.4–7.7%)**; largest jumps ~5–6° are plausible teleop jerks after temporal context review.  
+1. **Soft review : adjacent exact duplicate wrist frames (16.48% of within-episode pairs)**, plus near-lossless 5.06%; a subset coincides with above-median state motion (soft freeze/stutter review).  
+2. **Soft review : overexposed wrist frames (1.36%).**  
+3. **Diagnostic : absolute blur threshold miscalibration** (78.5% flag rate; median sharpness 9.6 ≪ 50). Recalibrate with distribution-derived cut (e.g. p05) before using as a filter.  
+4. **Soft review : within-episode joint discontinuity candidates (~7.4–7.7%)**; largest jumps ~5–6° are plausible teleop jerks after temporal context review.  
 5. **ALOHA-only historical note:** uniform episode length 500; gripper “outliers” reclassified as normal bimodal grasp behavior.
 
 No hard evidence of NaN corruption, missing videos, or timeline tears on the paired dataset.
@@ -163,7 +163,7 @@ No hard evidence of NaN corruption, missing videos, or timeline tears on the pai
 | Keep expected grasp self-occlusion and normal gripper mode switches | **Do not filter** |
 | Short-gap hold-last-frame only if a future dataset shows brief decode holes | **Soft**, justified only then |
 | Episode-level reject if sustained unusable occlusion (not observed here) | **Hard** when criteria met |
-| **Never delete a wrist frame alone** — drop/replace the aligned `(state, action, images.*)` timestep | Alignment contract |
+| **Never delete a wrist frame alone** : drop/replace the aligned `(state, action, images.*)` timestep | Alignment contract |
 
 ## 13. Teleoperation-versus-egocentric filtering differences
 
@@ -182,4 +182,4 @@ Teleop filters act on low-dimensional series (Δ, z-scores, length). Egocentric 
 
 ## 15. README-ready conclusion
 
-Task 1 is complete for **both** modalities on `lerobot/svla_so100_pickplace` @ `728583b5…` (wrist+top, full 19,631-frame tabular + full wrist decode). No structural or timing mismatches were detected by the implemented checks. The original ALOHA audit is preserved as a teleop-only baseline; its gripper “outliers” are reclassified as normal bimodal grasp behavior. Paired-dataset issues are mostly soft review flags (exact/near-lossless/near duplicate bands, mild overexposure, motion-correlated low sharpness under a miscalibrated absolute blur cut)—not hard corruption. Future curation must use shared timestep masks so egocentric cleaning cannot desynchronize robot state and action.
+Task 1 is complete for **both** modalities on `lerobot/svla_so100_pickplace` @ `728583b5…` (wrist+top, full 19,631-frame tabular + full wrist decode). No structural or timing mismatches were detected by the implemented checks. The original ALOHA audit is preserved as a teleop-only baseline; its gripper “outliers” are reclassified as normal bimodal grasp behavior. Paired-dataset issues are mostly soft review flags (exact/near-lossless/near duplicate bands, mild overexposure, motion-correlated low sharpness under a miscalibrated absolute blur cut):not hard corruption. Future curation must use shared timestep masks so egocentric cleaning cannot desynchronize robot state and action.

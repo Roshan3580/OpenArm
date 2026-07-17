@@ -304,7 +304,7 @@ def test_synthetic_corruption_integration(tmp_path):
     vis = compute_visual_timestep_flags(frames, sd, ad, cfg, sharpness_soft_threshold=1.0)
     assert vis["decode_failure"][5]
     assert vis["hard_invalid"][5]
-    # stationary early: frame 1 vs 0 identical but low motion at start — keep
+    # stationary early: frame 1 vs 0 identical but low motion at start : keep
     assert vis["visual_soft_valid"][1] or vis["exact_duplicate"][1]
 
     # Build windows: mark hard invalid at missing frame

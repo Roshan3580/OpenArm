@@ -65,7 +65,7 @@ Policy inference latency; end-to-end control latency; missed deadlines; camera-f
 
 Wrist visibility; severe occlusion duration; blur/exposure/freeze rates; object loss-from-view; detector confidence/calibration (diagnostic only).
 
-**Primary success source:** simulator state, trusted external evaluator, or adjudicated human — not the wrist detector under test.
+**Primary success source:** simulator state, trusted external evaluator, or adjudicated human : not the wrist detector under test.
 
 ## Proposed acceptance criteria (project thresholds)
 
@@ -91,17 +91,17 @@ Abort remaining rollouts if: severe safety failure; repeated control instability
 
 Order for “works in sim, fails on hardware” (no hardware claimed performed):
 
-1. **Interface/schema parity** — compare obs/action keys/shapes; unit test mock policy I/O; signature: KeyError/shape mismatch; fix adapters.
-2. **Joint ordering/units** — plot channel ranges vs demos; single-joint step; signature: mirrored/wrong axis; remap/scale.
-3. **State/action normalization** — dump mean/std; open-loop replay of normalized actions in sim; signature: saturated actions; recompute stats.
-4. **Gripper convention/range** — open/close command test; signature: inverted gripper; invert/scale.
-5. **Control rate / chunk execution** — measure loop Hz vs 30; signature: slow/fast playback; fix horizon/ensemble.
-6. **Latency / clocks** — timestamp skew probe; signature: delayed contact; delay compensation.
-7. **Camera pipeline** — calibration poses; intrinsics/extrinsics/crop/color; signature: shifted targets; fix preprocess.
-8. **Lighting/blur/occlusion/background** — hold robot, vary lights; signature: visual OOD; domain rand / real fine-tune.
-9. **Dynamics/friction/backlash/limits** — chirp joints; signature: tracking lag; identify plant / adapt.
-10. **Contact/object properties** — instrumented grasp; signature: slip despite closed gripper; retune gains / add compliance.
-11. **Policy uncertainty / OOD** — shadow-mode inference on real obs; signature: high action variance; collect demos / fine-tune.
-12. **Safety/low-level interference** — log overrides; signature: clipped commands; coordinate with safety layer.
+1. **Interface/schema parity** : compare obs/action keys/shapes; unit test mock policy I/O; signature: KeyError/shape mismatch; fix adapters.
+2. **Joint ordering/units** : plot channel ranges vs demos; single-joint step; signature: mirrored/wrong axis; remap/scale.
+3. **State/action normalization** : dump mean/std; open-loop replay of normalized actions in sim; signature: saturated actions; recompute stats.
+4. **Gripper convention/range** : open/close command test; signature: inverted gripper; invert/scale.
+5. **Control rate / chunk execution** : measure loop Hz vs 30; signature: slow/fast playback; fix horizon/ensemble.
+6. **Latency / clocks** : timestamp skew probe; signature: delayed contact; delay compensation.
+7. **Camera pipeline** : calibration poses; intrinsics/extrinsics/crop/color; signature: shifted targets; fix preprocess.
+8. **Lighting/blur/occlusion/background** : hold robot, vary lights; signature: visual OOD; domain rand / real fine-tune.
+9. **Dynamics/friction/backlash/limits** : chirp joints; signature: tracking lag; identify plant / adapt.
+10. **Contact/object properties** : instrumented grasp; signature: slip despite closed gripper; retune gains / add compliance.
+11. **Policy uncertainty / OOD** : shadow-mode inference on real obs; signature: high action variance; collect demos / fine-tune.
+12. **Safety/low-level interference** : log overrides; signature: clipped commands; coordinate with safety layer.
 
 Supporting procedures: recorded-action open-loop replay in sim; shadow-mode inference; calibration poses; latency measurement; single-joint + gripper sanity; domain randomization; real-data fine-tuning; action scaling validation.

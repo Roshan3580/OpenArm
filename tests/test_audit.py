@@ -266,12 +266,12 @@ def test_within_episode_adjacent_pair_count():
 def test_should_compare_adjacent_frames_refuses_cross_episode():
     from openarm_pipeline.audit.egocentric import should_compare_adjacent_frames
 
-    # Same episode, consecutive frames — OK
+    # Same episode, consecutive frames : OK
     assert should_compare_adjacent_frames(0, 10, 0, 11) is True
-    # Cross-episode boundary with identical-looking frame indices reset — refuse
+    # Cross-episode boundary with identical-looking frame indices reset : refuse
     assert should_compare_adjacent_frames(0, 399, 1, 0) is False
     assert should_compare_adjacent_frames(0, 100, 1, 101) is False
-    # Non-consecutive within episode — refuse (unless diagnostic mode disables check)
+    # Non-consecutive within episode : refuse (unless diagnostic mode disables check)
     assert should_compare_adjacent_frames(2, 5, 2, 7) is False
     assert (
         should_compare_adjacent_frames(
@@ -291,12 +291,12 @@ def test_cross_episode_boundary_identical_frames_not_compared():
     frame_a = np.full((8, 8, 3), 42, dtype=np.uint8)
     frame_b = frame_a.copy()  # identical-looking across boundary
     assert classify_frame_duplicate(frame_a, frame_b)["exact_duplicate"] is True
-    # Stream order: last of ep0 then first of ep1 — must not compare
+    # Stream order: last of ep0 then first of ep1 : must not compare
     assert should_compare_adjacent_frames(0, 199, 1, 0) is False
     # Simulate accounting: only count when should_compare is True
     pairs = [
         (0, 198, 0, 199, frame_a, frame_a),
-        (0, 199, 1, 0, frame_a, frame_b),  # boundary — excluded
+        (0, 199, 1, 0, frame_a, frame_b),  # boundary : excluded
         (1, 0, 1, 1, frame_b, frame_b),
     ]
     n_compared = 0

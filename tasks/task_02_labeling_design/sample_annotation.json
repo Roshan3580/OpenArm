@@ -21,7 +21,7 @@
     "failure_types": ["object_slip"],
     "n_recovery_attempts": 1,
     "intervention_occurred": false,
-    "notes": "SYNTHETIC EXAMPLE — phases/outcomes were NOT observed on a real episode.",
+    "notes": "SYNTHETIC EXAMPLE : phases/outcomes were NOT observed on a real episode.",
     "confidence": 0.8
   },
   "phase_segments": [
@@ -447,7 +447,7 @@
       "source": "manual",
       "visibility": "fully_visible",
       "confidence": 0.7,
-      "note": "Attention proxy only — NOT measured human gaze."
+      "note": "Attention proxy only : NOT measured human gaze."
     }
   ],
   "object_interaction_flags": [

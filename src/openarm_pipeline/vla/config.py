@@ -25,7 +25,7 @@ class OpenVLAAdapterConfig:
     wrist_key: str = "observation.images.wrist"
     top_key: str = "observation.images.top"
 
-    # Actions — project design for SO-100 vs OpenVLA 7-DoF tokenizer
+    # Actions : project design for SO-100 vs OpenVLA 7-DoF tokenizer
     source_action_dim: int = 6
     openvla_action_dim: int = 7  # verified pretrained tokenizer slot count
     action_mode: str = "absolute"  # absolute | delta

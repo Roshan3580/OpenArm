@@ -110,5 +110,5 @@ def aggregate_episode_temporal(results: list[dict[str, Any]]) -> dict[str, Any]:
         "false_early_trigger_rate": float(early / n),
         "median_detection_latency_frames": float(np.median(lats)) if lats else float("nan"),
         "mean_flicker_events": float(np.mean([r.get("flicker_events", 0) for r in results])),
-        "note": "Proxy temporal metrics only — not genuine task-success metrics.",
+        "note": "Proxy temporal metrics only : not genuine task-success metrics.",
     }

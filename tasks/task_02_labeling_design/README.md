@@ -1,4 +1,4 @@
-# Task 2 — Synchronized Multimodal Labeling Design
+# Task 2 : Synchronized Multimodal Labeling Design
 
 **Dataset:** `lerobot/svla_so100_pickplace` @ `728583b5eaf9e739a7f119e2def466fa1d552402`  
 **Task:** “Pick up the cube and place it in the box.”  
@@ -84,7 +84,7 @@ See `egocentric_schema.yaml`.
 - Visual interaction states aligned to teleop phases (not a second independent phase taxonomy).
 - Failure moments (visual).
 - Ordinal visibility; self-occlusion of arm/gripper kept separate from unusable camera occlusion.
-- `attention_proxy_roi`: **not human gaze / eye tracking** — task-relevant visual region proxy only.
+- `attention_proxy_roi`: **not human gaze / eye tracking** : task-relevant visual region proxy only.
 
 ## 6. Temporal alignment
 

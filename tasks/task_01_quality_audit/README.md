@@ -1,4 +1,4 @@
-# Task 1 — Dataset Exploration & Quality Audit
+# Task 1 : Dataset Exploration & Quality Audit
 
 ## Environment
 
@@ -43,7 +43,7 @@ artifacts/task_01_quality_audit/
 
 ## Interpretation caveats
 
-- Absolute Laplacian blur cut (50) is an exploratory heuristic; on SO100 wrist it over-flags — use distributions.
+- Absolute Laplacian blur cut (50) is an exploratory heuristic; on SO100 wrist it over-flags : use distributions.
 - Gripper multimodal behavior ≠ corruption.
 - Low entropy ≠ proven occlusion.
 - Never delete video frames without a shared timestep mask.

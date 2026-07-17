@@ -8,7 +8,7 @@
   canonical (dataset_revision, episode_index, frame_index, timestamp) space.
 -->
 <View>
-  <Header value="OpenArm pick-and-place — synchronized review (illustrative)"/>
+  <Header value="OpenArm pick-and-place : synchronized review (illustrative)"/>
   <Text name="meta" value="repo=$dataset_repo_id rev=$dataset_revision ep=$episode_index"/>
   <Video name="review_video" value="$review_video" framerate="30"/>
 
@@ -83,7 +83,7 @@
     <Label value="operator_intervention"/>
   </Labels>
 
-  <Header value="Egocentric / wrist (on keyframes of composite — store in wrist coords)"/>
+  <Header value="Egocentric / wrist (on keyframes of composite : store in wrist coords)"/>
   <Labels name="wrist_failure" toName="review_video">
     <Label value="missed_grasp"/>
     <Label value="visual_slip"/>

@@ -103,7 +103,7 @@ def build_examples_dataframe(
 
     actions = np.stack(rows["action"].to_numpy())
     if cfg.action_mode == "delta":
-        # need full-episode context for deltas — recompute from timesteps then join
+        # need full-episode context for deltas : recompute from timesteps then join
         full_a = np.stack(timesteps["action"].to_numpy())
         deltas = compute_delta_actions(
             full_a,

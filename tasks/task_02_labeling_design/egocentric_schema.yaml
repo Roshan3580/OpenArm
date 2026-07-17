@@ -59,7 +59,7 @@ visibility_scale:
     - expected_arm_gripper_self_occlusion  # not automatically "unusable"
 
 attention_proxy_roi:
-  claim: "Task-relevant visual region proxy — NOT human gaze / eye tracking."
+  claim: "Task-relevant visual region proxy : NOT human gaze / eye tracking."
   roi_types:
     - target_object
     - gripper_object_contact

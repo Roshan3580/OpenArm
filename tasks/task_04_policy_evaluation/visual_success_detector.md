@@ -120,7 +120,7 @@ Plots: `temporal_detection_examples.png`, `confusion_matrix.png`, `precision_rec
 2. Negatives from true failures, not only early frames.
 3. Hard negatives near success (almost-placed).
 4. Separate calibration set with adjudicated labels.
-5. Primary rollout success still from simulator / human — never from this detector alone.
+5. Primary rollout success still from simulator / human : never from this detector alone.
 
 ## What this bonus demonstrates
 

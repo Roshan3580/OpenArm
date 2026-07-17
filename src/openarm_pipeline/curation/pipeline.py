@@ -399,7 +399,7 @@ def _write_plots(artifacts_dir: Path, timesteps: pd.DataFrame, smoothing_rows: l
     ax.plot(g["frame_index"], raw[:, dim], label="raw", alpha=0.8)
     ax.plot(g["frame_index"], sm[:, dim], label="smoothed", alpha=0.8)
     name = state_names[dim] if state_names else f"dim_{dim}"
-    ax.set_title(f"Episode {ep} — {name} raw vs smoothed")
+    ax.set_title(f"Episode {ep} : {name} raw vs smoothed")
     ax.legend()
     fig.tight_layout()
     fig.savefig(artifacts_dir / "trajectory_smooth_before_after.png", dpi=120)
@@ -418,7 +418,7 @@ def _write_plots(artifacts_dir: Path, timesteps: pd.DataFrame, smoothing_rows: l
     )
     axes[2].legend(fontsize=7)
     axes[2].set_xlabel("frame_index")
-    axes[0].set_title(f"Episode {ep} — motion & wrist quality flags")
+    axes[0].set_title(f"Episode {ep} : motion & wrist quality flags")
     fig.tight_layout()
     fig.savefig(artifacts_dir / "visual_flag_timeline.png", dpi=120)
     plt.close(fig)

@@ -1,4 +1,4 @@
-# Task 3 — Data Curation Pipeline: Design and Results
+# Task 3 : Data Curation Pipeline: Design and Results
 
 ## 1. Objective
 
@@ -106,8 +106,8 @@ Strict windows are a subset of conservative windows (validated).
 |----------|--------|-------|
 | Episodes | 50 | 50 accepted, 0 rejected |
 | Timesteps hard-valid | 19,631 | 19,631 (0 hard-invalid) |
-| Conservative windows | — | **18,881** |
-| Strict windows | — | **18,386** |
+| Conservative windows | : | **18,881** |
+| Strict windows | : | **18,386** |
 
 Honest conclusion: the real corpus needed **no hard episode/timestep rejection**. Curation still applied smoothing + aligned visual flagging + dual-policy window construction. Strict policy removed 495 overlapping windows intersecting sustained soft-exclusion timesteps (240 timesteps with `soft_exclude_strict`, primarily sustained overexposure).
 
@@ -138,4 +138,4 @@ Calibrate joint limits, exposure, and blur thresholds on the real OpenArm wrist 
 
 ## 15. README-ready summary
 
-Task 3 curates `lerobot/svla_so100_pickplace` @ `728583b5…` into a Git-ignored manifest-backed view with joint smoothing (gripper excluded), aligned wrist quality flags (corrected exact / near-lossless / near duplicates), and conservative (18,881) vs strict (18,386) training windows of horizon 16. No real episodes were hard-rejected—consistent with Task 1’s clean structural audit—while synthetic tests prove the filters fire when corruption is present.
+Task 3 curates `lerobot/svla_so100_pickplace` @ `728583b5…` into a Git-ignored manifest-backed view with joint smoothing (gripper excluded), aligned wrist quality flags (corrected exact / near-lossless / near duplicates), and conservative (18,881) vs strict (18,386) training windows of horizon 16. No real episodes were hard-rejected:consistent with Task 1’s clean structural audit:while synthetic tests prove the filters fire when corruption is present.

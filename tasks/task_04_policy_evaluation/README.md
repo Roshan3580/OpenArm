@@ -1,4 +1,4 @@
-# Task 4 — Policy Evaluation Design
+# Task 4 : Policy Evaluation Design
 
 **Dataset:** `lerobot/svla_so100_pickplace` @ `728583b5eaf9e739a7f119e2def466fa1d552402`  
 **Task:** Pick up the cube and place it in the box.  
@@ -45,7 +45,7 @@ Task 3 curated view → (hypothetical) ACT train
               Acceptance / diagnosis ladder
 ```
 
-Primary success labels come from simulator state, trusted external evaluator, or adjudicated humans — **never** from the wrist detector under test.
+Primary success labels come from simulator state, trusted external evaluator, or adjudicated humans : **never** from the wrist detector under test.
 
 ## 4. Rollout matrix
 
@@ -62,11 +62,11 @@ Paired comparison templates fix seeds across conservative/strict, wrist/top/both
 
 ## 5. Teleoperation metrics
 
-Primary task, efficiency, motion quality (gripper separate), safety, systems, and visual metrics — definitions in `teleop_protocol.md`.
+Primary task, efficiency, motion quality (gripper separate), safety, systems, and visual metrics : definitions in `teleop_protocol.md`.
 
 ## 6. Egocentric metrics
 
-Wrist-specific failure modes, phase-level evaluation, camera-quality flags, and cross-modal adjudication — `egocentric_protocol.md`.
+Wrist-specific failure modes, phase-level evaluation, camera-quality flags, and cross-modal adjudication : `egocentric_protocol.md`.
 
 ## 7. Acceptance criteria (proposed project thresholds)
 
@@ -80,7 +80,7 @@ Wrist-specific failure modes, phase-level evaluation, camera-quality flags, and 
 
 ## 8. Sim-to-real diagnosis
 
-12-stage ladder from interface/schema parity through contact dynamics and OOD behavior — `teleop_protocol.md`. No hardware tests claimed.
+12-stage ladder from interface/schema parity through contact dynamics and OOD behavior : `teleop_protocol.md`. No hardware tests claimed.
 
 ## 9. Visual success-detector prototype
 

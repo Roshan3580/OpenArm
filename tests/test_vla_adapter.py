@@ -133,7 +133,7 @@ def test_unsafe_augmentations_disabled():
 def test_action_offset_and_episode_end():
     cfg = OpenVLAAdapterConfig(action_offset_frames=1)
     assert cfg.action_offset_frames == 1
-    # select_export_rows with offset drops last frames — unit-level via tiny synthetic
+    # select_export_rows with offset drops last frames : unit-level via tiny synthetic
     ts = pd.DataFrame(
         {
             "episode_index": [0, 0, 0],
