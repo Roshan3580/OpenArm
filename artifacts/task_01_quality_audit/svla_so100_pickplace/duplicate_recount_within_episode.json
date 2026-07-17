@@ -1,0 +1,14 @@
+{
+  "n_frames": 19631,
+  "n_episodes": 50,
+  "within_episode_adjacent_pairs_denominator": 19581,
+  "adjacent_pairs_legacy_incorrect": 19630,
+  "cross_episode_boundary_pairs_excluded": 49,
+  "exact_duplicate": 3227,
+  "near_lossless_duplicate": 991,
+  "near_duplicate": 7405,
+  "exact_rate": 0.16480261477963332,
+  "near_lossless_rate": 0.05061028548082325,
+  "near_rate": 0.3781727184515602,
+  "note": "Mutually exclusive within-episode adjacent pairs only (group by episode, sort by frame_index, consecutive only). Never across episode boundaries. Counts taken from per-episode curation flags (identical thresholds); legacy Task-1 stream used denom=19630 and near=7424 by including 49 cross-episode pairs (19 of which were near_duplicate)."
+}

@@ -1,0 +1,559 @@
+{
+  "repo_id": "lerobot/svla_so100_pickplace",
+  "revision": "728583b5eaf9e739a7f119e2def466fa1d552402",
+  "split_names": [
+    "train"
+  ],
+  "size_info": {
+    "total_episodes": 50,
+    "total_frames": 19631,
+    "total_videos": null,
+    "total_chunks": null,
+    "total_tasks": 1,
+    "files_size_in_mb": null,
+    "chunks_size": 1000,
+    "codebase_version": "v3.0",
+    "robot_type": "so100",
+    "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+    "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+    "splits": {
+      "train": "0:50"
+    }
+  },
+  "episode_count": 50,
+  "total_frames": 19631,
+  "fps": 30.0,
+  "feature_schema": {
+    "action": {
+      "dtype": "float32",
+      "shape": [
+        6
+      ],
+      "names": [
+        "main_shoulder_pan",
+        "main_shoulder_lift",
+        "main_elbow_flex",
+        "main_wrist_flex",
+        "main_wrist_roll",
+        "main_gripper"
+      ],
+      "fps": 30.0
+    },
+    "observation.state": {
+      "dtype": "float32",
+      "shape": [
+        6
+      ],
+      "names": [
+        "main_shoulder_pan",
+        "main_shoulder_lift",
+        "main_elbow_flex",
+        "main_wrist_flex",
+        "main_wrist_roll",
+        "main_gripper"
+      ],
+      "fps": 30.0
+    },
+    "observation.images.top": {
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "info": {
+        "video.fps": 30.0,
+        "video.height": 480,
+        "video.width": 640,
+        "video.channels": 3,
+        "video.codec": "av1",
+        "video.pix_fmt": "yuv420p",
+        "video.is_depth_map": false,
+        "has_audio": false
+      }
+    },
+    "observation.images.wrist": {
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "info": {
+        "video.fps": 30.0,
+        "video.height": 480,
+        "video.width": 640,
+        "video.channels": 3,
+        "video.codec": "av1",
+        "video.pix_fmt": "yuv420p",
+        "video.is_depth_map": false,
+        "has_audio": false
+      }
+    },
+    "timestamp": {
+      "dtype": "float32",
+      "shape": [
+        1
+      ],
+      "names": null,
+      "fps": 30.0
+    },
+    "frame_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null,
+      "fps": 30.0
+    },
+    "episode_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null,
+      "fps": 30.0
+    },
+    "index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null,
+      "fps": 30.0
+    },
+    "task_index": {
+      "dtype": "int64",
+      "shape": [
+        1
+      ],
+      "names": null,
+      "fps": 30.0
+    }
+  },
+  "state_keys": [
+    "observation.state"
+  ],
+  "action_keys": [
+    "action"
+  ],
+  "timestamp_keys": [
+    "timestamp"
+  ],
+  "frame_index_keys": [
+    "frame_index"
+  ],
+  "episode_index_keys": [
+    "episode_index"
+  ],
+  "task_keys": [
+    "task_index"
+  ],
+  "image_video_features": [
+    "observation.images.top",
+    "observation.images.wrist"
+  ],
+  "cameras": [
+    {
+      "key": "observation.images.top",
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "video_info": {
+        "video.fps": 30.0,
+        "video.height": 480,
+        "video.width": 640,
+        "video.channels": 3,
+        "video.codec": "av1",
+        "video.pix_fmt": "yuv420p",
+        "video.is_depth_map": false,
+        "has_audio": false
+      },
+      "viewpoint": "verified_external",
+      "evidence": [
+        "feature_key=observation.images.top",
+        "dtype=video",
+        "shape=[480, 640, 3]",
+        "key contains external placement token(s): ['top']",
+        "ALOHA 'top' cameras are overhead/workspace views, not wrist-mounted egocentric streams"
+      ]
+    },
+    {
+      "key": "observation.images.wrist",
+      "dtype": "video",
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "names": [
+        "height",
+        "width",
+        "channels"
+      ],
+      "video_info": {
+        "video.fps": 30.0,
+        "video.height": 480,
+        "video.width": 640,
+        "video.channels": 3,
+        "video.codec": "av1",
+        "video.pix_fmt": "yuv420p",
+        "video.is_depth_map": false,
+        "has_audio": false
+      },
+      "viewpoint": "verified_egocentric",
+      "evidence": [
+        "feature_key=observation.images.wrist",
+        "dtype=video",
+        "shape=[480, 640, 3]",
+        "key contains egocentric placement token(s): ['wrist']"
+      ]
+    }
+  ],
+  "dataset_stats": {
+    "source": "meta/stats.json",
+    "data": {
+      "timestamp": {
+        "min": [
+          0.0
+        ],
+        "max": [
+          19.133333333333333
+        ],
+        "mean": [
+          6.605121151919582
+        ],
+        "std": [
+          3.9269355733875306
+        ],
+        "count": [
+          19631
+        ]
+      },
+      "episode_index": {
+        "min": [
+          0
+        ],
+        "max": [
+          49
+        ],
+        "mean": [
+          24.62920890428404
+        ],
+        "std": [
+          14.52263170448732
+        ],
+        "count": [
+          19631
+        ]
+      },
+      "observation.images.wrist": {
+        "min": [
+          [
+            [
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0
+            ]
+          ]
+        ],
+        "max": [
+          [
+            [
+              1.0
+            ]
+          ],
+          [
+            [
+              1.0
+            ]
+          ],
+          [
+            [
+              1.0
+            ]
+          ]
+        ],
+        "mean": [
+          [
+            [
+              0.5715253298088179
+            ]
+          ],
+          [
+            [
+              0.5292877316198447
+            ]
+          ],
+          [
+            [
+              0.5286737121568759
+            ]
+          ]
+        ],
+        "std": [
+          [
+            [
+              0.2641149176189463
+            ]
+          ],
+          [
+            [
+              0.2603990197782375
+            ]
+          ],
+          [
+            [
+              0.2526018411820677
+            ]
+          ]
+        ],
+        "count": [
+          5019
+        ]
+      },
+      "index": {
+        "min": [
+          0
+        ],
+        "max": [
+          19630
+        ],
+        "mean": [
+          9815.0
+        ],
+        "std": [
+          5666.981559878239
+        ],
+        "count": [
+          19631
+        ]
+      },
+      "action": {
+        "min": [
+          -37.177734375,
+          -89.47265625,
+          -49.04296875,
+          9.66796875,
+          56.25,
+          0.0
+        ],
+        "max": [
+          72.7734375,
+          41.1328125,
+          74.619140625,
+          96.591796875,
+          123.57421875,
+          34.93077850341797
+        ],
+        "mean": [
+          14.511381970002802,
+          -56.4485967267969,
+          53.315923415930165,
+          62.96079462966736,
+          85.83099991722275,
+          7.78160037260705
+        ],
+        "std": [
+          27.986932985426474,
+          34.98953940198908,
+          21.46426831187618,
+          16.911356101951554,
+          12.47835855058132,
+          9.546033618392507
+        ],
+        "count": [
+          19631
+        ]
+      },
+      "frame_index": {
+        "min": [
+          0
+        ],
+        "max": [
+          574
+        ],
+        "mean": [
+          198.15363455758748
+        ],
+        "std": [
+          117.80806720162592
+        ],
+        "count": [
+          19631
+        ]
+      },
+      "task_index": {
+        "min": [
+          0
+        ],
+        "max": [
+          0
+        ],
+        "mean": [
+          0.0
+        ],
+        "std": [
+          0.0
+        ],
+        "count": [
+          19631
+        ]
+      },
+      "observation.state": {
+        "min": [
+          -37.177734375,
+          -89.82421875,
+          -46.494140625,
+          9.931640625,
+          56.689453125,
+          -0.20718231797218323
+        ],
+        "max": [
+          72.421875,
+          41.923828125,
+          75.05859375,
+          95.712890625,
+          123.134765625,
+          34.66850662231445
+        ],
+        "mean": [
+          14.471714559402221,
+          -55.769509461279355,
+          54.385663041713364,
+          63.22616781573149,
+          85.84173608546432,
+          9.35449304585425
+        ],
+        "std": [
+          27.93257973859725,
+          35.36501569882333,
+          20.953093395686356,
+          16.808334633005988,
+          12.418557479277588,
+          9.769189447098496
+        ],
+        "count": [
+          19631
+        ]
+      },
+      "observation.images.top": {
+        "min": [
+          [
+            [
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0196078431372549
+            ]
+          ],
+          [
+            [
+              0.0
+            ]
+          ]
+        ],
+        "max": [
+          [
+            [
+              1.0
+            ]
+          ],
+          [
+            [
+              1.0
+            ]
+          ],
+          [
+            [
+              1.0
+            ]
+          ]
+        ],
+        "mean": [
+          [
+            [
+              0.4790243156886186
+            ]
+          ],
+          [
+            [
+              0.4902900992161158
+            ]
+          ],
+          [
+            [
+              0.5013001322914101
+            ]
+          ]
+        ],
+        "std": [
+          [
+            [
+              0.24174318161723388
+            ]
+          ],
+          [
+            [
+              0.22135021369835353
+            ]
+          ],
+          [
+            [
+              0.19391528585212184
+            ]
+          ]
+        ],
+        "count": [
+          5019
+        ]
+      }
+    }
+  },
+  "inspection_timestamp": "2026-07-17T20:57:00.482364+00:00",
+  "package_versions": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "pyarrow": "21.0.0",
+    "datasets": "3.6.0",
+    "huggingface_hub": "0.36.2",
+    "opencv-python-headless": "4.13.0",
+    "Pillow": "11.3.0",
+    "PyYAML": "6.0.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.0",
+    "lerobot": "not_installed"
+  },
+  "access_method": "huggingface_hub:meta/info.json",
+  "notes": [
+    "lerobot package not installed; using huggingface_hub + parquet fallback for tabular access"
+  ]
+}

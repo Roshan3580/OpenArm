@@ -1,0 +1,52 @@
+# Teleoperation & egocentric quality-audit thresholds.
+# Measurements are recorded raw; decisions use these rules.
+
+seed: 42
+
+teleop:
+  timestamp_gap_factor: 1.5
+  timestamp_gap_absolute_s: null
+  duplicate_timestamp_tol_s: 1.0e-6
+
+  # Scale-aware discontinuity: max(k*MAD, abs_floor, range_frac*dim_range)
+  # abs_floor=1.0 suits degree-scale SO-100; radian-scale sims still gated by range_frac.
+  discontinuity_mad_k: 8.0
+  discontinuity_abs_floor: 1.0
+  discontinuity_range_frac: 0.01
+  discontinuity_mad_floor: 1.0e-6
+
+  near_stuck_std: 1.0e-5
+  near_stuck_range: 1.0e-4
+  outlier_mad_k: 10.0
+  saturation_edge_eps_frac: 0.01
+  saturation_rate_flag: 0.05
+
+egocentric:
+  laplacian_var_blur_threshold: 50.0
+  underexposure_mean_threshold: 40.0
+  overexposure_mean_threshold: 220.0
+  overexposure_sat_frac: 0.15
+  underexposure_sat_frac: 0.15
+  low_entropy_threshold: 3.5
+  # Mutually exclusive duplicate bands:
+  # exact: MSE==0 / array-equal; near_lossless: 0<MSE<=1; near: 1<MSE<=25
+  near_lossless_mse_threshold: 1.0
+  duplicate_mse_threshold: 1.0  # alias for near_lossless upper bound (compat)
+  near_duplicate_mse_threshold: 25.0
+
+video_alignment:
+  timing_tol_frames: 1.0          # tolerance in frames => tol_s = this / fps
+  material_frame_mismatch: 2
+  material_duration_mismatch_s: 0.1
+
+sampling:
+  max_video_frames: 200
+  frames_per_episode_contact: 3
+  contact_sheet_episodes: 6
+  montage_flagged_examples: 8
+  montage_normal_examples: 8
+  # Wrist audit: prefer full decode; fallback windows if --windowed
+  wrist_decode_every_frame: true
+  wrist_windows_per_episode: 4
+  wrist_window_size: 12
+  wrist_min_total_frames: 2000

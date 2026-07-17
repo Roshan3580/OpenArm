@@ -1,0 +1,2952 @@
+{
+  "fps_metadata": 30.0,
+  "timing_tol_s": 0.03333333333333333,
+  "material_frame_mismatch_threshold": 2,
+  "material_duration_mismatch_s": 0.1,
+  "video_file_probes": {
+    "observation.images.top": {
+      "path": "<HF_HOME>/hub/datasets--lerobot--svla_so100_pickplace/snapshots/728583b5eaf9e739a7f119e2def466fa1d552402/videos/observation.images.top/chunk-000/file-000.mp4",
+      "opened": true,
+      "error": null,
+      "n_frames_container": 19631,
+      "fps": 30.0,
+      "width": 640,
+      "height": 480,
+      "duration_s": 654.3666666666667,
+      "fourcc": "AV01",
+      "sample_decoded_endpoint_frames": 2,
+      "zero_length": false,
+      "camera_key": "observation.images.top"
+    },
+    "observation.images.wrist": {
+      "path": "<HF_HOME>/hub/datasets--lerobot--svla_so100_pickplace/snapshots/728583b5eaf9e739a7f119e2def466fa1d552402/videos/observation.images.wrist/chunk-000/file-000.mp4",
+      "opened": true,
+      "error": null,
+      "n_frames_container": 19631,
+      "fps": 30.0,
+      "width": 640,
+      "height": 480,
+      "duration_s": 654.3666666666667,
+      "fourcc": "AV01",
+      "sample_decoded_endpoint_frames": 2,
+      "zero_length": false,
+      "camera_key": "observation.images.wrist"
+    }
+  },
+  "n_episodes": 50,
+  "summary_flags": {
+    "missing_videos": 0,
+    "unreadable_videos": 0,
+    "zero_length_videos": 0,
+    "episodes_material_frame_mismatch": 0,
+    "episodes_material_duration_mismatch": 0,
+    "episodes_timing_tolerance_exceeded": 0
+  },
+  "episodes": [
+    {
+      "episode_index": 0,
+      "tabular_length": 454,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 0,
+          "expected_tabular_frame_count": 454,
+          "container_reported_segment_frame_count_est": 454,
+          "video_segment_from_timestamp": 0.0,
+          "video_segment_to_timestamp": 15.133333,
+          "video_segment_duration_s": 15.133333,
+          "expected_duration_from_tabular_frames_s": 15.1,
+          "tabular_timestamp_span_s": 15.100000381469727,
+          "duration_mismatch_s": 0.03333300000000072,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 0,
+          "expected_tabular_frame_count": 454,
+          "container_reported_segment_frame_count_est": 454,
+          "video_segment_from_timestamp": 0.0,
+          "video_segment_to_timestamp": 15.133333,
+          "video_segment_duration_s": 15.133333,
+          "expected_duration_from_tabular_frames_s": 15.1,
+          "tabular_timestamp_span_s": 15.100000381469727,
+          "duration_mismatch_s": 0.03333300000000072,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 1,
+      "tabular_length": 468,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 1,
+          "expected_tabular_frame_count": 468,
+          "container_reported_segment_frame_count_est": 468,
+          "video_segment_from_timestamp": 15.133333,
+          "video_segment_to_timestamp": 30.733333000000002,
+          "video_segment_duration_s": 15.600000000000001,
+          "expected_duration_from_tabular_frames_s": 15.566666666666666,
+          "tabular_timestamp_span_s": 15.566666603088379,
+          "duration_mismatch_s": 0.03333333333333499,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 1,
+          "expected_tabular_frame_count": 468,
+          "container_reported_segment_frame_count_est": 468,
+          "video_segment_from_timestamp": 15.133333,
+          "video_segment_to_timestamp": 30.733333000000002,
+          "video_segment_duration_s": 15.600000000000001,
+          "expected_duration_from_tabular_frames_s": 15.566666666666666,
+          "tabular_timestamp_span_s": 15.566666603088379,
+          "duration_mismatch_s": 0.03333333333333499,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 2,
+      "tabular_length": 420,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 2,
+          "expected_tabular_frame_count": 420,
+          "container_reported_segment_frame_count_est": 420,
+          "video_segment_from_timestamp": 30.733333000000002,
+          "video_segment_to_timestamp": 44.733333,
+          "video_segment_duration_s": 14.0,
+          "expected_duration_from_tabular_frames_s": 13.966666666666667,
+          "tabular_timestamp_span_s": 13.966666221618652,
+          "duration_mismatch_s": 0.033333333333333215,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 2,
+          "expected_tabular_frame_count": 420,
+          "container_reported_segment_frame_count_est": 420,
+          "video_segment_from_timestamp": 30.733333000000002,
+          "video_segment_to_timestamp": 44.733333,
+          "video_segment_duration_s": 14.0,
+          "expected_duration_from_tabular_frames_s": 13.966666666666667,
+          "tabular_timestamp_span_s": 13.966666221618652,
+          "duration_mismatch_s": 0.033333333333333215,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 3,
+      "tabular_length": 416,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 3,
+          "expected_tabular_frame_count": 416,
+          "container_reported_segment_frame_count_est": 416,
+          "video_segment_from_timestamp": 44.733333,
+          "video_segment_to_timestamp": 58.6,
+          "video_segment_duration_s": 13.866667,
+          "expected_duration_from_tabular_frames_s": 13.833333333333334,
+          "tabular_timestamp_span_s": 13.833333015441895,
+          "duration_mismatch_s": 0.03333366666666571,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 3,
+          "expected_tabular_frame_count": 416,
+          "container_reported_segment_frame_count_est": 416,
+          "video_segment_from_timestamp": 44.733333,
+          "video_segment_to_timestamp": 58.6,
+          "video_segment_duration_s": 13.866667,
+          "expected_duration_from_tabular_frames_s": 13.833333333333334,
+          "tabular_timestamp_span_s": 13.833333015441895,
+          "duration_mismatch_s": 0.03333366666666571,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 4,
+      "tabular_length": 401,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 4,
+          "expected_tabular_frame_count": 401,
+          "container_reported_segment_frame_count_est": 401,
+          "video_segment_from_timestamp": 58.6,
+          "video_segment_to_timestamp": 71.966667,
+          "video_segment_duration_s": 13.366667,
+          "expected_duration_from_tabular_frames_s": 13.333333333333334,
+          "tabular_timestamp_span_s": 13.333333015441895,
+          "duration_mismatch_s": 0.03333366666666571,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 4,
+          "expected_tabular_frame_count": 401,
+          "container_reported_segment_frame_count_est": 401,
+          "video_segment_from_timestamp": 58.6,
+          "video_segment_to_timestamp": 71.966667,
+          "video_segment_duration_s": 13.366667,
+          "expected_duration_from_tabular_frames_s": 13.333333333333334,
+          "tabular_timestamp_span_s": 13.333333015441895,
+          "duration_mismatch_s": 0.03333366666666571,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 5,
+      "tabular_length": 354,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 5,
+          "expected_tabular_frame_count": 354,
+          "container_reported_segment_frame_count_est": 354,
+          "video_segment_from_timestamp": 71.966667,
+          "video_segment_to_timestamp": 83.766667,
+          "video_segment_duration_s": 11.799999999999997,
+          "expected_duration_from_tabular_frames_s": 11.766666666666667,
+          "tabular_timestamp_span_s": 11.766666412353516,
+          "duration_mismatch_s": 0.03333333333332966,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 5,
+          "expected_tabular_frame_count": 354,
+          "container_reported_segment_frame_count_est": 354,
+          "video_segment_from_timestamp": 71.966667,
+          "video_segment_to_timestamp": 83.766667,
+          "video_segment_duration_s": 11.799999999999997,
+          "expected_duration_from_tabular_frames_s": 11.766666666666667,
+          "tabular_timestamp_span_s": 11.766666412353516,
+          "duration_mismatch_s": 0.03333333333332966,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 6,
+      "tabular_length": 357,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 6,
+          "expected_tabular_frame_count": 357,
+          "container_reported_segment_frame_count_est": 357,
+          "video_segment_from_timestamp": 83.766667,
+          "video_segment_to_timestamp": 95.666667,
+          "video_segment_duration_s": 11.900000000000006,
+          "expected_duration_from_tabular_frames_s": 11.866666666666667,
+          "tabular_timestamp_span_s": 11.866666793823242,
+          "duration_mismatch_s": 0.033333333333338544,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 6,
+          "expected_tabular_frame_count": 357,
+          "container_reported_segment_frame_count_est": 357,
+          "video_segment_from_timestamp": 83.766667,
+          "video_segment_to_timestamp": 95.666667,
+          "video_segment_duration_s": 11.900000000000006,
+          "expected_duration_from_tabular_frames_s": 11.866666666666667,
+          "tabular_timestamp_span_s": 11.866666793823242,
+          "duration_mismatch_s": 0.033333333333338544,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 7,
+      "tabular_length": 351,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 7,
+          "expected_tabular_frame_count": 351,
+          "container_reported_segment_frame_count_est": 351,
+          "video_segment_from_timestamp": 95.666667,
+          "video_segment_to_timestamp": 107.366667,
+          "video_segment_duration_s": 11.700000000000003,
+          "expected_duration_from_tabular_frames_s": 11.666666666666666,
+          "tabular_timestamp_span_s": 11.666666984558105,
+          "duration_mismatch_s": 0.03333333333333677,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 7,
+          "expected_tabular_frame_count": 351,
+          "container_reported_segment_frame_count_est": 351,
+          "video_segment_from_timestamp": 95.666667,
+          "video_segment_to_timestamp": 107.366667,
+          "video_segment_duration_s": 11.700000000000003,
+          "expected_duration_from_tabular_frames_s": 11.666666666666666,
+          "tabular_timestamp_span_s": 11.666666984558105,
+          "duration_mismatch_s": 0.03333333333333677,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 8,
+      "tabular_length": 368,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 8,
+          "expected_tabular_frame_count": 368,
+          "container_reported_segment_frame_count_est": 368,
+          "video_segment_from_timestamp": 107.366667,
+          "video_segment_to_timestamp": 119.633334,
+          "video_segment_duration_s": 12.266666999999998,
+          "expected_duration_from_tabular_frames_s": 12.233333333333333,
+          "tabular_timestamp_span_s": 12.233333587646484,
+          "duration_mismatch_s": 0.03333366666666571,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 8,
+          "expected_tabular_frame_count": 368,
+          "container_reported_segment_frame_count_est": 368,
+          "video_segment_from_timestamp": 107.366667,
+          "video_segment_to_timestamp": 119.633334,
+          "video_segment_duration_s": 12.266666999999998,
+          "expected_duration_from_tabular_frames_s": 12.233333333333333,
+          "tabular_timestamp_span_s": 12.233333587646484,
+          "duration_mismatch_s": 0.03333366666666571,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 9,
+      "tabular_length": 388,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 9,
+          "expected_tabular_frame_count": 388,
+          "container_reported_segment_frame_count_est": 388,
+          "video_segment_from_timestamp": 119.633334,
+          "video_segment_to_timestamp": 132.566667,
+          "video_segment_duration_s": 12.93333299999999,
+          "expected_duration_from_tabular_frames_s": 12.9,
+          "tabular_timestamp_span_s": 12.899999618530273,
+          "duration_mismatch_s": 0.033332999999990065,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 9,
+          "expected_tabular_frame_count": 388,
+          "container_reported_segment_frame_count_est": 388,
+          "video_segment_from_timestamp": 119.633334,
+          "video_segment_to_timestamp": 132.566667,
+          "video_segment_duration_s": 12.93333299999999,
+          "expected_duration_from_tabular_frames_s": 12.9,
+          "tabular_timestamp_span_s": 12.899999618530273,
+          "duration_mismatch_s": 0.033332999999990065,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 10,
+      "tabular_length": 364,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 10,
+          "expected_tabular_frame_count": 364,
+          "container_reported_segment_frame_count_est": 364,
+          "video_segment_from_timestamp": 132.566667,
+          "video_segment_to_timestamp": 144.7,
+          "video_segment_duration_s": 12.133332999999993,
+          "expected_duration_from_tabular_frames_s": 12.1,
+          "tabular_timestamp_span_s": 12.100000381469727,
+          "duration_mismatch_s": 0.03333299999999362,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 10,
+          "expected_tabular_frame_count": 364,
+          "container_reported_segment_frame_count_est": 364,
+          "video_segment_from_timestamp": 132.566667,
+          "video_segment_to_timestamp": 144.7,
+          "video_segment_duration_s": 12.133332999999993,
+          "expected_duration_from_tabular_frames_s": 12.1,
+          "tabular_timestamp_span_s": 12.100000381469727,
+          "duration_mismatch_s": 0.03333299999999362,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 11,
+      "tabular_length": 377,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 11,
+          "expected_tabular_frame_count": 377,
+          "container_reported_segment_frame_count_est": 377,
+          "video_segment_from_timestamp": 144.7,
+          "video_segment_to_timestamp": 157.26666699999998,
+          "video_segment_duration_s": 12.566666999999995,
+          "expected_duration_from_tabular_frames_s": 12.533333333333333,
+          "tabular_timestamp_span_s": 12.533333778381348,
+          "duration_mismatch_s": 0.033333666666662154,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 11,
+          "expected_tabular_frame_count": 377,
+          "container_reported_segment_frame_count_est": 377,
+          "video_segment_from_timestamp": 144.7,
+          "video_segment_to_timestamp": 157.26666699999998,
+          "video_segment_duration_s": 12.566666999999995,
+          "expected_duration_from_tabular_frames_s": 12.533333333333333,
+          "tabular_timestamp_span_s": 12.533333778381348,
+          "duration_mismatch_s": 0.033333666666662154,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 12,
+      "tabular_length": 369,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 12,
+          "expected_tabular_frame_count": 369,
+          "container_reported_segment_frame_count_est": 369,
+          "video_segment_from_timestamp": 157.26666699999998,
+          "video_segment_to_timestamp": 169.566667,
+          "video_segment_duration_s": 12.300000000000011,
+          "expected_duration_from_tabular_frames_s": 12.266666666666667,
+          "tabular_timestamp_span_s": 12.266666412353516,
+          "duration_mismatch_s": 0.03333333333334387,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 12,
+          "expected_tabular_frame_count": 369,
+          "container_reported_segment_frame_count_est": 369,
+          "video_segment_from_timestamp": 157.26666699999998,
+          "video_segment_to_timestamp": 169.566667,
+          "video_segment_duration_s": 12.300000000000011,
+          "expected_duration_from_tabular_frames_s": 12.266666666666667,
+          "tabular_timestamp_span_s": 12.266666412353516,
+          "duration_mismatch_s": 0.03333333333334387,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 13,
+      "tabular_length": 357,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 13,
+          "expected_tabular_frame_count": 357,
+          "container_reported_segment_frame_count_est": 357,
+          "video_segment_from_timestamp": 169.566667,
+          "video_segment_to_timestamp": 181.466667,
+          "video_segment_duration_s": 11.900000000000006,
+          "expected_duration_from_tabular_frames_s": 11.866666666666667,
+          "tabular_timestamp_span_s": 11.866666793823242,
+          "duration_mismatch_s": 0.033333333333338544,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 13,
+          "expected_tabular_frame_count": 357,
+          "container_reported_segment_frame_count_est": 357,
+          "video_segment_from_timestamp": 169.566667,
+          "video_segment_to_timestamp": 181.466667,
+          "video_segment_duration_s": 11.900000000000006,
+          "expected_duration_from_tabular_frames_s": 11.866666666666667,
+          "tabular_timestamp_span_s": 11.866666793823242,
+          "duration_mismatch_s": 0.033333333333338544,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 14,
+      "tabular_length": 375,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 14,
+          "expected_tabular_frame_count": 375,
+          "container_reported_segment_frame_count_est": 375,
+          "video_segment_from_timestamp": 181.466667,
+          "video_segment_to_timestamp": 193.966667,
+          "video_segment_duration_s": 12.5,
+          "expected_duration_from_tabular_frames_s": 12.466666666666667,
+          "tabular_timestamp_span_s": 12.466666221618652,
+          "duration_mismatch_s": 0.033333333333333215,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 14,
+          "expected_tabular_frame_count": 375,
+          "container_reported_segment_frame_count_est": 375,
+          "video_segment_from_timestamp": 181.466667,
+          "video_segment_to_timestamp": 193.966667,
+          "video_segment_duration_s": 12.5,
+          "expected_duration_from_tabular_frames_s": 12.466666666666667,
+          "tabular_timestamp_span_s": 12.466666221618652,
+          "duration_mismatch_s": 0.033333333333333215,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 15,
+      "tabular_length": 384,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 15,
+          "expected_tabular_frame_count": 384,
+          "container_reported_segment_frame_count_est": 384,
+          "video_segment_from_timestamp": 193.966667,
+          "video_segment_to_timestamp": 206.766667,
+          "video_segment_duration_s": 12.800000000000011,
+          "expected_duration_from_tabular_frames_s": 12.766666666666667,
+          "tabular_timestamp_span_s": 12.766666412353516,
+          "duration_mismatch_s": 0.03333333333334387,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 15,
+          "expected_tabular_frame_count": 384,
+          "container_reported_segment_frame_count_est": 384,
+          "video_segment_from_timestamp": 193.966667,
+          "video_segment_to_timestamp": 206.766667,
+          "video_segment_duration_s": 12.800000000000011,
+          "expected_duration_from_tabular_frames_s": 12.766666666666667,
+          "tabular_timestamp_span_s": 12.766666412353516,
+          "duration_mismatch_s": 0.03333333333334387,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 16,
+      "tabular_length": 365,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 16,
+          "expected_tabular_frame_count": 365,
+          "container_reported_segment_frame_count_est": 365,
+          "video_segment_from_timestamp": 206.766667,
+          "video_segment_to_timestamp": 218.933334,
+          "video_segment_duration_s": 12.16666699999999,
+          "expected_duration_from_tabular_frames_s": 12.133333333333333,
+          "tabular_timestamp_span_s": 12.133333206176758,
+          "duration_mismatch_s": 0.033333666666656825,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 16,
+          "expected_tabular_frame_count": 365,
+          "container_reported_segment_frame_count_est": 365,
+          "video_segment_from_timestamp": 206.766667,
+          "video_segment_to_timestamp": 218.933334,
+          "video_segment_duration_s": 12.16666699999999,
+          "expected_duration_from_tabular_frames_s": 12.133333333333333,
+          "tabular_timestamp_span_s": 12.133333206176758,
+          "duration_mismatch_s": 0.033333666666656825,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 17,
+      "tabular_length": 409,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 17,
+          "expected_tabular_frame_count": 409,
+          "container_reported_segment_frame_count_est": 409,
+          "video_segment_from_timestamp": 218.933334,
+          "video_segment_to_timestamp": 232.566667,
+          "video_segment_duration_s": 13.633332999999993,
+          "expected_duration_from_tabular_frames_s": 13.6,
+          "tabular_timestamp_span_s": 13.600000381469727,
+          "duration_mismatch_s": 0.03333299999999362,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 17,
+          "expected_tabular_frame_count": 409,
+          "container_reported_segment_frame_count_est": 409,
+          "video_segment_from_timestamp": 218.933334,
+          "video_segment_to_timestamp": 232.566667,
+          "video_segment_duration_s": 13.633332999999993,
+          "expected_duration_from_tabular_frames_s": 13.6,
+          "tabular_timestamp_span_s": 13.600000381469727,
+          "duration_mismatch_s": 0.03333299999999362,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 18,
+      "tabular_length": 385,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 18,
+          "expected_tabular_frame_count": 385,
+          "container_reported_segment_frame_count_est": 385,
+          "video_segment_from_timestamp": 232.566667,
+          "video_segment_to_timestamp": 245.4,
+          "video_segment_duration_s": 12.83333300000001,
+          "expected_duration_from_tabular_frames_s": 12.8,
+          "tabular_timestamp_span_s": 12.800000190734863,
+          "duration_mismatch_s": 0.033333000000009605,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 18,
+          "expected_tabular_frame_count": 385,
+          "container_reported_segment_frame_count_est": 385,
+          "video_segment_from_timestamp": 232.566667,
+          "video_segment_to_timestamp": 245.4,
+          "video_segment_duration_s": 12.83333300000001,
+          "expected_duration_from_tabular_frames_s": 12.8,
+          "tabular_timestamp_span_s": 12.800000190734863,
+          "duration_mismatch_s": 0.033333000000009605,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 19,
+      "tabular_length": 367,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 19,
+          "expected_tabular_frame_count": 367,
+          "container_reported_segment_frame_count_est": 367,
+          "video_segment_from_timestamp": 245.4,
+          "video_segment_to_timestamp": 257.633333,
+          "video_segment_duration_s": 12.233332999999988,
+          "expected_duration_from_tabular_frames_s": 12.2,
+          "tabular_timestamp_span_s": 12.199999809265137,
+          "duration_mismatch_s": 0.03333299999998829,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 19,
+          "expected_tabular_frame_count": 367,
+          "container_reported_segment_frame_count_est": 367,
+          "video_segment_from_timestamp": 245.4,
+          "video_segment_to_timestamp": 257.633333,
+          "video_segment_duration_s": 12.233332999999988,
+          "expected_duration_from_tabular_frames_s": 12.2,
+          "tabular_timestamp_span_s": 12.199999809265137,
+          "duration_mismatch_s": 0.03333299999998829,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 20,
+      "tabular_length": 366,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 20,
+          "expected_tabular_frame_count": 366,
+          "container_reported_segment_frame_count_est": 366,
+          "video_segment_from_timestamp": 257.633333,
+          "video_segment_to_timestamp": 269.833333,
+          "video_segment_duration_s": 12.199999999999989,
+          "expected_duration_from_tabular_frames_s": 12.166666666666666,
+          "tabular_timestamp_span_s": 12.166666984558105,
+          "duration_mismatch_s": 0.03333333333332256,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 20,
+          "expected_tabular_frame_count": 366,
+          "container_reported_segment_frame_count_est": 366,
+          "video_segment_from_timestamp": 257.633333,
+          "video_segment_to_timestamp": 269.833333,
+          "video_segment_duration_s": 12.199999999999989,
+          "expected_duration_from_tabular_frames_s": 12.166666666666666,
+          "tabular_timestamp_span_s": 12.166666984558105,
+          "duration_mismatch_s": 0.03333333333332256,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 21,
+      "tabular_length": 370,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 21,
+          "expected_tabular_frame_count": 370,
+          "container_reported_segment_frame_count_est": 370,
+          "video_segment_from_timestamp": 269.833333,
+          "video_segment_to_timestamp": 282.16666599999996,
+          "video_segment_duration_s": 12.333332999999982,
+          "expected_duration_from_tabular_frames_s": 12.3,
+          "tabular_timestamp_span_s": 12.300000190734863,
+          "duration_mismatch_s": 0.03333299999998118,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 21,
+          "expected_tabular_frame_count": 370,
+          "container_reported_segment_frame_count_est": 370,
+          "video_segment_from_timestamp": 269.833333,
+          "video_segment_to_timestamp": 282.16666599999996,
+          "video_segment_duration_s": 12.333332999999982,
+          "expected_duration_from_tabular_frames_s": 12.3,
+          "tabular_timestamp_span_s": 12.300000190734863,
+          "duration_mismatch_s": 0.03333299999998118,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 22,
+      "tabular_length": 387,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 22,
+          "expected_tabular_frame_count": 387,
+          "container_reported_segment_frame_count_est": 387,
+          "video_segment_from_timestamp": 282.16666599999996,
+          "video_segment_to_timestamp": 295.06666599999994,
+          "video_segment_duration_s": 12.899999999999977,
+          "expected_duration_from_tabular_frames_s": 12.866666666666667,
+          "tabular_timestamp_span_s": 12.866666793823242,
+          "duration_mismatch_s": 0.03333333333331012,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 22,
+          "expected_tabular_frame_count": 387,
+          "container_reported_segment_frame_count_est": 387,
+          "video_segment_from_timestamp": 282.16666599999996,
+          "video_segment_to_timestamp": 295.06666599999994,
+          "video_segment_duration_s": 12.899999999999977,
+          "expected_duration_from_tabular_frames_s": 12.866666666666667,
+          "tabular_timestamp_span_s": 12.866666793823242,
+          "duration_mismatch_s": 0.03333333333331012,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 23,
+      "tabular_length": 375,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 23,
+          "expected_tabular_frame_count": 375,
+          "container_reported_segment_frame_count_est": 375,
+          "video_segment_from_timestamp": 295.06666599999994,
+          "video_segment_to_timestamp": 307.56666599999994,
+          "video_segment_duration_s": 12.5,
+          "expected_duration_from_tabular_frames_s": 12.466666666666667,
+          "tabular_timestamp_span_s": 12.466666221618652,
+          "duration_mismatch_s": 0.033333333333333215,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 23,
+          "expected_tabular_frame_count": 375,
+          "container_reported_segment_frame_count_est": 375,
+          "video_segment_from_timestamp": 295.06666599999994,
+          "video_segment_to_timestamp": 307.56666599999994,
+          "video_segment_duration_s": 12.5,
+          "expected_duration_from_tabular_frames_s": 12.466666666666667,
+          "tabular_timestamp_span_s": 12.466666221618652,
+          "duration_mismatch_s": 0.033333333333333215,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 24,
+      "tabular_length": 365,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 24,
+          "expected_tabular_frame_count": 365,
+          "container_reported_segment_frame_count_est": 365,
+          "video_segment_from_timestamp": 307.56666599999994,
+          "video_segment_to_timestamp": 319.73333299999996,
+          "video_segment_duration_s": 12.166667000000018,
+          "expected_duration_from_tabular_frames_s": 12.133333333333333,
+          "tabular_timestamp_span_s": 12.133333206176758,
+          "duration_mismatch_s": 0.03333366666668525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 24,
+          "expected_tabular_frame_count": 365,
+          "container_reported_segment_frame_count_est": 365,
+          "video_segment_from_timestamp": 307.56666599999994,
+          "video_segment_to_timestamp": 319.73333299999996,
+          "video_segment_duration_s": 12.166667000000018,
+          "expected_duration_from_tabular_frames_s": 12.133333333333333,
+          "tabular_timestamp_span_s": 12.133333206176758,
+          "duration_mismatch_s": 0.03333366666668525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 25,
+      "tabular_length": 408,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 25,
+          "expected_tabular_frame_count": 408,
+          "container_reported_segment_frame_count_est": 408,
+          "video_segment_from_timestamp": 319.73333299999996,
+          "video_segment_to_timestamp": 333.333333,
+          "video_segment_duration_s": 13.600000000000023,
+          "expected_duration_from_tabular_frames_s": 13.566666666666666,
+          "tabular_timestamp_span_s": 13.566666603088379,
+          "duration_mismatch_s": 0.03333333333335631,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 25,
+          "expected_tabular_frame_count": 408,
+          "container_reported_segment_frame_count_est": 408,
+          "video_segment_from_timestamp": 319.73333299999996,
+          "video_segment_to_timestamp": 333.333333,
+          "video_segment_duration_s": 13.600000000000023,
+          "expected_duration_from_tabular_frames_s": 13.566666666666666,
+          "tabular_timestamp_span_s": 13.566666603088379,
+          "duration_mismatch_s": 0.03333333333335631,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 26,
+      "tabular_length": 353,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 26,
+          "expected_tabular_frame_count": 353,
+          "container_reported_segment_frame_count_est": 353,
+          "video_segment_from_timestamp": 333.333333,
+          "video_segment_to_timestamp": 345.09999999999997,
+          "video_segment_duration_s": 11.766666999999984,
+          "expected_duration_from_tabular_frames_s": 11.733333333333333,
+          "tabular_timestamp_span_s": 11.733333587646484,
+          "duration_mismatch_s": 0.033333666666651496,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 26,
+          "expected_tabular_frame_count": 353,
+          "container_reported_segment_frame_count_est": 353,
+          "video_segment_from_timestamp": 333.333333,
+          "video_segment_to_timestamp": 345.09999999999997,
+          "video_segment_duration_s": 11.766666999999984,
+          "expected_duration_from_tabular_frames_s": 11.733333333333333,
+          "tabular_timestamp_span_s": 11.733333587646484,
+          "duration_mismatch_s": 0.033333666666651496,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 27,
+      "tabular_length": 326,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 27,
+          "expected_tabular_frame_count": 326,
+          "container_reported_segment_frame_count_est": 326,
+          "video_segment_from_timestamp": 345.09999999999997,
+          "video_segment_to_timestamp": 355.966667,
+          "video_segment_duration_s": 10.866667000000007,
+          "expected_duration_from_tabular_frames_s": 10.833333333333334,
+          "tabular_timestamp_span_s": 10.833333015441895,
+          "duration_mismatch_s": 0.03333366666667281,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 27,
+          "expected_tabular_frame_count": 326,
+          "container_reported_segment_frame_count_est": 326,
+          "video_segment_from_timestamp": 345.09999999999997,
+          "video_segment_to_timestamp": 355.966667,
+          "video_segment_duration_s": 10.866667000000007,
+          "expected_duration_from_tabular_frames_s": 10.833333333333334,
+          "tabular_timestamp_span_s": 10.833333015441895,
+          "duration_mismatch_s": 0.03333366666667281,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 28,
+      "tabular_length": 378,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 28,
+          "expected_tabular_frame_count": 378,
+          "container_reported_segment_frame_count_est": 378,
+          "video_segment_from_timestamp": 355.966667,
+          "video_segment_to_timestamp": 368.566667,
+          "video_segment_duration_s": 12.600000000000023,
+          "expected_duration_from_tabular_frames_s": 12.566666666666666,
+          "tabular_timestamp_span_s": 12.566666603088379,
+          "duration_mismatch_s": 0.03333333333335631,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 28,
+          "expected_tabular_frame_count": 378,
+          "container_reported_segment_frame_count_est": 378,
+          "video_segment_from_timestamp": 355.966667,
+          "video_segment_to_timestamp": 368.566667,
+          "video_segment_duration_s": 12.600000000000023,
+          "expected_duration_from_tabular_frames_s": 12.566666666666666,
+          "tabular_timestamp_span_s": 12.566666603088379,
+          "duration_mismatch_s": 0.03333333333335631,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 29,
+      "tabular_length": 374,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 29,
+          "expected_tabular_frame_count": 374,
+          "container_reported_segment_frame_count_est": 374,
+          "video_segment_from_timestamp": 368.566667,
+          "video_segment_to_timestamp": 381.03333399999997,
+          "video_segment_duration_s": 12.466666999999973,
+          "expected_duration_from_tabular_frames_s": 12.433333333333334,
+          "tabular_timestamp_span_s": 12.433333396911621,
+          "duration_mismatch_s": 0.03333366666663906,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 29,
+          "expected_tabular_frame_count": 374,
+          "container_reported_segment_frame_count_est": 374,
+          "video_segment_from_timestamp": 368.566667,
+          "video_segment_to_timestamp": 381.03333399999997,
+          "video_segment_duration_s": 12.466666999999973,
+          "expected_duration_from_tabular_frames_s": 12.433333333333334,
+          "tabular_timestamp_span_s": 12.433333396911621,
+          "duration_mismatch_s": 0.03333366666663906,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 30,
+      "tabular_length": 418,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 30,
+          "expected_tabular_frame_count": 418,
+          "container_reported_segment_frame_count_est": 418,
+          "video_segment_from_timestamp": 381.03333399999997,
+          "video_segment_to_timestamp": 394.966667,
+          "video_segment_duration_s": 13.933333000000005,
+          "expected_duration_from_tabular_frames_s": 13.9,
+          "tabular_timestamp_span_s": 13.899999618530273,
+          "duration_mismatch_s": 0.033333000000004276,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 30,
+          "expected_tabular_frame_count": 418,
+          "container_reported_segment_frame_count_est": 418,
+          "video_segment_from_timestamp": 381.03333399999997,
+          "video_segment_to_timestamp": 394.966667,
+          "video_segment_duration_s": 13.933333000000005,
+          "expected_duration_from_tabular_frames_s": 13.9,
+          "tabular_timestamp_span_s": 13.899999618530273,
+          "duration_mismatch_s": 0.033333000000004276,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 31,
+      "tabular_length": 575,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 31,
+          "expected_tabular_frame_count": 575,
+          "container_reported_segment_frame_count_est": 575,
+          "video_segment_from_timestamp": 394.966667,
+          "video_segment_to_timestamp": 414.133334,
+          "video_segment_duration_s": 19.166667000000018,
+          "expected_duration_from_tabular_frames_s": 19.133333333333333,
+          "tabular_timestamp_span_s": 19.133333206176758,
+          "duration_mismatch_s": 0.03333366666668525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 8.900960288826809e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 31,
+          "expected_tabular_frame_count": 575,
+          "container_reported_segment_frame_count_est": 575,
+          "video_segment_from_timestamp": 394.966667,
+          "video_segment_to_timestamp": 414.133334,
+          "video_segment_duration_s": 19.166667000000018,
+          "expected_duration_from_tabular_frames_s": 19.133333333333333,
+          "tabular_timestamp_span_s": 19.133333206176758,
+          "duration_mismatch_s": 0.03333366666668525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 8.900960288826809e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 32,
+      "tabular_length": 416,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 32,
+          "expected_tabular_frame_count": 416,
+          "container_reported_segment_frame_count_est": 416,
+          "video_segment_from_timestamp": 414.133334,
+          "video_segment_to_timestamp": 428.000001,
+          "video_segment_duration_s": 13.866667000000007,
+          "expected_duration_from_tabular_frames_s": 13.833333333333334,
+          "tabular_timestamp_span_s": 13.833333015441895,
+          "duration_mismatch_s": 0.03333366666667281,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 32,
+          "expected_tabular_frame_count": 416,
+          "container_reported_segment_frame_count_est": 416,
+          "video_segment_from_timestamp": 414.133334,
+          "video_segment_to_timestamp": 428.000001,
+          "video_segment_duration_s": 13.866667000000007,
+          "expected_duration_from_tabular_frames_s": 13.833333333333334,
+          "tabular_timestamp_span_s": 13.833333015441895,
+          "duration_mismatch_s": 0.03333366666667281,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 33,
+      "tabular_length": 425,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 33,
+          "expected_tabular_frame_count": 425,
+          "container_reported_segment_frame_count_est": 425,
+          "video_segment_from_timestamp": 428.000001,
+          "video_segment_to_timestamp": 442.166668,
+          "video_segment_duration_s": 14.166667000000018,
+          "expected_duration_from_tabular_frames_s": 14.133333333333333,
+          "tabular_timestamp_span_s": 14.133333206176758,
+          "duration_mismatch_s": 0.03333366666668525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 33,
+          "expected_tabular_frame_count": 425,
+          "container_reported_segment_frame_count_est": 425,
+          "video_segment_from_timestamp": 428.000001,
+          "video_segment_to_timestamp": 442.166668,
+          "video_segment_duration_s": 14.166667000000018,
+          "expected_duration_from_tabular_frames_s": 14.133333333333333,
+          "tabular_timestamp_span_s": 14.133333206176758,
+          "duration_mismatch_s": 0.03333366666668525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 34,
+      "tabular_length": 376,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 34,
+          "expected_tabular_frame_count": 376,
+          "container_reported_segment_frame_count_est": 376,
+          "video_segment_from_timestamp": 442.166668,
+          "video_segment_to_timestamp": 454.70000100000004,
+          "video_segment_duration_s": 12.533333000000027,
+          "expected_duration_from_tabular_frames_s": 12.5,
+          "tabular_timestamp_span_s": 12.5,
+          "duration_mismatch_s": 0.03333300000002737,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 34,
+          "expected_tabular_frame_count": 376,
+          "container_reported_segment_frame_count_est": 376,
+          "video_segment_from_timestamp": 442.166668,
+          "video_segment_to_timestamp": 454.70000100000004,
+          "video_segment_duration_s": 12.533333000000027,
+          "expected_duration_from_tabular_frames_s": 12.5,
+          "tabular_timestamp_span_s": 12.5,
+          "duration_mismatch_s": 0.03333300000002737,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 35,
+      "tabular_length": 393,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 35,
+          "expected_tabular_frame_count": 393,
+          "container_reported_segment_frame_count_est": 393,
+          "video_segment_from_timestamp": 454.70000100000004,
+          "video_segment_to_timestamp": 467.80000100000007,
+          "video_segment_duration_s": 13.100000000000023,
+          "expected_duration_from_tabular_frames_s": 13.066666666666666,
+          "tabular_timestamp_span_s": 13.066666603088379,
+          "duration_mismatch_s": 0.03333333333335631,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 35,
+          "expected_tabular_frame_count": 393,
+          "container_reported_segment_frame_count_est": 393,
+          "video_segment_from_timestamp": 454.70000100000004,
+          "video_segment_to_timestamp": 467.80000100000007,
+          "video_segment_duration_s": 13.100000000000023,
+          "expected_duration_from_tabular_frames_s": 13.066666666666666,
+          "tabular_timestamp_span_s": 13.066666603088379,
+          "duration_mismatch_s": 0.03333333333335631,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 36,
+      "tabular_length": 440,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 36,
+          "expected_tabular_frame_count": 440,
+          "container_reported_segment_frame_count_est": 440,
+          "video_segment_from_timestamp": 467.80000100000007,
+          "video_segment_to_timestamp": 482.4666680000001,
+          "video_segment_duration_s": 14.666667000000018,
+          "expected_duration_from_tabular_frames_s": 14.633333333333333,
+          "tabular_timestamp_span_s": 14.633333206176758,
+          "duration_mismatch_s": 0.03333366666668525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 36,
+          "expected_tabular_frame_count": 440,
+          "container_reported_segment_frame_count_est": 440,
+          "video_segment_from_timestamp": 467.80000100000007,
+          "video_segment_to_timestamp": 482.4666680000001,
+          "video_segment_duration_s": 14.666667000000018,
+          "expected_duration_from_tabular_frames_s": 14.633333333333333,
+          "tabular_timestamp_span_s": 14.633333206176758,
+          "duration_mismatch_s": 0.03333366666668525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 37,
+      "tabular_length": 382,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 37,
+          "expected_tabular_frame_count": 382,
+          "container_reported_segment_frame_count_est": 382,
+          "video_segment_from_timestamp": 482.4666680000001,
+          "video_segment_to_timestamp": 495.2000010000001,
+          "video_segment_duration_s": 12.733333000000016,
+          "expected_duration_from_tabular_frames_s": 12.7,
+          "tabular_timestamp_span_s": 12.699999809265137,
+          "duration_mismatch_s": 0.03333300000001671,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 37,
+          "expected_tabular_frame_count": 382,
+          "container_reported_segment_frame_count_est": 382,
+          "video_segment_from_timestamp": 482.4666680000001,
+          "video_segment_to_timestamp": 495.2000010000001,
+          "video_segment_duration_s": 12.733333000000016,
+          "expected_duration_from_tabular_frames_s": 12.7,
+          "tabular_timestamp_span_s": 12.699999809265137,
+          "duration_mismatch_s": 0.03333300000001671,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 38,
+      "tabular_length": 402,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 38,
+          "expected_tabular_frame_count": 402,
+          "container_reported_segment_frame_count_est": 402,
+          "video_segment_from_timestamp": 495.2000010000001,
+          "video_segment_to_timestamp": 508.6000010000001,
+          "video_segment_duration_s": 13.399999999999977,
+          "expected_duration_from_tabular_frames_s": 13.366666666666667,
+          "tabular_timestamp_span_s": 13.366666793823242,
+          "duration_mismatch_s": 0.03333333333331012,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 38,
+          "expected_tabular_frame_count": 402,
+          "container_reported_segment_frame_count_est": 402,
+          "video_segment_from_timestamp": 495.2000010000001,
+          "video_segment_to_timestamp": 508.6000010000001,
+          "video_segment_duration_s": 13.399999999999977,
+          "expected_duration_from_tabular_frames_s": 13.366666666666667,
+          "tabular_timestamp_span_s": 13.366666793823242,
+          "duration_mismatch_s": 0.03333333333331012,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 39,
+      "tabular_length": 341,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 39,
+          "expected_tabular_frame_count": 341,
+          "container_reported_segment_frame_count_est": 341,
+          "video_segment_from_timestamp": 508.6000010000001,
+          "video_segment_to_timestamp": 519.966668,
+          "video_segment_duration_s": 11.36666699999995,
+          "expected_duration_from_tabular_frames_s": 11.333333333333334,
+          "tabular_timestamp_span_s": 11.333333015441895,
+          "duration_mismatch_s": 0.03333366666661597,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 39,
+          "expected_tabular_frame_count": 341,
+          "container_reported_segment_frame_count_est": 341,
+          "video_segment_from_timestamp": 508.6000010000001,
+          "video_segment_to_timestamp": 519.966668,
+          "video_segment_duration_s": 11.36666699999995,
+          "expected_duration_from_tabular_frames_s": 11.333333333333334,
+          "tabular_timestamp_span_s": 11.333333015441895,
+          "duration_mismatch_s": 0.03333366666661597,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 40,
+      "tabular_length": 473,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 40,
+          "expected_tabular_frame_count": 473,
+          "container_reported_segment_frame_count_est": 473,
+          "video_segment_from_timestamp": 519.966668,
+          "video_segment_to_timestamp": 535.733335,
+          "video_segment_duration_s": 15.766666999999984,
+          "expected_duration_from_tabular_frames_s": 15.733333333333333,
+          "tabular_timestamp_span_s": 15.733333587646484,
+          "duration_mismatch_s": 0.033333666666651496,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 40,
+          "expected_tabular_frame_count": 473,
+          "container_reported_segment_frame_count_est": 473,
+          "video_segment_from_timestamp": 519.966668,
+          "video_segment_to_timestamp": 535.733335,
+          "video_segment_duration_s": 15.766666999999984,
+          "expected_duration_from_tabular_frames_s": 15.733333333333333,
+          "tabular_timestamp_span_s": 15.733333587646484,
+          "duration_mismatch_s": 0.033333666666651496,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 41,
+      "tabular_length": 475,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 41,
+          "expected_tabular_frame_count": 475,
+          "container_reported_segment_frame_count_est": 475,
+          "video_segment_from_timestamp": 535.733335,
+          "video_segment_to_timestamp": 551.566668,
+          "video_segment_duration_s": 15.833333000000039,
+          "expected_duration_from_tabular_frames_s": 15.8,
+          "tabular_timestamp_span_s": 15.800000190734863,
+          "duration_mismatch_s": 0.03333300000003803,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 41,
+          "expected_tabular_frame_count": 475,
+          "container_reported_segment_frame_count_est": 475,
+          "video_segment_from_timestamp": 535.733335,
+          "video_segment_to_timestamp": 551.566668,
+          "video_segment_duration_s": 15.833333000000039,
+          "expected_duration_from_tabular_frames_s": 15.8,
+          "tabular_timestamp_span_s": 15.800000190734863,
+          "duration_mismatch_s": 0.03333300000003803,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 42,
+      "tabular_length": 417,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 42,
+          "expected_tabular_frame_count": 417,
+          "container_reported_segment_frame_count_est": 417,
+          "video_segment_from_timestamp": 551.566668,
+          "video_segment_to_timestamp": 565.466668,
+          "video_segment_duration_s": 13.899999999999977,
+          "expected_duration_from_tabular_frames_s": 13.866666666666667,
+          "tabular_timestamp_span_s": 13.866666793823242,
+          "duration_mismatch_s": 0.03333333333331012,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 42,
+          "expected_tabular_frame_count": 417,
+          "container_reported_segment_frame_count_est": 417,
+          "video_segment_from_timestamp": 551.566668,
+          "video_segment_to_timestamp": 565.466668,
+          "video_segment_duration_s": 13.899999999999977,
+          "expected_duration_from_tabular_frames_s": 13.866666666666667,
+          "tabular_timestamp_span_s": 13.866666793823242,
+          "duration_mismatch_s": 0.03333333333331012,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 43,
+      "tabular_length": 423,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 43,
+          "expected_tabular_frame_count": 423,
+          "container_reported_segment_frame_count_est": 423,
+          "video_segment_from_timestamp": 565.466668,
+          "video_segment_to_timestamp": 579.566668,
+          "video_segment_duration_s": 14.100000000000023,
+          "expected_duration_from_tabular_frames_s": 14.066666666666666,
+          "tabular_timestamp_span_s": 14.066666603088379,
+          "duration_mismatch_s": 0.03333333333335631,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 43,
+          "expected_tabular_frame_count": 423,
+          "container_reported_segment_frame_count_est": 423,
+          "video_segment_from_timestamp": 565.466668,
+          "video_segment_to_timestamp": 579.566668,
+          "video_segment_duration_s": 14.100000000000023,
+          "expected_duration_from_tabular_frames_s": 14.066666666666666,
+          "tabular_timestamp_span_s": 14.066666603088379,
+          "duration_mismatch_s": 0.03333333333335631,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 44,
+      "tabular_length": 367,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 44,
+          "expected_tabular_frame_count": 367,
+          "container_reported_segment_frame_count_est": 367,
+          "video_segment_from_timestamp": 579.566668,
+          "video_segment_to_timestamp": 591.8000010000001,
+          "video_segment_duration_s": 12.233333000000016,
+          "expected_duration_from_tabular_frames_s": 12.2,
+          "tabular_timestamp_span_s": 12.199999809265137,
+          "duration_mismatch_s": 0.03333300000001671,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 44,
+          "expected_tabular_frame_count": 367,
+          "container_reported_segment_frame_count_est": 367,
+          "video_segment_from_timestamp": 579.566668,
+          "video_segment_to_timestamp": 591.8000010000001,
+          "video_segment_duration_s": 12.233333000000016,
+          "expected_duration_from_tabular_frames_s": 12.2,
+          "tabular_timestamp_span_s": 12.199999809265137,
+          "duration_mismatch_s": 0.03333300000001671,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 45,
+      "tabular_length": 351,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 45,
+          "expected_tabular_frame_count": 351,
+          "container_reported_segment_frame_count_est": 351,
+          "video_segment_from_timestamp": 591.8000010000001,
+          "video_segment_to_timestamp": 603.5000010000001,
+          "video_segment_duration_s": 11.700000000000045,
+          "expected_duration_from_tabular_frames_s": 11.666666666666666,
+          "tabular_timestamp_span_s": 11.666666984558105,
+          "duration_mismatch_s": 0.0333333333333794,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 45,
+          "expected_tabular_frame_count": 351,
+          "container_reported_segment_frame_count_est": 351,
+          "video_segment_from_timestamp": 591.8000010000001,
+          "video_segment_to_timestamp": 603.5000010000001,
+          "video_segment_duration_s": 11.700000000000045,
+          "expected_duration_from_tabular_frames_s": 11.666666666666666,
+          "tabular_timestamp_span_s": 11.666666984558105,
+          "duration_mismatch_s": 0.0333333333333794,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 46,
+      "tabular_length": 346,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 46,
+          "expected_tabular_frame_count": 346,
+          "container_reported_segment_frame_count_est": 346,
+          "video_segment_from_timestamp": 603.5000010000001,
+          "video_segment_to_timestamp": 615.0333340000001,
+          "video_segment_duration_s": 11.53333299999997,
+          "expected_duration_from_tabular_frames_s": 11.5,
+          "tabular_timestamp_span_s": 11.5,
+          "duration_mismatch_s": 0.033332999999970525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 46,
+          "expected_tabular_frame_count": 346,
+          "container_reported_segment_frame_count_est": 346,
+          "video_segment_from_timestamp": 603.5000010000001,
+          "video_segment_to_timestamp": 615.0333340000001,
+          "video_segment_duration_s": 11.53333299999997,
+          "expected_duration_from_tabular_frames_s": 11.5,
+          "tabular_timestamp_span_s": 11.5,
+          "duration_mismatch_s": 0.033332999999970525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 47,
+      "tabular_length": 418,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 47,
+          "expected_tabular_frame_count": 418,
+          "container_reported_segment_frame_count_est": 418,
+          "video_segment_from_timestamp": 615.0333340000001,
+          "video_segment_to_timestamp": 628.966667,
+          "video_segment_duration_s": 13.933332999999948,
+          "expected_duration_from_tabular_frames_s": 13.9,
+          "tabular_timestamp_span_s": 13.899999618530273,
+          "duration_mismatch_s": 0.03333299999994743,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 47,
+          "expected_tabular_frame_count": 418,
+          "container_reported_segment_frame_count_est": 418,
+          "video_segment_from_timestamp": 615.0333340000001,
+          "video_segment_to_timestamp": 628.966667,
+          "video_segment_duration_s": 13.933332999999948,
+          "expected_duration_from_tabular_frames_s": 13.9,
+          "tabular_timestamp_span_s": 13.899999618530273,
+          "duration_mismatch_s": 0.03333299999994743,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 48,
+      "tabular_length": 361,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 48,
+          "expected_tabular_frame_count": 361,
+          "container_reported_segment_frame_count_est": 361,
+          "video_segment_from_timestamp": 628.966667,
+          "video_segment_to_timestamp": 641.0,
+          "video_segment_duration_s": 12.03333299999997,
+          "expected_duration_from_tabular_frames_s": 12.0,
+          "tabular_timestamp_span_s": 12.0,
+          "duration_mismatch_s": 0.033332999999970525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 48,
+          "expected_tabular_frame_count": 361,
+          "container_reported_segment_frame_count_est": 361,
+          "video_segment_from_timestamp": 628.966667,
+          "video_segment_to_timestamp": 641.0,
+          "video_segment_duration_s": 12.03333299999997,
+          "expected_duration_from_tabular_frames_s": 12.0,
+          "tabular_timestamp_span_s": 12.0,
+          "duration_mismatch_s": 0.033332999999970525,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    },
+    {
+      "episode_index": 49,
+      "tabular_length": 401,
+      "cameras": {
+        "observation.images.top": {
+          "episode_index": 49,
+          "expected_tabular_frame_count": 401,
+          "container_reported_segment_frame_count_est": 401,
+          "video_segment_from_timestamp": 641.0,
+          "video_segment_to_timestamp": 654.366667,
+          "video_segment_duration_s": 13.366667000000007,
+          "expected_duration_from_tabular_frames_s": 13.333333333333334,
+          "tabular_timestamp_span_s": 13.333333015441895,
+          "duration_mismatch_s": 0.03333366666667281,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.top",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        },
+        "observation.images.wrist": {
+          "episode_index": 49,
+          "expected_tabular_frame_count": 401,
+          "container_reported_segment_frame_count_est": 401,
+          "video_segment_from_timestamp": 641.0,
+          "video_segment_to_timestamp": 654.366667,
+          "video_segment_duration_s": 13.366667000000007,
+          "expected_duration_from_tabular_frames_s": 13.333333333333334,
+          "tabular_timestamp_span_s": 13.333333015441895,
+          "duration_mismatch_s": 0.03333366666667281,
+          "frame_count_delta_est": 0,
+          "max_frame_index_over_fps_vs_timestamp_s": 4.4504801444134046e-07,
+          "timing_within_tolerance": true,
+          "timing_tol_s": 0.03333333333333333,
+          "material_frame_count_mismatch": false,
+          "material_duration_mismatch": false,
+          "flags": {
+            "material_frame_count_mismatch": false,
+            "material_duration_mismatch": false,
+            "timing_tolerance_exceeded": false
+          },
+          "camera_key": "observation.images.wrist",
+          "video_file_opened": true,
+          "container_n_frames_file": 19631,
+          "successfully_inspected_endpoint_frames": 2
+        }
+      }
+    }
+  ],
+  "definitions": {
+    "expected_tabular_frame_count": "rows in parquet for the episode (or episodes.length)",
+    "container_reported_segment_frame_count_est": "round((to_ts-from_ts)*fps) from episode video timestamps",
+    "successfully_inspected_or_decoded": "endpoint decode probe at file level; full wrist decode counts appear in egocentric audit"
+  }
+}

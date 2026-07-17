@@ -1,0 +1,61 @@
+{
+  "generated_for": "task_01_quality_audit",
+  "candidates": [
+    {
+      "repo_id": "lerobot/svla_so100_pickplace",
+      "revision": "728583b5eaf9e739a7f119e2def466fa1d552402",
+      "task": "Pick up the cube and place it in the box.",
+      "episodes": 50,
+      "frames": 19631,
+      "state_dim": 6,
+      "action_dim": 6,
+      "cameras": ["observation.images.top", "observation.images.wrist"],
+      "fps": 30,
+      "approx_size_mb": 470.1,
+      "license": "apache-2.0",
+      "decision": "selected",
+      "reason": "Explicit wrist+top cameras, synchronized teleop fields, pick-and-place, manageable size."
+    },
+    {
+      "repo_id": "lerobot/aloha_static_coffee",
+      "revision": "b144896feb1f37398a862927b22cd3abdf005a6b",
+      "task": "ALOHA static coffee manipulation",
+      "episodes": 50,
+      "frames": 55000,
+      "state_dim": 14,
+      "action_dim": 14,
+      "cameras": [
+        "observation.images.cam_high",
+        "observation.images.cam_left_wrist",
+        "observation.images.cam_right_wrist",
+        "observation.images.cam_low"
+      ],
+      "fps": 50,
+      "approx_size_mb": 1566.3,
+      "license": "mit",
+      "decision": "rejected",
+      "reason": "Exceeds preferred ~1GB size with four AV1 video streams."
+    },
+    {
+      "repo_id": "lerobot/imperialcollege_sawyer_wrist_cam",
+      "revision": "fa2512d0965ce44ec2c4abb9f67f5780197b0586",
+      "task": "Sawyer wrist-cam demonstrations",
+      "episodes": 170,
+      "frames": 7148,
+      "state_dim": null,
+      "action_dim": null,
+      "cameras": ["observation.images.image", "observation.images.wrist_image"],
+      "fps": 5,
+      "approx_size_mb": 3.8,
+      "license": "apache-2.0",
+      "decision": "rejected",
+      "reason": "64x64 @ 5 FPS insufficient for egocentric quality metrics; not pick-and-place focused."
+    }
+  ],
+  "preserved_baseline": {
+    "repo_id": "lerobot/aloha_sim_insertion_human",
+    "artifact_dir": "artifacts/task_01_quality_audit/aloha_sim_insertion_human",
+    "note": "Teleoperation baseline only; no verified wrist camera."
+  },
+  "primary_paired_dataset": "lerobot/svla_so100_pickplace"
+}

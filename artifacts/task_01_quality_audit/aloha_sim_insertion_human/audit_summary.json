@@ -1,0 +1,1595 @@
+{
+  "task": "task_01_quality_audit",
+  "runtime_s": 3.9819291250314564,
+  "scope": {
+    "repo_id": "lerobot/aloha_sim_insertion_human",
+    "revision": "cc571a3c661df81b566dbfde3d5c1e85fcdf7884",
+    "split": "train",
+    "seed": 42,
+    "tabular_scope": "full_dataset",
+    "max_episodes_arg": null,
+    "episodes_in_manifest": 50,
+    "episodes_audited": 50,
+    "frames_audited": 25000,
+    "frames_in_manifest": 25000,
+    "is_full_tabular_audit": true
+  },
+  "config_path": "configs/audit.yaml",
+  "thresholds": {
+    "teleop": {
+      "timestamp_gap_factor": 1.5,
+      "timestamp_gap_absolute_s": null,
+      "duplicate_timestamp_tol_s": 1e-06,
+      "discontinuity_mad_k": 8.0,
+      "discontinuity_abs_floor": 0.05,
+      "discontinuity_mad_floor": 1e-06,
+      "near_stuck_std": 1e-05,
+      "near_stuck_range": 0.0001,
+      "outlier_mad_k": 10.0,
+      "saturation_edge_eps_frac": 0.01,
+      "saturation_rate_flag": 0.05
+    },
+    "egocentric": {
+      "laplacian_var_blur_threshold": 50.0,
+      "underexposure_mean_threshold": 40.0,
+      "overexposure_mean_threshold": 220.0,
+      "overexposure_sat_frac": 0.15,
+      "underexposure_sat_frac": 0.15,
+      "low_entropy_threshold": 3.5,
+      "duplicate_mse_threshold": 1.0,
+      "near_duplicate_mse_threshold": 25.0
+    },
+    "sampling": {
+      "max_video_frames": 200,
+      "frames_per_episode_contact": 3,
+      "contact_sheet_episodes": 6,
+      "montage_flagged_examples": 8,
+      "montage_normal_examples": 8
+    }
+  },
+  "camera_inspection": {
+    "cameras": [
+      {
+        "key": "observation.images.top",
+        "dtype": "video",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "names": [
+          "height",
+          "width",
+          "channel"
+        ],
+        "video_info": {
+          "video.fps": 50.0,
+          "video.codec": "av1",
+          "video.pix_fmt": "yuv420p",
+          "video.is_depth_map": false,
+          "has_audio": false
+        },
+        "viewpoint": "verified_external",
+        "evidence": [
+          "feature_key=observation.images.top",
+          "dtype=video",
+          "shape=[480, 640, 3]",
+          "key contains external placement token(s): ['top']",
+          "ALOHA 'top' cameras are overhead/workspace views, not wrist-mounted egocentric streams"
+        ]
+      }
+    ],
+    "has_verified_egocentric": false
+  },
+  "teleoperation": {
+    "scope": {
+      "repo_id": "lerobot/aloha_sim_insertion_human",
+      "revision": "cc571a3c661df81b566dbfde3d5c1e85fcdf7884",
+      "split": "train",
+      "seed": 42,
+      "tabular_scope": "full_dataset",
+      "max_episodes_arg": null,
+      "episodes_in_manifest": 50,
+      "episodes_audited": 50,
+      "frames_audited": 25000,
+      "frames_in_manifest": 25000,
+      "is_full_tabular_audit": true
+    },
+    "n_episodes": 50,
+    "n_frames": 25000,
+    "trajectory_length": {
+      "count": 50,
+      "min": 500,
+      "max": 500,
+      "mean": 500.0,
+      "median": 500.0,
+      "std": 0.0,
+      "p5": 500.0,
+      "p25": 500.0,
+      "p75": 500.0,
+      "p95": 500.0
+    },
+    "trajectory_lengths_raw": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ],
+    "state_key": "observation.state",
+    "action_key": "action",
+    "state_dim": 14,
+    "action_dim": 14,
+    "state_names": [
+      "left_waist",
+      "left_shoulder",
+      "left_elbow",
+      "left_forearm_roll",
+      "left_wrist_angle",
+      "left_wrist_rotate",
+      "left_gripper",
+      "right_waist",
+      "right_shoulder",
+      "right_elbow",
+      "right_forearm_roll",
+      "right_wrist_angle",
+      "right_wrist_rotate",
+      "right_gripper"
+    ],
+    "action_names": [
+      "left_waist",
+      "left_shoulder",
+      "left_elbow",
+      "left_forearm_roll",
+      "left_wrist_angle",
+      "left_wrist_rotate",
+      "left_gripper",
+      "right_waist",
+      "right_shoulder",
+      "right_elbow",
+      "right_forearm_roll",
+      "right_wrist_angle",
+      "right_wrist_rotate",
+      "right_gripper"
+    ],
+    "state_nan_inf": {
+      "nan": 0,
+      "inf": 0,
+      "total_elements": 350000
+    },
+    "action_nan_inf": {
+      "nan": 0,
+      "inf": 0,
+      "total_elements": 350000
+    },
+    "state_per_dim": [
+      {
+        "name": "left_waist",
+        "dim": 0,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.007601045066213174,
+        "std": 0.1090702875426817,
+        "min": -0.2860569655895233,
+        "max": 0.3167214095592499,
+        "median": 0.004569069016724825
+      },
+      {
+        "name": "left_shoulder",
+        "dim": 1,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.18723901768361204,
+        "std": 0.22419280220683585,
+        "min": -0.9599999785423279,
+        "max": 0.075322724878788,
+        "median": -0.11508392915129662
+      },
+      {
+        "name": "left_elbow",
+        "dim": 2,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.7382194275939464,
+        "std": 0.20276570111262512,
+        "min": 0.3066967725753784,
+        "max": 1.2031160593032837,
+        "median": 0.7252169847488403
+      },
+      {
+        "name": "left_forearm_roll",
+        "dim": 3,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.007421846300496781,
+        "std": 0.10341581523915667,
+        "min": -0.2636253535747528,
+        "max": 0.2756938934326172,
+        "median": -0.01464026514440775
+      },
+      {
+        "name": "left_wrist_angle",
+        "dim": 4,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.44064859862794403,
+        "std": 0.22568834053998682,
+        "min": -0.493009477853775,
+        "max": 0.9997532367706299,
+        "median": 0.47311004996299744
+      },
+      {
+        "name": "left_wrist_rotate",
+        "dim": 5,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.003844368018246164,
+        "std": 0.13937632227302696,
+        "min": -0.42267003655433655,
+        "max": 0.44105732440948486,
+        "median": -0.011496122926473618
+      },
+      {
+        "name": "left_gripper",
+        "dim": 6,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.6210289442740008,
+        "std": 0.19231783523158463,
+        "min": 0.0,
+        "max": 1.091105341911316,
+        "median": 0.6295273303985596
+      },
+      {
+        "name": "right_waist",
+        "dim": 7,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.0989922822136445,
+        "std": 0.14224260705342082,
+        "min": -0.4774622619152069,
+        "max": 0.3204266130924225,
+        "median": -0.09644247591495514
+      },
+      {
+        "name": "right_shoulder",
+        "dim": 8,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.21497447650019913,
+        "std": 0.3174291194257199,
+        "min": -0.9905557632446289,
+        "max": 0.20700688660144806,
+        "median": -0.08536545932292938
+      },
+      {
+        "name": "right_elbow",
+        "dim": 9,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.6489820951867104,
+        "std": 0.285451485444318,
+        "min": 0.09440229088068008,
+        "max": 1.2157615423202515,
+        "median": 0.6897079348564148
+      },
+      {
+        "name": "right_forearm_roll",
+        "dim": 10,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.18937694714121014,
+        "std": 0.18508381779503746,
+        "min": -0.22565385699272156,
+        "max": 0.8068909645080566,
+        "median": 0.15072310715913773
+      },
+      {
+        "name": "right_wrist_angle",
+        "dim": 11,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.6149135551077576,
+        "std": 0.3043302120378915,
+        "min": -0.43221959471702576,
+        "max": 1.1542441844940186,
+        "median": 0.6847822964191437
+      },
+      {
+        "name": "right_wrist_rotate",
+        "dim": 12,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.14312536061662698,
+        "std": 0.2879387203863611,
+        "min": -0.8460990786552429,
+        "max": 0.5063774585723877,
+        "median": -0.1282038539648056
+      },
+      {
+        "name": "right_gripper",
+        "dim": 13,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.41608142403303733,
+        "std": 0.2574092160959141,
+        "min": -0.012096084654331207,
+        "max": 1.0758001804351807,
+        "median": 0.31040096282958984
+      }
+    ],
+    "action_per_dim": [
+      {
+        "name": "left_waist",
+        "dim": 0,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.00753583405284211,
+        "std": 0.10980397914881908,
+        "min": -0.2883884012699127,
+        "max": 0.31753402948379517,
+        "median": 0.004601942375302315
+      },
+      {
+        "name": "left_shoulder",
+        "dim": 1,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.18172580021645873,
+        "std": 0.21561163403173747,
+        "min": -0.9556700587272644,
+        "max": 0.08436894416809082,
+        "median": -0.11504856497049332
+      },
+      {
+        "name": "left_elbow",
+        "dim": 2,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.732216112704277,
+        "std": 0.20219533154123887,
+        "min": 0.3021942377090454,
+        "max": 1.2225826978683472,
+        "median": 0.7179030179977417
+      },
+      {
+        "name": "left_forearm_roll",
+        "dim": 3,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.00686364383125212,
+        "std": 0.10660390899801615,
+        "min": -0.2653786838054657,
+        "max": 0.28071850538253784,
+        "median": -0.015339808538556099
+      },
+      {
+        "name": "left_wrist_angle",
+        "dim": 4,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.435718602935113,
+        "std": 0.2204141578693545,
+        "min": -0.5445631742477417,
+        "max": 0.9986215233802795,
+        "median": 0.46172821521759033
+      },
+      {
+        "name": "left_wrist_rotate",
+        "dim": 5,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.0031045316426642237,
+        "std": 0.1394308062159806,
+        "min": -0.4141748249530792,
+        "max": 0.4417864680290222,
+        "median": -0.010737866163253784
+      },
+      {
+        "name": "left_gripper",
+        "dim": 6,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.27917510527580974,
+        "std": 0.2706776932390892,
+        "min": 0.08270374685525894,
+        "max": 1.162463665008545,
+        "median": 0.17318376898765564
+      },
+      {
+        "name": "right_waist",
+        "dim": 7,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.1001997506132489,
+        "std": 0.14247868463646407,
+        "min": -0.4724660813808441,
+        "max": 0.3206019997596741,
+        "median": -0.10124273598194122
+      },
+      {
+        "name": "right_shoulder",
+        "dim": 8,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.20623685043758713,
+        "std": 0.31271142550458897,
+        "min": -0.9940195679664612,
+        "max": 0.20555342733860016,
+        "median": -0.07516506314277649
+      },
+      {
+        "name": "right_elbow",
+        "dim": 9,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.6435295627513528,
+        "std": 0.28606984317710504,
+        "min": 0.08897088468074799,
+        "max": 1.211844801902771,
+        "median": 0.6810874938964844
+      },
+      {
+        "name": "right_forearm_roll",
+        "dim": 10,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.2016644828200061,
+        "std": 0.1915323923067958,
+        "min": -0.2208932340145111,
+        "max": 0.7056311964988708,
+        "median": 0.16873788833618164
+      },
+      {
+        "name": "right_wrist_angle",
+        "dim": 11,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.6110104573761626,
+        "std": 0.2999130235653688,
+        "min": -0.4448544383049011,
+        "max": 1.1458836793899536,
+        "median": 0.6810874938964844
+      },
+      {
+        "name": "right_wrist_rotate",
+        "dim": 12,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": -0.1440406157330051,
+        "std": 0.2879566027903954,
+        "min": -0.8452234268188477,
+        "max": 0.4801360070705414,
+        "median": -0.13192234933376312
+      },
+      {
+        "name": "right_gripper",
+        "dim": 13,
+        "count": 25000,
+        "nan": 0,
+        "inf": 0,
+        "mean": 0.2545682038529089,
+        "std": 0.35035899851886454,
+        "min": -0.06495711207389832,
+        "max": 0.9540639519691467,
+        "median": 0.03073251061141491
+      }
+    ],
+    "fps_metadata": 50.0,
+    "expected_dt_s": 0.02,
+    "inferred_dt_s": 0.019999980926513672,
+    "alignment": {
+      "expected_dt": 0.02,
+      "n_episodes": 50,
+      "episodes_with_non_monotonic_timestamps": 0,
+      "episodes_with_duplicate_timestamps": 0,
+      "episodes_with_frame_gaps": 0,
+      "episodes_with_length_mismatch": 0,
+      "total_timestamp_gaps": 0,
+      "total_duplicate_timestamps": 0,
+      "total_frame_index_gaps": 0,
+      "gap_magnitude_stats_s": {
+        "count": 0,
+        "min": null,
+        "max": null,
+        "mean": null,
+        "median": null,
+        "p95": null
+      },
+      "gap_magnitudes_s_sample": [],
+      "notes": []
+    },
+    "state_discontinuities_global_concat": {
+      "n_frames": 25000,
+      "n_dims": 14,
+      "n_deltas": 24999,
+      "total_flags": 1370,
+      "flag_rate": 0.003914442291977393,
+      "per_dim": [
+        {
+          "dim": 0,
+          "mad": 5.713850259780884e-05,
+          "threshold": 0.05,
+          "n_flags": 15,
+          "flag_rate": 0.0006000240009600384,
+          "max_abs_delta": 0.14699611067771912
+        },
+        {
+          "dim": 1,
+          "mad": 0.0004354529082775116,
+          "threshold": 0.05,
+          "n_flags": 55,
+          "flag_rate": 0.002200088003520141,
+          "max_abs_delta": 1.028630442917347
+        },
+        {
+          "dim": 2,
+          "mad": 0.0005969405174255371,
+          "threshold": 0.05,
+          "n_flags": 49,
+          "flag_rate": 0.0019600784031361253,
+          "max_abs_delta": 0.8527814149856567
+        },
+        {
+          "dim": 3,
+          "mad": 0.0003358800895512104,
+          "threshold": 0.05,
+          "n_flags": 41,
+          "flag_rate": 0.001640065602624105,
+          "max_abs_delta": 0.27152109146118164
+        },
+        {
+          "dim": 4,
+          "mad": 0.0005906522274017334,
+          "threshold": 0.05,
+          "n_flags": 305,
+          "flag_rate": 0.012200488019520781,
+          "max_abs_delta": 1.1518086194992065
+        },
+        {
+          "dim": 5,
+          "mad": 0.000433996319770813,
+          "threshold": 0.05,
+          "n_flags": 38,
+          "flag_rate": 0.0015200608024320973,
+          "max_abs_delta": 0.35024550557136536
+        },
+        {
+          "dim": 6,
+          "mad": 0.0008139908313751221,
+          "threshold": 0.05,
+          "n_flags": 211,
+          "flag_rate": 0.00844033761350454,
+          "max_abs_delta": 0.8610656261444092
+        },
+        {
+          "dim": 7,
+          "mad": 0.00012875348329544067,
+          "threshold": 0.05,
+          "n_flags": 35,
+          "flag_rate": 0.0014000560022400896,
+          "max_abs_delta": 0.23772764205932617
+        },
+        {
+          "dim": 8,
+          "mad": 0.0011584460735321045,
+          "threshold": 0.05,
+          "n_flags": 50,
+          "flag_rate": 0.002000080003200128,
+          "max_abs_delta": 1.1606201529502869
+        },
+        {
+          "dim": 9,
+          "mad": 0.0008881092071533203,
+          "threshold": 0.05,
+          "n_flags": 49,
+          "flag_rate": 0.0019600784031361253,
+          "max_abs_delta": 1.0655976757407188
+        },
+        {
+          "dim": 10,
+          "mad": 0.0005009062588214874,
+          "threshold": 0.05,
+          "n_flags": 67,
+          "flag_rate": 0.0026801072042881716,
+          "max_abs_delta": 0.4888264238834381
+        },
+        {
+          "dim": 11,
+          "mad": 0.0009951591491699219,
+          "threshold": 0.05,
+          "n_flags": 234,
+          "flag_rate": 0.0093603744149766,
+          "max_abs_delta": 1.4514231085777283
+        },
+        {
+          "dim": 12,
+          "mad": 0.000492987222969532,
+          "threshold": 0.05,
+          "n_flags": 72,
+          "flag_rate": 0.0028801152046081845,
+          "max_abs_delta": 0.5279999375343323
+        },
+        {
+          "dim": 13,
+          "mad": 0.0008440613746643066,
+          "threshold": 0.05,
+          "n_flags": 149,
+          "flag_rate": 0.005960238409536382,
+          "max_abs_delta": 0.5095381140708923
+        }
+      ],
+      "max_abs_delta_global": 1.4514231085777283,
+      "rule": "|delta| > max(8.0 * MAD, abs_floor=0.05) (MAD floor=1e-06)"
+    },
+    "action_discontinuities_global_concat": {
+      "n_frames": 25000,
+      "n_dims": 14,
+      "n_deltas": 24999,
+      "total_flags": 2387,
+      "flag_rate": 0.006820272810912437,
+      "per_dim": [
+        {
+          "dim": 0,
+          "mad": 1e-06,
+          "threshold": 0.05,
+          "n_flags": 13,
+          "flag_rate": 0.0005200208008320333,
+          "max_abs_delta": 0.1411262359470129
+        },
+        {
+          "dim": 1,
+          "mad": 0.0015339702367782593,
+          "threshold": 0.05,
+          "n_flags": 50,
+          "flag_rate": 0.002000080003200128,
+          "max_abs_delta": 1.0093594118952751
+        },
+        {
+          "dim": 2,
+          "mad": 0.0015339851379394531,
+          "threshold": 0.05,
+          "n_flags": 49,
+          "flag_rate": 0.0019600784031361253,
+          "max_abs_delta": 0.8467574119567871
+        },
+        {
+          "dim": 3,
+          "mad": 1e-06,
+          "threshold": 0.05,
+          "n_flags": 39,
+          "flag_rate": 0.0015600624024961,
+          "max_abs_delta": 0.27765053941402584
+        },
+        {
+          "dim": 4,
+          "mad": 1e-06,
+          "threshold": 0.05,
+          "n_flags": 335,
+          "flag_rate": 0.013400536021440857,
+          "max_abs_delta": 1.2732040882110596
+        },
+        {
+          "dim": 5,
+          "mad": 1e-06,
+          "threshold": 0.05,
+          "n_flags": 39,
+          "flag_rate": 0.0015600624024961,
+          "max_abs_delta": 0.35434956196695566
+        },
+        {
+          "dim": 6,
+          "mad": 1e-06,
+          "threshold": 0.05,
+          "n_flags": 759,
+          "flag_rate": 0.030361214448577943,
+          "max_abs_delta": 0.14666366577148438
+        },
+        {
+          "dim": 7,
+          "mad": 1e-06,
+          "threshold": 0.05,
+          "n_flags": 35,
+          "flag_rate": 0.0014000560022400896,
+          "max_abs_delta": 0.23163110250607133
+        },
+        {
+          "dim": 8,
+          "mad": 0.0015339851379394531,
+          "threshold": 0.05,
+          "n_flags": 49,
+          "flag_rate": 0.0019600784031361253,
+          "max_abs_delta": 1.158155545592308
+        },
+        {
+          "dim": 9,
+          "mad": 0.0015339851379394531,
+          "threshold": 0.05,
+          "n_flags": 49,
+          "flag_rate": 0.0019600784031361253,
+          "max_abs_delta": 1.0569127947092056
+        },
+        {
+          "dim": 10,
+          "mad": 1e-06,
+          "threshold": 0.05,
+          "n_flags": 55,
+          "flag_rate": 0.002200088003520141,
+          "max_abs_delta": 0.5215534610906616
+        },
+        {
+          "dim": 11,
+          "mad": 0.0015339851379394531,
+          "threshold": 0.05,
+          "n_flags": 275,
+          "flag_rate": 0.011000440017600704,
+          "max_abs_delta": 1.4281361401081085
+        },
+        {
+          "dim": 12,
+          "mad": 1e-06,
+          "threshold": 0.05,
+          "n_flags": 70,
+          "flag_rate": 0.0028001120044801792,
+          "max_abs_delta": 0.5368932858109474
+        },
+        {
+          "dim": 13,
+          "mad": 1e-06,
+          "threshold": 0.05,
+          "n_flags": 570,
+          "flag_rate": 0.02280091203648146,
+          "max_abs_delta": 0.11517578363418579
+        }
+      ],
+      "max_abs_delta_global": 1.4281361401081085,
+      "rule": "|delta| > max(8.0 * MAD, abs_floor=0.05) (MAD floor=1e-06)"
+    },
+    "state_discontinuities_per_episode": {
+      "total_flags": 771,
+      "total_delta_elements": 349300,
+      "flag_rate": 0.002207271686229602,
+      "note": "computed within episodes to avoid cross-episode boundary artifacts"
+    },
+    "state_near_stuck": [
+      {
+        "dim": 0,
+        "name": "left_waist",
+        "near_stuck": false,
+        "std": 0.1090702875426817,
+        "range": 0.6027783751487732,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 1,
+        "name": "left_shoulder",
+        "near_stuck": false,
+        "std": 0.22419280220683585,
+        "range": 1.0353227034211159,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 2,
+        "name": "left_elbow",
+        "near_stuck": false,
+        "std": 0.20276570111262512,
+        "range": 0.8964192867279053,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 3,
+        "name": "left_forearm_roll",
+        "near_stuck": false,
+        "std": 0.10341581523915667,
+        "range": 0.53931924700737,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 4,
+        "name": "left_wrist_angle",
+        "near_stuck": false,
+        "std": 0.22568834053998682,
+        "range": 1.492762714624405,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 5,
+        "name": "left_wrist_rotate",
+        "near_stuck": false,
+        "std": 0.13937632227302696,
+        "range": 0.8637273609638214,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 6,
+        "name": "left_gripper",
+        "near_stuck": false,
+        "std": 0.19231783523158463,
+        "range": 1.091105341911316,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 7,
+        "name": "right_waist",
+        "near_stuck": false,
+        "std": 0.14224260705342082,
+        "range": 0.7978888750076294,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 8,
+        "name": "right_shoulder",
+        "near_stuck": false,
+        "std": 0.3174291194257199,
+        "range": 1.197562649846077,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 9,
+        "name": "right_elbow",
+        "near_stuck": false,
+        "std": 0.285451485444318,
+        "range": 1.1213592514395714,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 10,
+        "name": "right_forearm_roll",
+        "near_stuck": false,
+        "std": 0.18508381779503746,
+        "range": 1.0325448215007782,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 11,
+        "name": "right_wrist_angle",
+        "near_stuck": false,
+        "std": 0.3043302120378915,
+        "range": 1.5864637792110443,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 12,
+        "name": "right_wrist_rotate",
+        "near_stuck": false,
+        "std": 0.2879387203863611,
+        "range": 1.3524765372276306,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 13,
+        "name": "right_gripper",
+        "near_stuck": false,
+        "std": 0.2574092160959141,
+        "range": 1.0878962650895119,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      }
+    ],
+    "action_near_stuck": [
+      {
+        "dim": 0,
+        "name": "left_waist",
+        "near_stuck": false,
+        "std": 0.10980397914881908,
+        "range": 0.6059224307537079,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 1,
+        "name": "left_shoulder",
+        "near_stuck": false,
+        "std": 0.21561163403173747,
+        "range": 1.0400390028953552,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 2,
+        "name": "left_elbow",
+        "near_stuck": false,
+        "std": 0.20219533154123887,
+        "range": 0.9203884601593018,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 3,
+        "name": "left_forearm_roll",
+        "near_stuck": false,
+        "std": 0.10660390899801615,
+        "range": 0.5460971891880035,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 4,
+        "name": "left_wrist_angle",
+        "near_stuck": false,
+        "std": 0.2204141578693545,
+        "range": 1.5431846976280212,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 5,
+        "name": "left_wrist_rotate",
+        "near_stuck": false,
+        "std": 0.1394308062159806,
+        "range": 0.8559612929821014,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 6,
+        "name": "left_gripper",
+        "near_stuck": false,
+        "std": 0.2706776932390892,
+        "range": 1.079759918153286,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 7,
+        "name": "right_waist",
+        "near_stuck": false,
+        "std": 0.14247868463646407,
+        "range": 0.7930680811405182,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 8,
+        "name": "right_shoulder",
+        "near_stuck": false,
+        "std": 0.31271142550458897,
+        "range": 1.1995729953050613,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 9,
+        "name": "right_elbow",
+        "near_stuck": false,
+        "std": 0.28606984317710504,
+        "range": 1.122873917222023,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 10,
+        "name": "right_forearm_roll",
+        "near_stuck": false,
+        "std": 0.1915323923067958,
+        "range": 0.926524430513382,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 11,
+        "name": "right_wrist_angle",
+        "near_stuck": false,
+        "std": 0.2999130235653688,
+        "range": 1.5907381176948547,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 12,
+        "name": "right_wrist_rotate",
+        "near_stuck": false,
+        "std": 0.2879566027903954,
+        "range": 1.325359433889389,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      },
+      {
+        "dim": 13,
+        "name": "right_gripper",
+        "near_stuck": false,
+        "std": 0.35035899851886454,
+        "range": 1.019021064043045,
+        "std_thresh": 1e-05,
+        "range_thresh": 0.0001
+      }
+    ],
+    "state_outliers": {
+      "total_outliers": 2282,
+      "total_elements": 350000,
+      "rate": 0.00652,
+      "rule": "modified_z = |x-median|/(1.4826*MAD) > 10.0",
+      "per_dim": [
+        {
+          "dim": 0,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.051085935439914465,
+          "median": 0.004569069016724825
+        },
+        {
+          "dim": 1,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.07250787504017353,
+          "median": -0.11508392915129662
+        },
+        {
+          "dim": 2,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.16419485211372375,
+          "median": 0.7252169847488403
+        },
+        {
+          "dim": 3,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.0684724934399128,
+          "median": -0.01464026514440775
+        },
+        {
+          "dim": 4,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.10707247257232666,
+          "median": 0.47311004996299744
+        },
+        {
+          "dim": 5,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.08213060349225998,
+          "median": -0.011496122926473618
+        },
+        {
+          "dim": 6,
+          "n_outliers": 2282,
+          "rate": 0.09128,
+          "mad": 0.027825534343719482,
+          "median": 0.6295273303985596
+        },
+        {
+          "dim": 7,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.09099128050729632,
+          "median": -0.09644247591495514
+        },
+        {
+          "dim": 8,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.14429983496665955,
+          "median": -0.08536545932292938
+        },
+        {
+          "dim": 9,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.26699551939964294,
+          "median": 0.6897079348564148
+        },
+        {
+          "dim": 10,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.14425449981354177,
+          "median": 0.15072310715913773
+        },
+        {
+          "dim": 11,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.17839080095291138,
+          "median": 0.6847822964191437
+        },
+        {
+          "dim": 12,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.24648326635360718,
+          "median": -0.1282038539648056
+        },
+        {
+          "dim": 13,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.08319342136383057,
+          "median": 0.31040096282958984
+        }
+      ]
+    },
+    "action_outliers": {
+      "total_outliers": 7597,
+      "total_elements": 350000,
+      "rate": 0.021705714285714287,
+      "rule": "modified_z = |x-median|/(1.4826*MAD) > 10.0",
+      "per_dim": [
+        {
+          "dim": 0,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.05062136612832546,
+          "median": 0.004601942375302315
+        },
+        {
+          "dim": 1,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.07056312263011932,
+          "median": -0.11504856497049332
+        },
+        {
+          "dim": 2,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.16413593292236328,
+          "median": 0.7179030179977417
+        },
+        {
+          "dim": 3,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.07209709845483303,
+          "median": -0.015339808538556099
+        },
+        {
+          "dim": 4,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.10891261696815491,
+          "median": 0.46172821521759033
+        },
+        {
+          "dim": 5,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.08283496648073196,
+          "median": -0.010737866163253784
+        },
+        {
+          "dim": 6,
+          "n_outliers": 3338,
+          "rate": 0.13352,
+          "mad": 0.02959008514881134,
+          "median": 0.17318376898765564
+        },
+        {
+          "dim": 7,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.09357283171266317,
+          "median": -0.10124273598194122
+        },
+        {
+          "dim": 8,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.13805827498435974,
+          "median": -0.07516506314277649
+        },
+        {
+          "dim": 9,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.26691263914108276,
+          "median": 0.6810874938964844
+        },
+        {
+          "dim": 10,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.15646604169160128,
+          "median": 0.16873788833618164
+        },
+        {
+          "dim": 11,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.18254372477531433,
+          "median": 0.6810874938964844
+        },
+        {
+          "dim": 12,
+          "n_outliers": 0,
+          "rate": 0.0,
+          "mad": 0.24543692916631699,
+          "median": -0.13192234933376312
+        },
+        {
+          "dim": 13,
+          "n_outliers": 4259,
+          "rate": 0.17036,
+          "mad": 0.04849848523736,
+          "median": 0.03073251061141491
+        }
+      ]
+    },
+    "state_boundary_saturation": [
+      {
+        "dim": 0,
+        "name": "left_waist",
+        "observed_min": -0.2860569655895233,
+        "observed_max": 0.3167214095592499,
+        "low_rate": 0.00096,
+        "high_rate": 0.00124,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 1,
+        "name": "left_shoulder",
+        "observed_min": -0.9599999785423279,
+        "observed_max": 0.075322724878788,
+        "low_rate": 0.01044,
+        "high_rate": 0.00132,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 2,
+        "name": "left_elbow",
+        "observed_min": 0.3066967725753784,
+        "observed_max": 1.2031160593032837,
+        "low_rate": 0.0008,
+        "high_rate": 0.0006,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 3,
+        "name": "left_forearm_roll",
+        "observed_min": -0.2636253535747528,
+        "observed_max": 0.2756938934326172,
+        "low_rate": 0.00164,
+        "high_rate": 0.00884,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 4,
+        "name": "left_wrist_angle",
+        "observed_min": -0.493009477853775,
+        "observed_max": 0.9997532367706299,
+        "low_rate": 0.00032,
+        "high_rate": 0.00064,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 5,
+        "name": "left_wrist_rotate",
+        "observed_min": -0.42267003655433655,
+        "observed_max": 0.44105732440948486,
+        "low_rate": 0.00068,
+        "high_rate": 0.00052,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 6,
+        "name": "left_gripper",
+        "observed_min": 0.0,
+        "observed_max": 1.091105341911316,
+        "low_rate": 0.002,
+        "high_rate": 0.00016,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 7,
+        "name": "right_waist",
+        "observed_min": -0.4774622619152069,
+        "observed_max": 0.3204266130924225,
+        "low_rate": 0.00236,
+        "high_rate": 0.00132,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 8,
+        "name": "right_shoulder",
+        "observed_min": -0.9905557632446289,
+        "observed_max": 0.20700688660144806,
+        "low_rate": 0.00112,
+        "high_rate": 0.00736,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 9,
+        "name": "right_elbow",
+        "observed_min": 0.09440229088068008,
+        "observed_max": 1.2157615423202515,
+        "low_rate": 0.00068,
+        "high_rate": 0.00092,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 10,
+        "name": "right_forearm_roll",
+        "observed_min": -0.22565385699272156,
+        "observed_max": 0.8068909645080566,
+        "low_rate": 0.0002,
+        "high_rate": 0.00036,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 11,
+        "name": "right_wrist_angle",
+        "observed_min": -0.43221959471702576,
+        "observed_max": 1.1542441844940186,
+        "low_rate": 0.0002,
+        "high_rate": 0.00296,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 12,
+        "name": "right_wrist_rotate",
+        "observed_min": -0.8460990786552429,
+        "observed_max": 0.5063774585723877,
+        "low_rate": 0.00276,
+        "high_rate": 0.00068,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      },
+      {
+        "dim": 13,
+        "name": "right_gripper",
+        "observed_min": -0.012096084654331207,
+        "observed_max": 1.0758001804351807,
+        "low_rate": 0.03364,
+        "high_rate": 8e-05,
+        "saturation_flag": false,
+        "caveat": "bounds are empirical dataset min/max, not known hardware joint limits"
+      }
+    ],
+    "missing_value_note": "parquet float columns: NaN counted explicitly; no separate null mask beyond NaN for these arrays"
+  },
+  "egocentric": [
+    {
+      "status": "blocked",
+      "reason": "No camera feature classified as verified_egocentric. Observed cameras: observation.images.top=>verified_external",
+      "evidence": [
+        "feature_key=observation.images.top",
+        "dtype=video",
+        "shape=[480, 640, 3]",
+        "key contains external placement token(s): ['top']",
+        "ALOHA 'top' cameras are overhead/workspace views, not wrist-mounted egocentric streams"
+      ],
+      "empirical_wrist_metrics": null,
+      "supported_but_unmeasured_metrics": [
+        "motion blur (laplacian variance)",
+        "underexposure / overexposure",
+        "low-entropy occlusion heuristic",
+        "duplicate / frozen frames",
+        "missing / undecodable frames",
+        "camera\u2013state temporal alignment"
+      ],
+      "note": "External-camera decode stats are recorded only as sensor-dropout evidence, not as egocentric quality results.",
+      "alignment_notes": [
+        "Tabular timestamp/frame_index alignment audited for all loaded episodes.",
+        "Camera streams are stored as separate mp4 files indexed by episode; frame_index in parquet is the joint observation index at metadata fps.",
+        "Deleting arbitrary video frames without a shared timestep mask would desynchronize observation.state/action from images."
+      ],
+      "sampling": {
+        "seed": 42,
+        "contact_episodes": [
+          0,
+          10,
+          20,
+          29,
+          39,
+          49
+        ],
+        "positions": [
+          0.1,
+          0.5,
+          0.9
+        ],
+        "method": "stratified_even_episode_indices"
+      }
+    }
+  ],
+  "external_camera_decode_probe": {
+    "status": "external_only_decode_probe",
+    "cameras": [
+      "observation.images.top"
+    ],
+    "sensor_dropout": {
+      "method": "video_frame_decode_on_stratified_contact_sample",
+      "per_camera": {
+        "observation.images.top": {
+          "viewpoint": "verified_external",
+          "episodes": [
+            0,
+            10,
+            20,
+            29,
+            39,
+            49
+          ],
+          "positions": [
+            0.1,
+            0.5,
+            0.9
+          ],
+          "n_ok": 18,
+          "n_err": 0,
+          "errors": []
+        }
+      }
+    }
+  },
+  "artifacts": {
+    "dataset_manifest": "artifacts/task_01_quality_audit/dataset_manifest.json",
+    "audit_summary": "artifacts/task_01_quality_audit/audit_summary.json",
+    "trajectory_lengths": "artifacts/task_01_quality_audit/trajectory_lengths.png",
+    "camera_samples": "artifacts/task_01_quality_audit/camera_samples.png",
+    "timestamp_gaps": "artifacts/task_01_quality_audit/timestamp_gaps.png",
+    "state_discontinuity_rate": "artifacts/task_01_quality_audit/state_discontinuity_rate.png"
+  },
+  "quality_issue_candidates": [
+    {
+      "severity": "observed",
+      "modality": "teleop",
+      "name": "uniform_trajectory_length",
+      "detail": "all 50 episodes have identical length 500",
+      "incidence": "100% of episodes"
+    },
+    {
+      "severity": "observed",
+      "modality": "teleop",
+      "name": "state_velocity_spikes_mad_rule",
+      "detail": {
+        "total_flags": 771,
+        "total_delta_elements": 349300,
+        "flag_rate": 0.002207271686229602,
+        "note": "computed within episodes to avoid cross-episode boundary artifacts"
+      },
+      "incidence": "flag_rate=0.002207271686229602"
+    },
+    {
+      "severity": "zero_incidence_risk",
+      "modality": "teleop",
+      "name": "timestamp_gaps",
+      "detail": {
+        "total_timestamp_gaps": 0,
+        "episodes_with_gaps": null
+      },
+      "incidence": "total_gaps=0"
+    },
+    {
+      "severity": "zero_incidence_risk",
+      "modality": "teleop",
+      "name": "state_nan_inf",
+      "incidence": "nan=0 inf=0 / 350000"
+    },
+    {
+      "severity": "blocker",
+      "modality": "egocentric",
+      "name": "no_verified_wrist_camera",
+      "detail": [
+        {
+          "key": "observation.images.top",
+          "dtype": "video",
+          "shape": [
+            480,
+            640,
+            3
+          ],
+          "names": [
+            "height",
+            "width",
+            "channel"
+          ],
+          "video_info": {
+            "video.fps": 50.0,
+            "video.codec": "av1",
+            "video.pix_fmt": "yuv420p",
+            "video.is_depth_map": false,
+            "has_audio": false
+          },
+          "viewpoint": "verified_external",
+          "evidence": [
+            "feature_key=observation.images.top",
+            "dtype=video",
+            "shape=[480, 640, 3]",
+            "key contains external placement token(s): ['top']",
+            "ALOHA 'top' cameras are overhead/workspace views, not wrist-mounted egocentric streams"
+          ]
+        }
+      ],
+      "incidence": "N/A \u2014 empirical egocentric audit blocked"
+    }
+  ]
+}
