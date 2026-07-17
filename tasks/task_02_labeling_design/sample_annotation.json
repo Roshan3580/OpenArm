@@ -1,0 +1,478 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_repo_id": "lerobot/svla_so100_pickplace",
+  "dataset_revision": "728583b5eaf9e739a7f119e2def466fa1d552402",
+  "illustrative_not_ground_truth": true,
+  "episode_index": 0,
+  "fps": 30,
+  "n_frames": 300,
+  "annotator_id": "annotator_synth_01",
+  "created_at": "2026-07-17T12:00:00Z",
+  "status": "submitted",
+  "confidence": 0.82,
+  "review_status": "unreviewed",
+  "source_modality": "joint",
+  "curation_policy_context": "raw",
+  "exhaustive_phase_timeline": true,
+  "episode_label": {
+    "annotation_id": "ep-000-outcome",
+    "task_outcome": "success",
+    "demonstration_quality": "usable_with_recovery",
+    "failure_types": ["object_slip"],
+    "n_recovery_attempts": 1,
+    "intervention_occurred": false,
+    "notes": "SYNTHETIC EXAMPLE — phases/outcomes were NOT observed on a real episode.",
+    "confidence": 0.8
+  },
+  "phase_segments": [
+    {
+      "annotation_id": "seg-001",
+      "start_frame": 0,
+      "end_frame": 30,
+      "start_timestamp": 0.0,
+      "end_timestamp": 1.0,
+      "phase": "idle_or_reset",
+      "motion_quality": "smooth",
+      "interaction_state": "none",
+      "is_recovery_behavior": false,
+      "confidence": 0.9
+    },
+    {
+      "annotation_id": "seg-002",
+      "start_frame": 30,
+      "end_frame": 70,
+      "start_timestamp": 1.0,
+      "end_timestamp": 2.3333333333333335,
+      "phase": "approach",
+      "motion_quality": "smooth",
+      "interaction_state": "near_object",
+      "is_recovery_behavior": false,
+      "confidence": 0.85
+    },
+    {
+      "annotation_id": "seg-003",
+      "start_frame": 70,
+      "end_frame": 90,
+      "start_timestamp": 2.3333333333333335,
+      "end_timestamp": 3.0,
+      "phase": "pregrasp_alignment",
+      "motion_quality": "corrective",
+      "interaction_state": "near_object",
+      "is_recovery_behavior": false,
+      "confidence": 0.8
+    },
+    {
+      "annotation_id": "seg-004",
+      "start_frame": 90,
+      "end_frame": 100,
+      "start_timestamp": 3.0,
+      "end_timestamp": 3.3333333333333335,
+      "phase": "gripper_close",
+      "motion_quality": "smooth",
+      "interaction_state": "in_contact",
+      "is_recovery_behavior": false,
+      "confidence": 0.85
+    },
+    {
+      "annotation_id": "seg-005",
+      "start_frame": 100,
+      "end_frame": 110,
+      "start_timestamp": 3.3333333333333335,
+      "end_timestamp": 3.6666666666666665,
+      "phase": "grasp_verification",
+      "motion_quality": "stalled",
+      "interaction_state": "holding",
+      "is_recovery_behavior": false,
+      "confidence": 0.7
+    },
+    {
+      "annotation_id": "seg-006",
+      "start_frame": 110,
+      "end_frame": 130,
+      "start_timestamp": 3.6666666666666665,
+      "end_timestamp": 4.333333333333333,
+      "phase": "lift",
+      "motion_quality": "jerky",
+      "interaction_state": "holding",
+      "is_recovery_behavior": false,
+      "confidence": 0.75,
+      "note": "Synthetic slip during first lift attempt"
+    },
+    {
+      "annotation_id": "seg-007",
+      "start_frame": 130,
+      "end_frame": 160,
+      "start_timestamp": 4.333333333333333,
+      "end_timestamp": 5.333333333333333,
+      "phase": "recovery",
+      "motion_quality": "corrective",
+      "interaction_state": "uncertain",
+      "is_recovery_behavior": true,
+      "confidence": 0.78,
+      "note": "Recovery after object_slip (synthetic)"
+    },
+    {
+      "annotation_id": "seg-008",
+      "start_frame": 160,
+      "end_frame": 190,
+      "start_timestamp": 5.333333333333333,
+      "end_timestamp": 6.333333333333333,
+      "phase": "approach",
+      "motion_quality": "smooth",
+      "interaction_state": "near_object",
+      "is_recovery_behavior": false,
+      "confidence": 0.84
+    },
+    {
+      "annotation_id": "seg-009",
+      "start_frame": 190,
+      "end_frame": 210,
+      "start_timestamp": 6.333333333333333,
+      "end_timestamp": 7.0,
+      "phase": "pregrasp_alignment",
+      "motion_quality": "smooth",
+      "interaction_state": "near_object",
+      "is_recovery_behavior": false,
+      "confidence": 0.86
+    },
+    {
+      "annotation_id": "seg-010",
+      "start_frame": 210,
+      "end_frame": 220,
+      "start_timestamp": 7.0,
+      "end_timestamp": 7.333333333333333,
+      "phase": "gripper_close",
+      "motion_quality": "smooth",
+      "interaction_state": "in_contact",
+      "is_recovery_behavior": false,
+      "confidence": 0.88
+    },
+    {
+      "annotation_id": "seg-011",
+      "start_frame": 220,
+      "end_frame": 230,
+      "start_timestamp": 7.333333333333333,
+      "end_timestamp": 7.666666666666667,
+      "phase": "grasp_verification",
+      "motion_quality": "smooth",
+      "interaction_state": "holding",
+      "is_recovery_behavior": false,
+      "confidence": 0.9
+    },
+    {
+      "annotation_id": "seg-012",
+      "start_frame": 230,
+      "end_frame": 250,
+      "start_timestamp": 7.666666666666667,
+      "end_timestamp": 8.333333333333334,
+      "phase": "lift",
+      "motion_quality": "smooth",
+      "interaction_state": "holding",
+      "is_recovery_behavior": false,
+      "confidence": 0.9
+    },
+    {
+      "annotation_id": "seg-013",
+      "start_frame": 250,
+      "end_frame": 270,
+      "start_timestamp": 8.333333333333334,
+      "end_timestamp": 9.0,
+      "phase": "transport",
+      "motion_quality": "smooth",
+      "interaction_state": "holding",
+      "is_recovery_behavior": false,
+      "confidence": 0.88
+    },
+    {
+      "annotation_id": "seg-014",
+      "start_frame": 270,
+      "end_frame": 280,
+      "start_timestamp": 9.0,
+      "end_timestamp": 9.333333333333334,
+      "phase": "place_alignment",
+      "motion_quality": "corrective",
+      "interaction_state": "placing",
+      "is_recovery_behavior": false,
+      "confidence": 0.85
+    },
+    {
+      "annotation_id": "seg-015",
+      "start_frame": 280,
+      "end_frame": 288,
+      "start_timestamp": 9.333333333333334,
+      "end_timestamp": 9.6,
+      "phase": "lower",
+      "motion_quality": "smooth",
+      "interaction_state": "placing",
+      "is_recovery_behavior": false,
+      "confidence": 0.87
+    },
+    {
+      "annotation_id": "seg-016",
+      "start_frame": 288,
+      "end_frame": 292,
+      "start_timestamp": 9.6,
+      "end_timestamp": 9.733333333333333,
+      "phase": "release",
+      "motion_quality": "smooth",
+      "interaction_state": "releasing",
+      "is_recovery_behavior": false,
+      "confidence": 0.9
+    },
+    {
+      "annotation_id": "seg-017",
+      "start_frame": 292,
+      "end_frame": 298,
+      "start_timestamp": 9.733333333333333,
+      "end_timestamp": 9.933333333333334,
+      "phase": "retract",
+      "motion_quality": "smooth",
+      "interaction_state": "none",
+      "is_recovery_behavior": false,
+      "confidence": 0.88
+    },
+    {
+      "annotation_id": "seg-018",
+      "start_frame": 298,
+      "end_frame": 300,
+      "start_timestamp": 9.933333333333334,
+      "end_timestamp": 10.0,
+      "phase": "terminal_hold",
+      "motion_quality": "smooth",
+      "interaction_state": "none",
+      "is_recovery_behavior": false,
+      "confidence": 0.95
+    }
+  ],
+  "events": [
+    {
+      "annotation_id": "evt-001",
+      "frame_index": 30,
+      "timestamp": 1.0,
+      "timestamp_raw": 0.995,
+      "alignment_error_s": 0.005,
+      "event_type": "motion_start",
+      "confidence": 0.9
+    },
+    {
+      "annotation_id": "evt-002",
+      "frame_index": 90,
+      "timestamp": 3.0,
+      "event_type": "gripper_close_start",
+      "confidence": 0.88
+    },
+    {
+      "annotation_id": "evt-003",
+      "frame_index": 94,
+      "timestamp": 3.1333333333333333,
+      "event_type": "first_contact",
+      "confidence": 0.8
+    },
+    {
+      "annotation_id": "evt-004",
+      "frame_index": 125,
+      "timestamp": 4.166666666666667,
+      "event_type": "object_slip",
+      "confidence": 0.77,
+      "note": "Synthetic first-attempt slip"
+    },
+    {
+      "annotation_id": "evt-005",
+      "frame_index": 130,
+      "timestamp": 4.333333333333333,
+      "event_type": "failure_onset",
+      "confidence": 0.8
+    },
+    {
+      "annotation_id": "evt-006",
+      "frame_index": 130,
+      "timestamp": 4.333333333333333,
+      "event_type": "recovery_start",
+      "confidence": 0.85
+    },
+    {
+      "annotation_id": "evt-007",
+      "frame_index": 210,
+      "timestamp": 7.0,
+      "event_type": "gripper_close_start",
+      "confidence": 0.9
+    },
+    {
+      "annotation_id": "evt-008",
+      "frame_index": 224,
+      "timestamp": 7.466666666666667,
+      "event_type": "stable_grasp",
+      "confidence": 0.9
+    },
+    {
+      "annotation_id": "evt-009",
+      "frame_index": 232,
+      "timestamp": 7.733333333333333,
+      "event_type": "object_liftoff",
+      "confidence": 0.88
+    },
+    {
+      "annotation_id": "evt-010",
+      "frame_index": 250,
+      "timestamp": 8.333333333333334,
+      "event_type": "transport_start",
+      "confidence": 0.88
+    },
+    {
+      "annotation_id": "evt-011",
+      "frame_index": 272,
+      "timestamp": 9.066666666666666,
+      "event_type": "object_over_target",
+      "confidence": 0.84
+    },
+    {
+      "annotation_id": "evt-012",
+      "frame_index": 282,
+      "timestamp": 9.4,
+      "event_type": "placement_contact",
+      "confidence": 0.86
+    },
+    {
+      "annotation_id": "evt-013",
+      "frame_index": 288,
+      "timestamp": 9.6,
+      "event_type": "release_start",
+      "confidence": 0.9
+    },
+    {
+      "annotation_id": "evt-014",
+      "frame_index": 291,
+      "timestamp": 9.7,
+      "event_type": "release_complete",
+      "confidence": 0.9
+    },
+    {
+      "annotation_id": "evt-015",
+      "frame_index": 295,
+      "timestamp": 9.833333333333334,
+      "event_type": "task_success_visible",
+      "confidence": 0.92
+    }
+  ],
+  "wrist_interaction_states": [
+    {
+      "annotation_id": "wrs-001",
+      "start_frame": 30,
+      "end_frame": 90,
+      "start_timestamp": 1.0,
+      "end_timestamp": 3.0,
+      "state": "approaching",
+      "aligned_teleop_phase": "approach",
+      "confidence": 0.85
+    },
+    {
+      "annotation_id": "wrs-002",
+      "start_frame": 90,
+      "end_frame": 110,
+      "start_timestamp": 3.0,
+      "end_timestamp": 3.6666666666666665,
+      "state": "contact",
+      "aligned_teleop_phase": "gripper_close",
+      "confidence": 0.8
+    },
+    {
+      "annotation_id": "wrs-003",
+      "start_frame": 130,
+      "end_frame": 160,
+      "start_timestamp": 4.333333333333333,
+      "end_timestamp": 5.333333333333333,
+      "state": "recovery",
+      "aligned_teleop_phase": "recovery",
+      "confidence": 0.8
+    },
+    {
+      "annotation_id": "wrs-004",
+      "start_frame": 230,
+      "end_frame": 270,
+      "start_timestamp": 7.666666666666667,
+      "end_timestamp": 9.0,
+      "state": "carried",
+      "aligned_teleop_phase": "transport",
+      "confidence": 0.88
+    },
+    {
+      "annotation_id": "wrs-005",
+      "start_frame": 280,
+      "end_frame": 292,
+      "start_timestamp": 9.333333333333334,
+      "end_timestamp": 9.733333333333333,
+      "state": "placing",
+      "aligned_teleop_phase": "lower",
+      "confidence": 0.86
+    }
+  ],
+  "visibility_labels": [
+    {
+      "annotation_id": "vis-001",
+      "frame_index": 100,
+      "timestamp": 3.3333333333333335,
+      "target": "target_object",
+      "visibility": "partially_visible",
+      "expected_self_occlusion": true,
+      "confidence": 0.75
+    },
+    {
+      "annotation_id": "vis-002",
+      "frame_index": 250,
+      "timestamp": 8.333333333333334,
+      "target": "gripper",
+      "visibility": "fully_visible",
+      "expected_self_occlusion": false,
+      "confidence": 0.9
+    }
+  ],
+  "failure_moments": [
+    {
+      "annotation_id": "fail-001",
+      "frame_index": 125,
+      "timestamp": 4.166666666666667,
+      "failure_type": "visual_slip",
+      "confidence": 0.8,
+      "note": "Synthetic visual slip coincident with object_slip event"
+    }
+  ],
+  "attention_proxy_rois": [
+    {
+      "annotation_id": "roi-001",
+      "start_frame": 70,
+      "end_frame": 100,
+      "roi_type": "target_object",
+      "shape": "bbox_xyxy",
+      "coordinates": [0.35, 0.40, 0.55, 0.65],
+      "source": "manual",
+      "visibility": "fully_visible",
+      "confidence": 0.7,
+      "note": "Attention proxy only — NOT measured human gaze."
+    }
+  ],
+  "object_interaction_flags": [
+    {
+      "annotation_id": "oif-001",
+      "frame_index": 224,
+      "timestamp": 7.466666666666667,
+      "flags": {
+        "target_object_visible": "true",
+        "gripper_visible": "true",
+        "contact_visible": "true",
+        "object_in_gripper": "true",
+        "object_slipping": "false",
+        "target_receptacle_visible": "unknown",
+        "object_released": "false",
+        "placement_visible": "not_visible"
+      },
+      "confidence": 0.85
+    }
+  ],
+  "provenance": {
+    "prelabel_source": "synthetic_robot_signal_stub",
+    "prelabels_are_ground_truth": false,
+    "tool": "Label Studio (design only; XML not server-tested)",
+    "review_asset": "synchronized_composite_review_video_design",
+    "notes": "Illustrative_not_ground_truth=true. Internally consistent at 30 FPS. Do not treat as observed labels."
+  }
+}

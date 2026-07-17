@@ -1,0 +1,106 @@
+<!--
+  Illustrative Label Studio labeling config for OpenArm Task 2.
+  NOT production-tested against a running Label Studio server in this take-home.
+
+  Intended review asset: a preprocessed synchronized composite MP4
+  (wrist primary + top contextual + robot-state/gripper strip + on-screen
+  canonical episode/frame/timestamp). Annotations must still be stored in
+  canonical (dataset_revision, episode_index, frame_index, timestamp) space.
+-->
+<View>
+  <Header value="OpenArm pick-and-place — synchronized review (illustrative)"/>
+  <Text name="meta" value="repo=$dataset_repo_id rev=$dataset_revision ep=$episode_index"/>
+  <Video name="review_video" value="$review_video" framerate="30"/>
+
+  <Header value="Episode labels"/>
+  <Choices name="task_outcome" toName="review_video" choice="single" required="true">
+    <Choice value="success"/>
+    <Choice value="partial_success"/>
+    <Choice value="failure"/>
+    <Choice value="aborted"/>
+    <Choice value="uncertain"/>
+  </Choices>
+  <Choices name="demonstration_quality" toName="review_video" choice="single" required="true">
+    <Choice value="clean"/>
+    <Choice value="usable_with_recovery"/>
+    <Choice value="review_required"/>
+    <Choice value="unusable"/>
+  </Choices>
+  <Choices name="failure_types" toName="review_video" choice="multiple">
+    <Choice value="missed_object"/>
+    <Choice value="failed_grasp"/>
+    <Choice value="object_slip"/>
+    <Choice value="collision"/>
+    <Choice value="wrong_target"/>
+    <Choice value="incomplete_release"/>
+    <Choice value="timeout"/>
+    <Choice value="operator_abort"/>
+    <Choice value="sensor_issue"/>
+    <Choice value="other"/>
+  </Choices>
+  <Number name="n_recovery_attempts" toName="review_video" min="0" max="20"/>
+  <Choices name="intervention_occurred" toName="review_video" choice="single">
+    <Choice value="true"/>
+    <Choice value="false"/>
+  </Choices>
+  <TextArea name="episode_notes" toName="review_video" placeholder="Episode notes"/>
+
+  <Header value="Primary phase segments (half-open [start,end))"/>
+  <Labels name="phase" toName="review_video">
+    <Label value="idle_or_reset"/>
+    <Label value="approach"/>
+    <Label value="pregrasp_alignment"/>
+    <Label value="gripper_close"/>
+    <Label value="grasp_verification"/>
+    <Label value="lift"/>
+    <Label value="transport"/>
+    <Label value="place_alignment"/>
+    <Label value="lower"/>
+    <Label value="release"/>
+    <Label value="retract"/>
+    <Label value="recovery"/>
+    <Label value="terminal_hold"/>
+    <Label value="uncertain"/>
+  </Labels>
+
+  <Header value="Events"/>
+  <Labels name="event" toName="review_video">
+    <Label value="motion_start"/>
+    <Label value="gripper_close_start"/>
+    <Label value="first_contact"/>
+    <Label value="stable_grasp"/>
+    <Label value="object_liftoff"/>
+    <Label value="transport_start"/>
+    <Label value="object_over_target"/>
+    <Label value="placement_contact"/>
+    <Label value="release_start"/>
+    <Label value="release_complete"/>
+    <Label value="task_success_visible"/>
+    <Label value="failure_onset"/>
+    <Label value="recovery_start"/>
+    <Label value="collision"/>
+    <Label value="object_slip"/>
+    <Label value="operator_intervention"/>
+  </Labels>
+
+  <Header value="Egocentric / wrist (on keyframes of composite — store in wrist coords)"/>
+  <Labels name="wrist_failure" toName="review_video">
+    <Label value="missed_grasp"/>
+    <Label value="visual_slip"/>
+    <Label value="collision_visible"/>
+    <Label value="object_lost_from_view"/>
+    <Label value="severe_occlusion"/>
+    <Label value="exposure_failure"/>
+    <Label value="frozen_camera"/>
+    <Label value="ambiguous_visual_failure"/>
+  </Labels>
+  <RectangleLabels name="attention_proxy_roi" toName="review_video">
+    <Label value="target_object"/>
+    <Label value="gripper_object_contact"/>
+    <Label value="target_receptacle"/>
+    <Label value="placement_area"/>
+    <Label value="anticipated_motion_target"/>
+  </RectangleLabels>
+  <TextArea name="annotator_confidence_note" toName="review_video"
+            placeholder="Confidence notes; ROIs are attention proxies NOT gaze"/>
+</View>

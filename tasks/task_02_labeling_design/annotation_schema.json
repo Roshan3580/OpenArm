@@ -1,0 +1,383 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openarm.local/schemas/annotation_schema_v1.json",
+  "title": "OpenArm synchronized multimodal annotation export",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "dataset_repo_id",
+    "dataset_revision",
+    "illustrative_not_ground_truth",
+    "episode_index",
+    "fps",
+    "annotator_id",
+    "created_at",
+    "status",
+    "confidence",
+    "review_status",
+    "source_modality",
+    "episode_label",
+    "phase_segments",
+    "events"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "1.0.0" },
+    "dataset_repo_id": { "type": "string", "minLength": 1 },
+    "dataset_revision": {
+      "type": "string",
+      "const": "728583b5eaf9e739a7f119e2def466fa1d552402"
+    },
+    "illustrative_not_ground_truth": { "type": "boolean" },
+    "episode_index": { "type": "integer", "minimum": 0 },
+    "fps": { "type": "number", "exclusiveMinimum": 0 },
+    "n_frames": { "type": "integer", "minimum": 1 },
+    "annotator_id": { "type": "string", "minLength": 1 },
+    "created_at": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "submitted", "adjudicated", "needs_review", "rejected"]
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "review_status": {
+      "type": "string",
+      "enum": ["unreviewed", "accepted", "rejected", "adjudicated"]
+    },
+    "source_modality": {
+      "type": "string",
+      "enum": ["teleoperation", "egocentric", "joint"]
+    },
+    "curation_policy_context": {
+      "type": "string",
+      "enum": ["raw", "conservative", "strict"]
+    },
+    "exhaustive_phase_timeline": { "type": "boolean" },
+    "episode_label": {
+      "type": "object",
+      "required": [
+        "annotation_id",
+        "task_outcome",
+        "demonstration_quality",
+        "failure_types",
+        "n_recovery_attempts",
+        "intervention_occurred",
+        "confidence"
+      ],
+      "properties": {
+        "annotation_id": { "type": "string" },
+        "task_outcome": {
+          "type": "string",
+          "enum": ["success", "partial_success", "failure", "aborted", "uncertain"]
+        },
+        "demonstration_quality": {
+          "type": "string",
+          "enum": ["clean", "usable_with_recovery", "review_required", "unusable"]
+        },
+        "failure_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "missed_object",
+              "failed_grasp",
+              "object_slip",
+              "collision",
+              "wrong_target",
+              "incomplete_release",
+              "timeout",
+              "operator_abort",
+              "sensor_issue",
+              "other"
+            ]
+          }
+        },
+        "n_recovery_attempts": { "type": "integer", "minimum": 0 },
+        "intervention_occurred": { "type": "boolean" },
+        "notes": { "type": "string" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "phase_segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "annotation_id",
+          "start_frame",
+          "end_frame",
+          "start_timestamp",
+          "end_timestamp",
+          "phase",
+          "motion_quality",
+          "interaction_state",
+          "is_recovery_behavior",
+          "confidence"
+        ],
+        "properties": {
+          "annotation_id": { "type": "string" },
+          "start_frame": { "type": "integer", "minimum": 0 },
+          "end_frame": { "type": "integer", "minimum": 0 },
+          "start_timestamp": { "type": "number" },
+          "end_timestamp": { "type": "number" },
+          "start_timestamp_raw": { "type": "number" },
+          "end_timestamp_raw": { "type": "number" },
+          "alignment_error_s": { "type": "number" },
+          "phase": {
+            "type": "string",
+            "enum": [
+              "idle_or_reset",
+              "approach",
+              "pregrasp_alignment",
+              "gripper_close",
+              "grasp_verification",
+              "lift",
+              "transport",
+              "place_alignment",
+              "lower",
+              "release",
+              "retract",
+              "recovery",
+              "terminal_hold",
+              "uncertain"
+            ]
+          },
+          "motion_quality": {
+            "type": "string",
+            "enum": ["smooth", "jerky", "stalled", "overshoot", "corrective", "uncertain"]
+          },
+          "interaction_state": {
+            "type": "string",
+            "enum": ["none", "near_object", "in_contact", "holding", "placing", "releasing", "uncertain"]
+          },
+          "is_recovery_behavior": { "type": "boolean" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "note": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["annotation_id", "frame_index", "timestamp", "event_type", "confidence"],
+        "properties": {
+          "annotation_id": { "type": "string" },
+          "frame_index": { "type": "integer", "minimum": 0 },
+          "timestamp": { "type": "number" },
+          "timestamp_raw": { "type": "number" },
+          "alignment_error_s": { "type": "number" },
+          "event_type": {
+            "type": "string",
+            "enum": [
+              "motion_start",
+              "gripper_close_start",
+              "first_contact",
+              "stable_grasp",
+              "object_liftoff",
+              "transport_start",
+              "object_over_target",
+              "placement_contact",
+              "release_start",
+              "release_complete",
+              "task_success_visible",
+              "failure_onset",
+              "recovery_start",
+              "collision",
+              "object_slip",
+              "operator_intervention"
+            ]
+          },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "note": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "wrist_interaction_states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "annotation_id",
+          "start_frame",
+          "end_frame",
+          "start_timestamp",
+          "end_timestamp",
+          "state",
+          "aligned_teleop_phase",
+          "confidence"
+        ],
+        "properties": {
+          "annotation_id": { "type": "string" },
+          "start_frame": { "type": "integer", "minimum": 0 },
+          "end_frame": { "type": "integer", "minimum": 0 },
+          "start_timestamp": { "type": "number" },
+          "end_timestamp": { "type": "number" },
+          "state": {
+            "type": "string",
+            "enum": [
+              "no_interaction",
+              "approaching",
+              "alignment",
+              "contact",
+              "grasped",
+              "carried",
+              "placing",
+              "released",
+              "recovery",
+              "uncertain"
+            ]
+          },
+          "aligned_teleop_phase": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "visibility_labels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["annotation_id", "frame_index", "timestamp", "target", "visibility", "confidence"],
+        "properties": {
+          "annotation_id": { "type": "string" },
+          "frame_index": { "type": "integer", "minimum": 0 },
+          "timestamp": { "type": "number" },
+          "target": {
+            "type": "string",
+            "enum": ["target_object", "target_receptacle", "gripper", "scene"]
+          },
+          "visibility": {
+            "type": "string",
+            "enum": [
+              "fully_visible",
+              "partially_visible",
+              "heavily_occluded",
+              "not_visible",
+              "uncertain"
+            ]
+          },
+          "expected_self_occlusion": { "type": "boolean" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "failure_moments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["annotation_id", "frame_index", "timestamp", "failure_type", "confidence"],
+        "properties": {
+          "annotation_id": { "type": "string" },
+          "frame_index": { "type": "integer", "minimum": 0 },
+          "timestamp": { "type": "number" },
+          "failure_type": {
+            "type": "string",
+            "enum": [
+              "missed_grasp",
+              "visual_slip",
+              "collision_visible",
+              "object_lost_from_view",
+              "target_lost_from_view",
+              "severe_occlusion",
+              "exposure_failure",
+              "frozen_camera",
+              "ambiguous_visual_failure"
+            ]
+          },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "note": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "attention_proxy_rois": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "annotation_id",
+          "start_frame",
+          "end_frame",
+          "roi_type",
+          "shape",
+          "coordinates",
+          "source",
+          "visibility",
+          "confidence"
+        ],
+        "properties": {
+          "annotation_id": { "type": "string" },
+          "start_frame": { "type": "integer", "minimum": 0 },
+          "end_frame": { "type": "integer", "minimum": 0 },
+          "roi_type": {
+            "type": "string",
+            "enum": [
+              "target_object",
+              "gripper_object_contact",
+              "target_receptacle",
+              "placement_area",
+              "anticipated_motion_target"
+            ]
+          },
+          "shape": { "type": "string", "enum": ["bbox_xyxy", "polygon"] },
+          "coordinates": {
+            "type": "array",
+            "items": { "type": "number", "minimum": 0, "maximum": 1 }
+          },
+          "source": { "type": "string", "enum": ["manual", "model_assisted"] },
+          "visibility": {
+            "type": "string",
+            "enum": [
+              "fully_visible",
+              "partially_visible",
+              "heavily_occluded",
+              "not_visible",
+              "uncertain"
+            ]
+          },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "note": {
+            "type": "string",
+            "description": "Must not claim measured human gaze"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "object_interaction_flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["annotation_id", "frame_index", "timestamp", "flags", "confidence"],
+        "properties": {
+          "annotation_id": { "type": "string" },
+          "frame_index": { "type": "integer", "minimum": 0 },
+          "timestamp": { "type": "number" },
+          "flags": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "enum": ["true", "false", "unknown", "not_visible"]
+            }
+          },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "prelabel_source": { "type": "string" },
+        "prelabels_are_ground_truth": { "type": "boolean", "const": false },
+        "tool": { "type": "string" },
+        "review_asset": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

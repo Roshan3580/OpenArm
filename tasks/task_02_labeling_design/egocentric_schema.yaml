@@ -1,0 +1,79 @@
+schema_version: "1.0.0"
+modality: egocentric
+camera_key: observation.images.wrist
+dataset_repo_id: lerobot/svla_so100_pickplace
+dataset_revision: "728583b5eaf9e739a7f119e2def466fa1d552402"
+notes:
+  - Attention ROIs are gaze proxies, not measured eye tracking.
+  - Visual interaction states align to teleoperation primary phases; do not invent a second phase ontology.
+  - Dense boxes optional; prefer sparse keyframes + interpolation/tracking.
+
+object_interaction_labels:
+  type: per_frame_or_interval
+  fields:
+    - target_object_visible
+    - target_receptacle_visible
+    - gripper_visible
+    - contact_visible
+    - object_in_gripper
+    - object_slipping
+    - object_released
+    - placement_visible
+  value_set: [true, false, unknown, not_visible]
+  rule: Prefer unknown/not_visible over silently treating occluded frames as false.
+
+visual_interaction_state:
+  values:
+    - no_interaction
+    - approaching
+    - alignment
+    - contact
+    - grasped
+    - carried
+    - placing
+    - released
+    - recovery
+    - uncertain
+  alignment: Reference teleoperation primary phase segment for the same frames.
+
+failure_moments:
+  values:
+    - missed_grasp
+    - visual_slip
+    - collision_visible
+    - object_lost_from_view
+    - target_lost_from_view
+    - severe_occlusion
+    - exposure_failure
+    - frozen_camera
+    - ambiguous_visual_failure
+
+visibility_scale:
+  ordinal:
+    - fully_visible
+    - partially_visible
+    - heavily_occluded
+    - not_visible
+    - uncertain
+  separate_from:
+    - expected_arm_gripper_self_occlusion  # not automatically "unusable"
+
+attention_proxy_roi:
+  claim: "Task-relevant visual region proxy — NOT human gaze / eye tracking."
+  roi_types:
+    - target_object
+    - gripper_object_contact
+    - target_receptacle
+    - placement_area
+    - anticipated_motion_target
+  geometry:
+    coordinates: normalized_to_wrist_image  # [0,1] x [0,1]
+    shapes: [bbox_xyxy, polygon]
+  fields:
+    - frame_index_or_interval
+    - coordinates
+    - roi_type
+    - source  # manual | model_assisted
+    - visibility  # visibility_scale
+    - confidence
+  density_policy: sparse_keyframes_plus_interpolation_preferred

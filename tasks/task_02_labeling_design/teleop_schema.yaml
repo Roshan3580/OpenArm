@@ -1,0 +1,121 @@
+schema_version: "1.0.0"
+modality: teleoperation
+dataset_repo_id: lerobot/svla_so100_pickplace
+dataset_revision: "728583b5eaf9e739a7f119e2def466fa1d552402"
+task_description: "Pick up the cube and place it in the box."
+fps: 30
+segment_interval: half_open  # [start_frame, end_frame)
+
+episode_level:
+  task_outcome:
+    type: enum
+    values: [success, partial_success, failure, aborted, uncertain]
+  demonstration_quality:
+    type: enum
+    values: [clean, usable_with_recovery, review_required, unusable]
+  failure_types:
+    type: multi_enum
+    values:
+      - missed_object
+      - failed_grasp
+      - object_slip
+      - collision
+      - wrong_target
+      - incomplete_release
+      - timeout
+      - operator_abort
+      - sensor_issue
+      - other
+  n_recovery_attempts:
+    type: integer
+    minimum: 0
+  intervention_occurred:
+    type: boolean
+  notes:
+    type: string
+  confidence:
+    type: number
+    minimum: 0
+    maximum: 1
+
+segment_level_phases:
+  primary_phase_per_frame: true
+  allow_overlap_primary: false
+  exhaustive_default: true
+  phases:
+    - idle_or_reset
+    - approach
+    - pregrasp_alignment
+    - gripper_close
+    - grasp_verification
+    - lift
+    - transport
+    - place_alignment
+    - lower
+    - release
+    - retract
+    - recovery
+    - terminal_hold
+    - uncertain
+  per_segment_fields:
+    start_frame: integer
+    end_frame: integer  # exclusive
+    start_timestamp: number
+    end_timestamp: number
+    phase: enum  # phases above
+    motion_quality:
+      values: [smooth, jerky, stalled, overshoot, corrective, uncertain]
+    interaction_state:
+      values: [none, near_object, in_contact, holding, placing, releasing, uncertain]
+    is_recovery_behavior: boolean
+    confidence: number
+    note: string_optional
+  rules:
+    short_transition_frames_lt: 3
+    short_transition_policy: absorb_into_neighbor_or_uncertain
+    recovery_reconnect: resume_nominal_phase_after_recovery
+
+event_level:
+  events:
+    - motion_start
+    - gripper_close_start
+    - first_contact
+    - stable_grasp
+    - object_liftoff
+    - transport_start
+    - object_over_target
+    - placement_contact
+    - release_start
+    - release_complete
+    - task_success_visible
+    - failure_onset
+    - recovery_start
+    - collision
+    - object_slip
+    - operator_intervention
+  repeatable:
+    - failure_onset
+    - recovery_start
+    - collision
+    - object_slip
+    - operator_intervention
+    - first_contact
+    - stable_grasp
+    - gripper_close_start
+  typically_once_per_successful_attempt:
+    - motion_start
+    - object_liftoff
+    - transport_start
+    - object_over_target
+    - placement_contact
+    - release_start
+    - release_complete
+    - task_success_visible
+  fields:
+    frame_index: integer
+    timestamp: number
+    timestamp_raw: number_optional
+    alignment_error_s: number_optional
+    event_type: enum
+    confidence: number
+    note: string_optional

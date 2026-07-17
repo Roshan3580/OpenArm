@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "n_errors": 0,
+  "n_warnings": 0,
+  "errors": [],
+  "warnings": [],
+  "schema_version": "1.0.0",
+  "expected_revision": "728583b5eaf9e739a7f119e2def466fa1d552402",
+  "path": "tasks/task_02_labeling_design/sample_annotation.json"
+}
