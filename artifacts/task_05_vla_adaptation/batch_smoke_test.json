@@ -1,0 +1,143 @@
+{
+  "ok": true,
+  "model_checkpoint_downloaded": false,
+  "batch_size": 6,
+  "image_shape": [
+    6,
+    224,
+    224,
+    3
+  ],
+  "image_dtype": "uint8",
+  "image_layout": "NHWC",
+  "image_color_space": "RGB",
+  "image_range": [
+    7,
+    255
+  ],
+  "image_tensor_note": "Adapter emits processor-ready NHWC uint8 RGB after BGR\u2192RGB convert and 224 resize. This is not the final normalized CHW model tensor; the official PrismaticProcessor would be applied only when loading OpenVLA (not done in this smoke test).",
+  "language_sample": "Pick up the cube and place it in the box.",
+  "raw_action_shape": [
+    6,
+    6
+  ],
+  "encoded_action_shape": [
+    6,
+    7
+  ],
+  "mask_shape": [
+    6,
+    7
+  ],
+  "mask_padded_dim_all_zero": true,
+  "round_trip": {
+    "max_abs_error": 1.4210854715202004e-14,
+    "mean_abs_error": 8.411481387958652e-16,
+    "ok": true
+  },
+  "samples": [
+    {
+      "episode_index": 3,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "split": "train",
+      "temporal_position": "early"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 104,
+      "timestamp": 3.4666666984558105,
+      "split": "train",
+      "temporal_position": "middle"
+    },
+    {
+      "episode_index": 3,
+      "frame_index": 312,
+      "timestamp": 10.399999618530273,
+      "split": "train",
+      "temporal_position": "late"
+    },
+    {
+      "episode_index": 0,
+      "frame_index": 114,
+      "timestamp": 3.799999952316284,
+      "split": "val",
+      "temporal_position": "middle"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 0,
+      "timestamp": 0.0,
+      "split": "test",
+      "temporal_position": "early"
+    },
+    {
+      "episode_index": 1,
+      "frame_index": 351,
+      "timestamp": 11.699999809265137,
+      "split": "test",
+      "temporal_position": "late"
+    }
+  ],
+  "episode_ids": [
+    3,
+    3,
+    3,
+    0,
+    1,
+    1
+  ],
+  "frame_ids": [
+    0,
+    104,
+    312,
+    114,
+    0,
+    351
+  ],
+  "timestamps": [
+    0.0,
+    3.4666666984558105,
+    10.399999618530273,
+    3.799999952316284,
+    0.0,
+    11.699999809265137
+  ],
+  "split": [
+    "train",
+    "train",
+    "train",
+    "val",
+    "test",
+    "test"
+  ],
+  "splits_present": [
+    "test",
+    "train",
+    "val"
+  ],
+  "temporal_positions": [
+    "early",
+    "middle",
+    "late",
+    "middle",
+    "early",
+    "late"
+  ],
+  "normalization_stat_source": "train_only_q01_q99",
+  "curation_policy": "conservative",
+  "alignment_error_frames": 0.0,
+  "action_offset_frames": 0,
+  "shape_errors": [],
+  "validation": {
+    "no_invalid_window": true,
+    "multi_split_smoke_batch_allowed": true,
+    "train_normalization_only": true,
+    "source_identity_preserved": true,
+    "pad_dim_excluded_adapter_side": true,
+    "stock_loss_mask_integration_verified": false
+  },
+  "openvla_model_id": "openvla/openvla-7b",
+  "openvla_model_revision": "47a0ec7fc4ec123775a391911046cf33cf9ed83f",
+  "note": "Smoke test validates dataset alignment, action encoding/masking, and batching on real wrist frames. OpenVLA 7B weights were not downloaded or loaded; official processor tensors were not produced."
+}

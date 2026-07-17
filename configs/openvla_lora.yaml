@@ -1,0 +1,79 @@
+# OpenVLA LoRA fine-tuning configuration (PROPOSED — not trained in this repo)
+#
+# Verified official defaults are marked [official].
+# Project-selected values for SO-100 / OpenArm are marked [project].
+
+# --- Base model (verified) ---
+base_model_id: openvla/openvla-7b  # [official]
+base_model_revision: "47a0ec7fc4ec123775a391911046cf33cf9ed83f"  # [project pin of HF model sha]
+official_code_repo: https://github.com/openvla/openvla
+official_code_revision: "c8f03f48af69"  # [project pin of github main tip inspected]
+license: MIT  # model card; Llama-2 component under Llama Community License
+
+# --- Dataset ---
+dataset_repo_id: lerobot/svla_so100_pickplace  # [project]
+dataset_revision: "728583b5eaf9e739a7f119e2def466fa1d552402"  # [project]
+curation_policy: conservative  # [project] Task 3 default; strict is ablation
+camera_view: wrist  # [project] egocentric baseline; top_only / composite are ablations
+instruction_field: "Pick up the cube and place it in the box."  # [project]
+use_proprio_state: false  # [project] OpenVLA baseline is image+language only
+state_field: state  # raw; smoothed available as ablation
+
+# --- Action representation (project-critical) ---
+action_representation: absolute_joint  # [project] primary; delta_joint supported in adapter
+source_action_dim: 6  # [project] SO-100
+openvla_action_dim: 7  # [official] pretrained ActionTokenizer / EEF+gripper slots
+pad_masked_seventh_dim: true  # [project] zero pad; excluded from loss/metrics
+normalization_method: q01_q99_to_unit_interval  # [project] matches OpenVLA [-1,1] bins
+action_offset_frames: 0  # [project] synchronous (image_t, action_t)
+fps: 30
+
+# --- Images ---
+image_size: 224  # [official] prism-dinosiglip-224px family
+image_aug: true  # [official default in finetune.py]
+wrist_safe_aug_only: true  # [project] no flips / large rotations
+
+# --- Optimization ---
+# Highest impact: learning_rate, lora_rank, effective_batch_size, action_norm, image_aug, action_offset, max_steps
+batch_size: 8  # [project] reduced from official 16 for smaller GPUs
+grad_accumulation_steps: 2  # [project] => effective batch 16 (matches official effective size)
+effective_batch_size: 16
+learning_rate: 5.0e-4  # [official finetune.py default]
+weight_decay: 0.0  # [official AdamW default in script uses no wd]
+warmup_steps: 0  # [official script uses constant LR; warmup is project-optional]
+max_steps: 20000  # [project] shorter than official 200000 for small corpus
+max_epochs_equivalent_note: "Prefer max_steps; ~20k steps on ~19k conservative frames is ~1 epoch-scale"
+
+# --- LoRA / precision ---
+use_lora: true  # [official recommended]
+lora_rank: 32  # [official]
+lora_alpha: 16  # [official] min(lora_rank, 16) in finetune.py
+lora_dropout: 0.0  # [official]
+target_modules: all-linear  # [official]
+use_quantization_4bit: false  # [official caution: hurts performance]
+precision: bfloat16  # [official]
+gradient_clipping: null  # [official script does not clip]
+gradient_checkpointing: false  # [project optional for memory]
+trainable_components: "LoRA adapters on all linear modules"  # [official PEFT wrap]
+frozen_components: "base weights not adapted by LoRA"  # [official]
+
+# --- Logging / eval cadence ---
+save_steps: 1000  # [project]
+validation_frequency_steps: 500  # [project]
+num_workers: 0  # [official RLDS note; our adapter uses 0-2]
+seed: 42  # [project]
+early_stopping:
+  metric: val_action_token_accuracy  # [project]
+  patience_evals: 5
+  mode: max
+
+# --- Hardware assumption (from official docs; not claimed available here) ---
+hardware_assumption: >
+  Official LoRA example: batch_size=16, grad_accum=1 needs ~72GB GPU.
+  Project config targets effective batch 16 via batch 8 x accum 2 on a 48GB-class GPU if available.
+  This repository does NOT run training.
+
+# --- Explicit non-claims ---
+training_performed: false
+checkpoint_downloaded: false
+rollouts_performed: false

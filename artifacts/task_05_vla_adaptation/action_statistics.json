@@ -1,0 +1,29 @@
+{
+  "method": "q01_q99",
+  "q_low": [
+    -32.43779296875,
+    -89.12109375,
+    -16.61748046875,
+    22.060546875,
+    58.52900390625,
+    0.0
+  ],
+  "q_high": [
+    69.873046875,
+    26.806640625,
+    74.619140625,
+    87.80888671874997,
+    120.673828125,
+    31.30990219116211
+  ],
+  "source_dim": 6,
+  "openvla_dim": 7,
+  "pad_to_openvla_dim": true,
+  "gripper_index": 5,
+  "action_mode": "absolute",
+  "note": "OpenVLA pretrained ActionTokenizer expects 7 continuous dims in [-1,1] before 256-bin discretization. SO-100 provides 6 joint dims; dim 6 is zero-padded and masked out of the loss.",
+  "fit_on_split": "train",
+  "n_train_frames": 15594,
+  "train_clip_fraction": 0.016245564533367535,
+  "frozen_for_val_test": true
+}

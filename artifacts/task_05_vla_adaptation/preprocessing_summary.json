@@ -1,0 +1,24 @@
+{
+  "source_typical_resolution": [
+    480,
+    640
+  ],
+  "color_space": "RGB",
+  "resize_method": "bilinear",
+  "crop_behavior": "none_at_export_center_crop_optional_in_safe_aug",
+  "output_resolution": [
+    224,
+    224
+  ],
+  "numeric_range_at_export": "uint8_[0,255]",
+  "normalization": "deferred_to_OpenVLA_PrismaticImageProcessor",
+  "augmentation_policy": "wrist_safe_photometric_optional",
+  "unsafe_disabled": [
+    "frame_reorder",
+    "horizontal_flip",
+    "large_rotation",
+    "time_reversal",
+    "vertical_flip"
+  ],
+  "ownership": "dataset_export_produces_uint8_RGB; model_processor_applies_train_norm"
+}
