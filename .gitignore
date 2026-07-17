@@ -1,0 +1,87 @@
+# Assignment PDF (keep local; do not track)
+OpenArm_DataPipeline_TakeHome.pdf
+
+# Local data downloads (never commit raw datasets)
+data/**
+!data/.gitkeep
+
+# Local model weights and evaluation feature caches (Task 4)
+data/models/
+data/evaluation_cache/
+
+# Task 5 OpenVLA local exports (metadata shards; never commit)
+data/vla/
+
+# Hugging Face / LeRobot caches
+.cache/
+**/huggingface/
+**/.huggingface/
+HF_HOME/
+HUGGINGFACE_HUB_CACHE/
+TRANSFORMERS_CACHE/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Temporary / OS files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.tmp/
+tmp/
+temp/
+
+# Downloaded media / parquet (keep small diagnostic artifacts only)
+*.parquet
+*.hdf5
+*.h5
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.webm
+*.bag
+*.mcap
+
+# Large binary model / array dumps
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# IDE / editor
+.idea/
+.vscode/
+*.code-workspace
+
+# Environment secrets
+.env
+.env.*
+!.env.example
